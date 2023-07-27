@@ -16,10 +16,12 @@ Including another URLconf
 """
 # No arquivo urls.py do diretório "funkosgalaxy"
 
-from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
+from django.contrib import admin
 
 urlpatterns = [
+    path('', lambda request: redirect('/store/')),  # Redirecionar para a página inicial da store
     path('admin/', admin.site.urls),
     path('store/', include('store.urls')),
 ]
