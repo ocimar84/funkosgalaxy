@@ -38,15 +38,15 @@ ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-481ykkt40rs.ws-eu102.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
-    "store", 
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
-    
+    'store',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -75,6 +75,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 
 WSGI_APPLICATION = "funkosgalaxy.wsgi.application"
