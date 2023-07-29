@@ -26,20 +26,22 @@ SECRET_KEY = "django-insecure-=2d5#b@$s&_*!hvkncky*1cju@@n&9u@lx1d-998yh88rx*&ma
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-zj6txjeqjqt.ws-eu102.gitpod.io', 'outro-host-aqui']
+ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-zs2easmsj3o.ws-eu102.gitpod.io']
+
 
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "store", 
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'store',
+    
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,7 @@ ROOT_URLCONF = "funkosgalaxy.urls"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'store', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         "OPTIONS": {
             "context_processors": [
