@@ -28,7 +28,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-481ykkt40rs.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-gsrt5zhrnmw.ws-eu102.gitpod.io']
 
 
 
@@ -38,13 +38,13 @@ ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-481ykkt40rs.ws-eu102.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
-    'store',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    "funkosgalaxy.store",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
 ]
 
 
@@ -63,7 +63,7 @@ ROOT_URLCONF = "funkosgalaxy.urls"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'store', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'y', 'store', 'templates')],
         'APP_DIRS': True,
         "OPTIONS": {
             "context_processors": [
@@ -75,6 +75,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 
 
