@@ -28,7 +28,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-gsrt5zhrnmw.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['.gitpod.io']
 
 
 
