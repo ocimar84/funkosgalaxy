@@ -1,10 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to FunkosGalaxy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamPop World</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <h1>Welcome to FunkosGalaxy</h1>
-    <p>This is the home page of FunkosGalaxy store.</p>
+    <header>
+        <div class="container">
+            <h1>DreamPop World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li> <a href="{% url 'product_detail' product_id=1 %}">View Details</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Discover Your Dream Pop Collection</h2>
+            <a href="#" class="btn-shop-now">Shop Now</a>
+        </section>
+        <section class="products">
+            <!-- Product cards will go here -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 DreamPop World. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
