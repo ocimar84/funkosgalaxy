@@ -135,6 +135,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'store', 'static'),
 ]
+# Chaves do Stripe
+STRIPE_PUBLIC_KEY = 'pk_test_51NalRtA60iQHN3CgZCsz52cwwNRJdfREiHy9aIG76bM31on6eAXPXJVancVNIVfbk6wNfBRu66sjV5TrGX5eEZfO00OCMCjIpA'
+STRIPE_SECRET_KEY = 'pk_test_51NalRtA60iQHN3CgZCsz52cwwNRJdfREiHy9aIG76bM31on6eAXPXJVancVNIVfbk6wNfBRu66sjV5TrGX5eEZfO00OCMCjIpA'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
