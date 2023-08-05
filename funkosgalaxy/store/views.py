@@ -17,6 +17,11 @@ def product_detail(request, product_id):
     product = Product.objects.get(id=product_id)
     return render(request, 'store/product_detail.html', {'product': product})
 
+def contact_view(request):
+    # Lógica da view aqui
+    return render(request, 'store/contact.html')
+
+
 def process_payment(request):
     if request.method == 'POST':
         payment_method_id = request.POST['payment_method_id']
