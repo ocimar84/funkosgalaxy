@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamPop World</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -16,6 +15,14 @@
             padding: 0;
         }
 
+        .logo {
+            width: 270px; /* Defina a largura desejada para a imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            position: absolute; /* Permite posicionar a imagem */
+            top: 5px; /* Distância do topo (ajuste conforme necessário) */
+            left: 5px; /* Distância da esquerda (ajuste conforme necessário) */
+        }
+
         header {
             background-color: #4CAF50; /* Fundo verde para o cabeçalho */
             color: #fff;
@@ -26,6 +33,38 @@
             position: relative; /* Define a posição relativa para o cabeçalho */
             z-index: 1; /* Define a ordem de empilhamento para garantir que o cabeçalho fique sobre os outros elementos */
             text-align: center; /* Centraliza o conteúdo do cabeçalho */
+        }
+
+        .banner-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .banner {
+            flex: 1;
+            max-width: calc(33.33% - 20px); /* Para que os banners fiquem lado a lado e mantenham um espaçamento entre eles */
+            background-color: #4CAF50; /* Fundo verde para o banner */
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .banner h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .btn-shop-now {
+            display: inline-block;
+            background-color: #fff;
+            color: #4CAF50;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
         }
 
         .container {
@@ -65,70 +104,6 @@
             color: #FF0000; /* Preço em vermelho */
         }
 
-        footer {
-            background-color: #4CAF50; /* Fundo verde para o footer */
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: #fff;
-            border-radius: 50%;
-            margin: 0 5px;
-            text-align: center;
-            line-height: 30px;
-            color: #4CAF50;
-        }
-
-        /* Estilo adicional para expandir o background verde do cabeçalho */
-        @media screen and (min-width: 768px) {
-            header {
-                left: 50%;
-                transform: translateX(-50%);
-                width: 100%;
-                border-left: 1px solid #fff;
-                border-right: 1px solid #fff;
-            }
-        }
-
-        /* Estilo adicional para a seção do banner */
-        .banner {
-            background-color: #4CAF50; /* Fundo verde para o banner */
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .banner h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .btn-shop-now {
-            display: inline-block;
-            background-color: #fff;
-            color: #4CAF50;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        /* Estilo adicional para a seção de produtos */
         .products {
             display: flex;
             justify-content: center;
@@ -145,19 +120,16 @@
             max-width: 300px;
         }
 
-        /* Estilo adicional para a seção de produtos - título */
         .products h3 {
             font-size: 24px;
             margin-bottom: 10px;
         }
 
-        /* Estilo adicional para a seção de produtos - preço */
         .products .price {
             font-size: 18px;
             color: #FF0000; /* Preço em vermelho */
         }
 
-        /* Estilo adicional para o footer */
         footer {
             background-color: #4CAF50; /* Fundo verde para o footer */
             color: #fff;
@@ -201,7 +173,8 @@
 <body>
     <header>
         <div class="container">
-            <h1>DreamPop World</h1>
+            <img src="{% static 'image/funkosgalaxy.logo.png' %}" alt="Funko's Galaxy Logo" class="logo">
+            <h1>Funko's Galaxy</h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -211,15 +184,26 @@
             </nav>
         </div>
     </header>
-    <main>
+
+    <main class="banner-container">
         <section class="banner">
-            <h2>Discover Your Dream Pop Collection</h2>
+            <h2>Discover Collection</h2>
             <a href="#" class="btn-shop-now">Shop Now</a>
         </section>
         <section class="products">
             <!-- Product cards will go here -->
         </section>
+        <section class="banner">
+            <h2>Exclusive Pop! Figures</h2>
+            <a href="#" class="btn-shop-now">Explore</a>
+        </section>
+
+        <section class="banner">
+            <h2>Limited Edition Collectibles</h2>
+            <a href="#" class="btn-shop-now">Get Yours</a>
+        </section>
     </main>
+
     <footer>
         <p>&copy; Fuko's Galaxy. All rights reserved.</p>
         <div class="social-icons">
@@ -228,4 +212,3 @@
             <a href="#" class="icon-youtube"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
-
