@@ -4,67 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamPop World</title>
+    <title>Funko's Galaxy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* Definindo um fundo cinza claro */
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
         }
 
         .logo {
-            width: 270px; /* Defina a largura desejada para a imagem */
-            height: auto; /* Mantém a proporção da imagem */
-            position: absolute; /* Permite posicionar a imagem */
-            top: 5px; /* Distância do topo (ajuste conforme necessário) */
-            left: 5px; /* Distância da esquerda (ajuste conforme necessário) */
+            width: 200px;
+            height: auto;
         }
 
         header {
-            background-color: #4CAF50; /* Fundo verde para o cabeçalho */
+            background-color: #4CAF50;
             color: #fff;
             padding: 10px;
-            display: flex; /* Torna o cabeçalho flexível */
-            align-items: center; /* Centraliza verticalmente os itens */
-            justify-content: space-between; /* Coloca os itens lado a lado */
-            position: relative; /* Define a posição relativa para o cabeçalho */
-            z-index: 1; /* Define a ordem de empilhamento para garantir que o cabeçalho fique sobre os outros elementos */
-            text-align: center; /* Centraliza o conteúdo do cabeçalho */
-        }
-
-        .banner-container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        
-        .banner {
-            flex: 1;
-            max-width: calc(33.33% - 20px); /* Para que os banners fiquem lado a lado e mantenham um espaçamento entre eles */
-            background-color: #4CAF50; /* Fundo verde para o banner */
-            color: #fff;
-            padding: 40px 0;
+            position: relative;
+            z-index: 1;
             text-align: center;
         }
-        
-        .banner h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+
+        .user-actions {
+            display: flex;
+            align-items: center;
         }
-        
-        .btn-shop-now {
-            display: inline-block;
+
+        .btn-icon {
             background-color: #fff;
             color: #4CAF50;
-            padding: 10px 20px;
+            padding: 12px;
             text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 10px;
+            font-size: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
         }
 
         .container {
@@ -76,32 +56,47 @@
         h1 {
             margin: 0;
             padding: 20px;
-            color: #000; /* Título em preto */
+            color: #000;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex; /* Torna a lista flexível */
+        .banner-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
         }
 
-        li {
-            margin-left: 20px; /* Espaçamento entre os itens da lista */
-        }
-
-        a {
-            text-decoration: none;
+        .banner {
+            flex: 0 1 350px;
+            background-color: #4CAF50;
             color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .btn-shop-now {
+            display: inline-block;
+            background-color: #fff;
+            color: #4CAF50;
+            padding: 10px 20px;
+            text-decoration: none;
             font-weight: bold;
-        }
-
-        a:hover {
-            color: #FF0000; /* Links em vermelho ao passar o mouse */
-        }
-
-        .price {
-            font-size: 18px;
-            color: #FF0000; /* Preço em vermelho */
+            border-radius: 5px;
+            margin-top: 10px;
         }
 
         .products {
@@ -127,11 +122,11 @@
 
         .products .price {
             font-size: 18px;
-            color: #FF0000; /* Preço em vermelho */
+            color: #FF0000;
         }
 
         footer {
-            background-color: #4CAF50; /* Fundo verde para o footer */
+            background-color: #4CAF50;
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -167,40 +162,47 @@
                 border-left: 1px solid #fff;
                 border-right: 1px solid #fff;
             }
-        }
+
+            .banner {
+                flex: 0 1 calc(33.33% - 20px);
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="{% static 'image/funkosgalaxy.logo.png' %}" alt="Funko's Galaxy Logo" class="logo">
-            <h1>Funko's Galaxy</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="{% url 'product_list' %}">Shop</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li> <!-- Added Contact link here -->
-                </ul>
-            </nav>
+            <div class="header-content">
+                <img src="{% static 'image/funkosgalaxy.logo.png' %}" alt="Funko's Galaxy Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="{% url 'product_list' %}">Shop</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="btn-icon"><i class="fas fa-user fa-lg"></i></a>
+                <a href="#" class="btn-icon"><i class="fas fa-shopping-basket fa-lg"></i></a>
+            </div>
         </div>
     </header>
+    
 
     <main class="banner-container">
         <section class="banner">
+            <img src="{% static 'image/bannerhome/bannerstarwars.jpeg' %}" alt="Discover Collection">
             <h2>Discover Collection</h2>
-            <a href="#" class="btn-shop-now">Shop Now</a>
-        </section>
-        <section class="products">
-            <!-- Product cards will go here -->
+            <a href="#" class="btn-shop-now">Star Wars</a>
         </section>
         <section class="banner">
-            <h2>Exclusive Pop! Figures</h2>
-            <a href="#" class="btn-shop-now">Explore</a>
+            <img src="{% static 'image/bannerhome/flashbanner2.jpeg' %}" alt="Exclusive Pop!">
+            <h2>Exclusive Pop!</h2>
+            <a href="#" class="btn-shop-now">DC</a>
         </section>
-
         <section class="banner">
-            <h2>Limited Edition Collectibles</h2>
-            <a href="#" class="btn-shop-now">Get Yours</a>
+            <img src="{% static 'image/bannerhome/marvelbanner.webp' %}" alt="Limited Edition">
+            <h2>Limited Edition</h2>
+            <a href="#" class="btn-shop-now">Marvel</a>
         </section>
     </main>
 
@@ -212,3 +214,5 @@
             <a href="#" class="icon-youtube"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
+</body>
+</html>
