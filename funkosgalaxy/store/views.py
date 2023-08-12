@@ -21,6 +21,9 @@ def contact_view(request):
     # Lógica da view aqui
     return render(request, 'store/contact.html')
 
+def showcase_view(request):
+    return render(request, 'store/showcase.html')
+
 
 def process_payment(request):
     if request.method == 'POST':
