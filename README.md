@@ -100,30 +100,96 @@ Ocimar Felipe Costa
 
 - Include a picture of site that shows it in responsive states and links to deployed
   code: https://ui.dev/amiresponsive
-- One or two paragraphs providing an overview of your project.
-- Write this as a sales pitch or commercial making users want to purchase your website.
-- Include a link to your deployed website
+  
+Welcome to Funko's Galaxy – Your One-Stop Pop Culture Haven!
+
+Discover a universe of collectibles and treasures at Funko's Galaxy, where every corner of popular culture comes alive. Our online emporium is more than just a store – it's an immersive experience that caters to every fandom. From iconic movie and TV characters to beloved superheroes and more, we've curated a stellar collection that will ignite your passion.
+
+Our user-friendly interface ensures that browsing, selecting, and purchasing your favorite pieces is a breeze. Dive into a visually stunning showcase of exclusive Pop! figures, limited editions, and much more. Whether you're seeking to expand your collection or find the perfect gift for a fellow enthusiast, Funko's Galaxy is your gateway to the extraordinary.
+
+Explore our virtual shelves now and embark on a journey through the cosmos of pop culture. Elevate your collection and join the ranks of our satisfied customers who have turned their passion into a lifestyle.
+
+Website Link:
+
+Experience Funko's Galaxy: Click here to explore
 
 # UX
 
-Your site is most likely geared to a certain audience and goals for the business owner and users of the site, and your
-design choices should tie into them. Let the assessors know your thought process.
+Absolutely, the design choices for Funko's Galaxy are carefully aligned with our target audience and specific goals for both the business owner and the users of the site. Here's the thought process behind the design:
 
-If you don't feel like the overview gave enough detail about the site, you can write up what you are expecting users to
-actually do on your site, book things, find thing then lead into the goals and target audience.
+Target Audience:
+
+Our target audience primarily consists of passionate pop culture enthusiasts, collectors, and fans of iconic movies, TV shows, comics, and gaming. These individuals are looking for high-quality collectibles, exclusive merchandise, and limited edition items that resonate with their favorite characters and franchises.
+
+Goals for Business Owner:
+
+Product Showcase: The website is designed to effectively showcase the extensive collection of collectibles and merchandise. Each product's visual appeal is highlighted to capture the essence of the characters and stories they represent.
+
+Sales and Conversion: The ultimate goal is to drive sales and conversion. This is achieved by ensuring a seamless shopping experience, easy navigation, and prominent calls-to-action that lead users to make purchases.
+
+Brand Recognition: The design elements reflect the brand's identity, fostering brand recognition and recall among visitors. Consistent visual cues, such as logo placement and color schemes, contribute to building a strong brand image.
+
+User Experience and Interaction:
+
+Easy Navigation: The header includes clear and intuitive links to essential sections: Home, Shop, Contact, and Showcase. This ensures that users can swiftly find the information they seek without any confusion.
+
+Product Discoverability: The website allows users to explore the product catalog effortlessly. Visually appealing images, succinct descriptions, and pricing details provide a comprehensive overview of each product.
+
+Showcase Engagement: By prominently featuring a "Showcase" link in the header, users are encouraged to delve into an exclusive collection of special items. This enhances engagement and encourages users to explore limited edition merchandise.
+
+Contact Information: The "Contact" link in the header ensures users can easily reach out for inquiries or assistance, creating a seamless communication channel between the business and customers.
+
+Expected User Actions:
+
+Exploring the Catalog: Users will navigate through the "Shop" section to explore the vast array of products available. Visual cues and organized categories aid in their product discovery journey.
+
+Making Purchases: The intuitive design of individual product pages, complete with descriptions and "Buy Now" buttons, streamlines the purchasing process.
+
+Discovering Exclusive Items: The "Showcase" link captures users' curiosity, enticing them to uncover limited edition and unique products that cater to their collector's mindset.
+
+Getting in Touch: Users can easily contact the store through the "Contact" section, seeking assistance or clarifications if needed.
+
+Funko's Galaxy is more than an e-commerce site; it's a haven where pop culture aficionados can immerse themselves in a world of collectibles and share their passion. The design choices, from user interface to visual elements, are intentionally crafted to enhance the user experience and align with the goals of both the business and its audience.
 
 ## Target Audience
-🚀 **merit & beyhond**
+The target audience for Funko's Galaxy is composed of passionate pop culture enthusiasts, collectors, and fans of iconic movies, TV shows, comics, and gaming. These individuals are not just customers; they are part of a vibrant community that thrives on their love for fictional characters, stories, and universes. Here's a breakdown of our target audience:
+
+1. Collectors: This group comprises avid collectors who are deeply invested in acquiring unique and high-quality collectibles. They appreciate exclusive items, limited editions, and special variants that hold sentimental and financial value.
+
+2. Pop Culture Enthusiasts: Individuals who have a profound interest in pop culture phenomena, such as superhero franchises, fantasy series, science fiction, and more. They want to display their passion through carefully curated merchandise.
+
+3. Fans of Fandoms: Fans of specific franchises like Marvel, DC, Star Wars, Harry Potter, and more. These fans seek products that connect them with their favorite characters and immerse them in the fictional worlds they adore.
+
+4. Gift Shoppers: Friends and family members of collectors who are looking for thoughtful gifts. They want to provide unique and cherished items that align with their loved ones' interests.
+
+5. Casual Shoppers: Even those who may not be die-hard fans are drawn to the charm of pop culture collectibles. They're interested in exploring unique items and may discover new interests through the offerings on the site.
+
+Goals and Expectations
+Understanding our target audience allows us to tailor our website to meet their expectations and exceed their needs. Here's how our design aligns with their goals:
+
+1. Engaging Visuals: The website's design incorporates captivating visuals that resonate with our audience's emotional connection to beloved characters and stories.
+
+2. Comprehensive Catalog: We ensure that our product catalog is extensive, offering a wide range of collectibles from various franchises to cater to diverse tastes.
+
+3. Limited Editions and Exclusivity: By featuring a dedicated "Showcase" section, we create a sense of exclusivity, appealing to collectors who crave unique items.
+
+4. Easy Navigation: With clearly labeled links for Home, Shop, Contact, and Showcase, we make it effortless for users to find what they're looking for.
+
+5. Seamless Shopping Experience: From product descriptions to easy checkout processes, we prioritize a smooth user journey for making purchases.
+
+6. Community Engagement: Our website encourages community engagement through social media integration, allowing users to share their finds and connect with fellow fans.
 
 Can be a paragraph or a list
 
 > **Paragraph Example**
-> The target audience for What2do2day comes in two flavors. The revenue driving forces is children ages 12-18 who have a bit of freedom to move around unsupervised but very little means to addend costly mass entertainment complexes more than 5 miles from home. Their parents are expected to be a customer group too as they will want to ensure the site is safe and not a predatory place where their kids could be scammed into unsafe adventures. Other groups of users are the businesses that want to promote themselves as community friendly who will be hosting events for the primary customer group. The business owners will want a friendly interface to upload details of their place and events.
+Step into the realm of Funko's Galaxy and explore a universe of pop culture collectibles like never before. Our platform is a haven for collectors seeking exclusive items, enthusiasts eager to showcase their passions, and fans yearning to connect with their favorite characters. Immerse yourself in the captivating charm of limited editions, and indulge your love for franchises like Marvel, DC, Star Wars, and more. Whether you're a dedicated collector or a casual shopper, Funko's Galaxy promises an unforgettable shopping experience that brings the magic of pop culture to your fingertips.
 
 > **List example**
-> 1. Patients who have been referred for radiology examinations by registered physicians
-> 2. External healthcare companies who have equipment to sell
-> 3. Radiology staff who want to have a more manageable and predictable workload
+> 1. Captivating Catalog: Delve into an expansive collection of products spanning various genres and franchises.
+> 2. Exclusive Showcases: Discover limited editions and exclusive items in our dedicated Showcase section.
+> 3. User-Friendly Navigation: Seamlessly explore Home, Shop, Contact, and Showcase through intuitive links.
+> 4. Thoughtful Gifts: Find the perfect gift for collectors and fans among our curated selection.
+> 5. Passionate Community: Become part of a vibrant community that celebrates shared interests and passions.
 
 ## Goals
 🚀 **merit & beyhond**
