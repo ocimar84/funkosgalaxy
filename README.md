@@ -121,7 +121,7 @@ Target Audience:
 
 Our target audience primarily consists of passionate pop culture enthusiasts, collectors, and fans of iconic movies, TV shows, comics, and gaming. These individuals are looking for high-quality collectibles, exclusive merchandise, and limited edition items that resonate with their favorite characters and franchises.
 
-Goals for Business Owner:
+> 1. Goals for Business Owner:
 
 Product Showcase: The website is designed to effectively showcase the extensive collection of collectibles and merchandise. Each product's visual appeal is highlighted to capture the essence of the characters and stories they represent.
 
@@ -129,7 +129,7 @@ Sales and Conversion: The ultimate goal is to drive sales and conversion. This i
 
 Brand Recognition: The design elements reflect the brand's identity, fostering brand recognition and recall among visitors. Consistent visual cues, such as logo placement and color schemes, contribute to building a strong brand image.
 
-User Experience and Interaction:
+> 2. User Experience and Interaction:
 
 Easy Navigation: The header includes clear and intuitive links to essential sections: Home, Shop, Contact, and Showcase. This ensures that users can swiftly find the information they seek without any confusion.
 
@@ -139,7 +139,7 @@ Showcase Engagement: By prominently featuring a "Showcase" link in the header, u
 
 Contact Information: The "Contact" link in the header ensures users can easily reach out for inquiries or assistance, creating a seamless communication channel between the business and customers.
 
-Expected User Actions:
+> 3. Expected User Actions:
 
 Exploring the Catalog: Users will navigate through the "Shop" section to explore the vast array of products available. Visual cues and organized categories aid in their product discovery journey.
 
@@ -154,30 +154,30 @@ Funko's Galaxy is more than an e-commerce site; it's a haven where pop culture a
 ## Target Audience
 The target audience for Funko's Galaxy is composed of passionate pop culture enthusiasts, collectors, and fans of iconic movies, TV shows, comics, and gaming. These individuals are not just customers; they are part of a vibrant community that thrives on their love for fictional characters, stories, and universes. Here's a breakdown of our target audience:
 
-1. Collectors: This group comprises avid collectors who are deeply invested in acquiring unique and high-quality collectibles. They appreciate exclusive items, limited editions, and special variants that hold sentimental and financial value.
+> 1. Collectors: This group comprises avid collectors who are deeply invested in acquiring unique and high-quality collectibles. They appreciate exclusive items, limited editions, and special variants that hold sentimental and financial value.
 
-2. Pop Culture Enthusiasts: Individuals who have a profound interest in pop culture phenomena, such as superhero franchises, fantasy series, science fiction, and more. They want to display their passion through carefully curated merchandise.
+> 2. Pop Culture Enthusiasts: Individuals who have a profound interest in pop culture phenomena, such as superhero franchises, fantasy series, science fiction, and more. They want to display their passion through carefully curated merchandise.
 
-3. Fans of Fandoms: Fans of specific franchises like Marvel, DC, Star Wars, Harry Potter, and more. These fans seek products that connect them with their favorite characters and immerse them in the fictional worlds they adore.
+> 3. Fans of Fandoms: Fans of specific franchises like Marvel, DC, Star Wars, Harry Potter, and more. These fans seek products that connect them with their favorite characters and immerse them in the fictional worlds they adore.
 
-4. Gift Shoppers: Friends and family members of collectors who are looking for thoughtful gifts. They want to provide unique and cherished items that align with their loved ones' interests.
+> 4. Gift Shoppers: Friends and family members of collectors who are looking for thoughtful gifts. They want to provide unique and cherished items that align with their loved ones' interests.
 
-5. Casual Shoppers: Even those who may not be die-hard fans are drawn to the charm of pop culture collectibles. They're interested in exploring unique items and may discover new interests through the offerings on the site.
+> 5. Casual Shoppers: Even those who may not be die-hard fans are drawn to the charm of pop culture collectibles. They're interested in exploring unique items and may discover new interests through the offerings on the site.
 
 Goals and Expectations
 Understanding our target audience allows us to tailor our website to meet their expectations and exceed their needs. Here's how our design aligns with their goals:
 
-1. Engaging Visuals: The website's design incorporates captivating visuals that resonate with our audience's emotional connection to beloved characters and stories.
+> 1. Engaging Visuals: The website's design incorporates captivating visuals that resonate with our audience's emotional connection to beloved characters and stories.
 
-2. Comprehensive Catalog: We ensure that our product catalog is extensive, offering a wide range of collectibles from various franchises to cater to diverse tastes.
+> 2. Comprehensive Catalog: We ensure that our product catalog is extensive, offering a wide range of collectibles from various franchises to cater to diverse tastes.
 
-3. Limited Editions and Exclusivity: By featuring a dedicated "Showcase" section, we create a sense of exclusivity, appealing to collectors who crave unique items.
+> 3. Limited Editions and Exclusivity: By featuring a dedicated "Showcase" section, we create a sense of exclusivity, appealing to collectors who crave unique items.
 
-4. Easy Navigation: With clearly labeled links for Home, Shop, Contact, and Showcase, we make it effortless for users to find what they're looking for.
+> 4. Easy Navigation: With clearly labeled links for Home, Shop, Contact, and Showcase, we make it effortless for users to find what they're looking for.
 
-5. Seamless Shopping Experience: From product descriptions to easy checkout processes, we prioritize a smooth user journey for making purchases.
+> 5. Seamless Shopping Experience: From product descriptions to easy checkout processes, we prioritize a smooth user journey for making purchases.
 
-6. Community Engagement: Our website encourages community engagement through social media integration, allowing users to share their finds and connect with fellow fans.
+> 6. Community Engagement: Our website encourages community engagement through social media integration, allowing users to share their finds and connect with fellow fans.
 
 Can be a paragraph or a list
 
@@ -192,17 +192,20 @@ Step into the realm of Funko's Galaxy and explore a universe of pop culture coll
 > 5. Passionate Community: Become part of a vibrant community that celebrates shared interests and passions.
 
 ## Goals
-🚀 **merit & beyhond**
+**For Web Users:**
 
-Bullet point out things from web users to website owners and other groups of people
+> - Effortless Shopping: Provide users with a seamless and enjoyable shopping experience, allowing them to browse and purchase Funko collectibles with ease.
+> - Quick Access to Information: Make it simple for users to find product details, prices, and availability, enhancing their decision-making process.
+> - Convenient Contact: Offer a convenient way for users to get in touch with Funko Stores for inquiries, feedback, and assistance.
+> - Engaging Showcase: Present a visually appealing showcase of Funko products that captivates users' attention and encourages exploration.
 
-**Booking Site Example**
-> - To allow the opportunity for patients to book and manage their own radiology appointments
-> - To give patients the opportunity to educate themselves on radiation safety prior to their visit
-> - To provide a simple-to-use contact form for site visitors to use in order to contact the radiology department
-> - To provide useful information to patients about radiology and the department to reduce 'white-coat-syndrome' and anxiety during their visit
-> - To give external companies the opportunity to partner with the radiology department and share their equipment prior to potential purchases
-> - To give radiology staff the opportunity to manage their workload and see in advance the patients they will encounter during the day
+
+**For Collectors and Fans:**
+> - Curated Selection: Provide collectors and fans with a curated selection of Funko products, making it a go-to destination for discovering new additions to their collections.
+> - Secure Transactions: Ensure a secure and trustworthy online shopping experience, safeguarding users' payment and personal information.
+> - Comprehensive Product Information: Offer comprehensive information about each collectible, including details about characters, franchises, and limited editions.
+> - Community Hub: Create a virtual space where Funko enthusiasts can connect, share their passion, and stay updated about the latest releases.
+
 
 **Granular Goals Example**
 > **Customers**
@@ -223,28 +226,24 @@ Bullet point out things from web users to website owners and other groups of peo
 > **Place Owners**
 > Owners of Places would ideally have a different set of user permissions and the Update and Contribute sections of navigation would be under a strict workflow, but in the initial phase, I wanted to show off the ability to add, update and delete items from the website's view,so it's not hidden behind permissions or workflow at this point. Place owners are those that have a business or an organization that hosts free events within a community. Examples are a group that wants to play pickup soccer or a bicycle shop that leads group rides once a month.
 >
-> **Place Owner Goals:**
+> **Funko Stores Owner Goals**
 >
-> - I want my place to be easily found on the site, so I can get more customers
+> - I want my Funko store to be prominently showcased on the website to attract more customers and increase footfall.
 > - I want users to share community reviews, so I build trust with future customers
-> - I want to add events to my place, to build a repertoire with my clients
-> - I want users to join my events, so I can track how successful community events are to my bottom line
-> - I want the ability to update my place's details
-> - I want to update events associated with my organization
-> - I want to protect against bloated ratings
-> - I want to protect against accidental deletion of my information
+> - I want to manage and update the events hosted by my store, keeping enthusiasts informed about upcoming activities.
+> - I want to feature special Funko-related events and promotions associated with my store to engage with collectors.
+> - I want to manage and update the events hosted by my store, keeping enthusiasts informed about upcoming activities.
+
 >
-> **WebSite Goals**
-> The primary goal of what2do2day is to create a user-friendly app that allows customers to quickly find an event they want to attend. It's a meeting point between business/organizations and kids/parents to improve the likelihood of kids getting off their devices and interacting with others face to face at a low cost with minimal adult supervision.
-> In order to support the maintenance and development of cool features on the site, what2do2day hopes to produce monetary gains through the following means:
-> - Workflow Management Plans for Businesses around:
-    >
-- oversee approval/disapproval of reviews to ensure spamming and bad-mouthing in reviews does not occur
->   - batch event creation to help save time
->   - user account management to help with password recovery and assigning or removing roles as employees change
->   - sharing of user emails that attend events
-> - Affiliate linking - link to at-cost services provided by businesses and receive a kickback
-> - Ads - target online sales related to equipment based on activities a place or event is associated with
+> **Website Goals for Funko Stores**
+> The primary objective of Funko Stores is to provide a user-friendly platform that seamlessly connects Funko enthusiasts with their favorite stores and collectibles. The website serves as a bridge between collectors, fans, and Funko stores, enhancing the overall experience for all parties involved. The following methods are aimed at supporting the site's growth and evolution:
+> Promoting Business Relationships: Establish strong business-customer relationships by ensuring stores are easily discoverable, leading to increased sales and brand exposure.
+> - Authentic User Engagement: Encourage authentic user reviews and interactions, fostering trust among potential customers and the Funko community.
+>   - User-Friendly Store Management: Offer stores a simple way to update and maintain their store details, ensuring accuracy and relevance.
+>   - Rating Transparency: Implement measures to prevent unfair and inflated ratings, ensuring that stores are accurately represented.
+>   - By facilitating these interactions and providing a platform that benefits both Funko stores and enthusiasts, the website aims to cultivate a vibrant community and contribute to the growth of the Funko collecting ecosystem.
+
+
 
 ## User Stories
 🚨**Required**
