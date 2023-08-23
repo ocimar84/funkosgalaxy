@@ -21,11 +21,11 @@ from django.urls import include, path
 from django.shortcuts import redirect
 
 urlpatterns = [
-    # Redirecionar para a página inicial da store
-    path('', lambda request: redirect('/store/')),
-    
     # URLs do painel de administração
     path('admin/', admin.site.urls),
+    
+    # Redirecionar para a página inicial da store
+    path('', lambda request: redirect('/store/')),
     
     # Incluir as URLs do aplicativo 'store'
     path('store/', include('funkosgalaxy.store.urls')),

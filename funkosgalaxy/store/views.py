@@ -7,22 +7,22 @@ from django.conf import settings
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def home(request):
-    return render(request, 'store/home.html')
+    return render(request, 'home.html')
 
 def product_list(request):
     products = Product.objects.all()
-    return render(request, 'store/product_list.html', {'products': products})
+    return render(request, 'product_list.html', {'products': products})
 
 def product_detail(request, product_id):
     product = Product.objects.get(id=product_id)
-    return render(request, 'store/product_detail.html', {'product': product})
+    return render(request, 'product_detail.html', {'product': product})
 
 def contact_view(request):
     # Lógica da view aqui
-    return render(request, 'store/contact.html')
+    return render(request, 'contact.html')
 
 def showcase_view(request):
-    return render(request, 'store/showcase.html')
+    return render(request, 'showcase.html')
 
 
 def process_payment(request):

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+    <div class="banner-container container">
+        <div class="banner">
+            <img src="{% static 'image/bannerhome/bannerstarwars.jpeg' %}" alt="Discover Collection">
+            <h2>Discover Collection</h2>
+            <a href="#" class="btn-shop-now">Star Wars</a>
+        </div>
+        <div class="banner">
+            <img src="{% static 'image/bannerhome/flashbanner2.jpeg' %}" alt="Exclusive Pop!">
+            <h2>Exclusive Pop!</h2>
+            <a href="#" class="btn-shop-now">DC</a>
+        </div>
+        <div class="banner">
+            <img src="{% static 'image/bannerhome/marvelbanner.webp' %}" alt="Limited Edition">
+            <h2>Limited Edition</h2>
+            <a href="#" class="btn-shop-now">Marvel</a>
+        </div>
+    </div>
+{% endblock %}

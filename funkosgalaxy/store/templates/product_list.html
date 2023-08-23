@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h1>Funko Pop Marvel Studios - Ant-Man and The Wasp: Quantumania - Kang</h1>
+        <ul>
+            {% for product in products %}
+                <li>
+                    <a href="{% url 'product_detail' product.id %}" style="color: #4CAF50;">{{ product.name }}</a>
+                    <span class="price">Preço: R$ {{ product.price }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+    

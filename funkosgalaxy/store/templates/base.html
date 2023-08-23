@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funko's Galaxy</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="{% url 'home' %}"><img src="{% static 'image/funkosgalaxy.logo2.png' %}" alt="Funko's Galaxy Logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'product_list' %}">Shop</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'showcase' %}">Showcase</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="btn-icon"><i class="fas fa-user fa-lg"></i></a>
+                <a href="#" class="btn-icon"><i class="fas fa-shopping-basket fa-lg"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; Fuko's Galaxy. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#facebook" target="_blank"  class="icon-facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#instagram" target="_blank" class="icon-instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#youtube" target="_blank" class="icon-youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
