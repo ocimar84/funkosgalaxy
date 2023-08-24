@@ -2,16 +2,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #4CAF50;
+    background-color: black;
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
 header {
-    background-color: #C8F8AC;
+    background-color: black;
 }
 
 header .container {
@@ -24,7 +24,7 @@ header .container {
 
 header .container nav ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     padding: 0;
     list-style: none;
 }
@@ -78,7 +78,7 @@ h1 {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    background-color: #4CAF50;
+    background-color: black;
 }
 
 .banner img {
@@ -128,7 +128,7 @@ h1 {
 }
 
 footer {
-    background-color: #C8F8AC;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 20px;
