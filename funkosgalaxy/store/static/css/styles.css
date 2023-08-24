@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #4CAF50;
 }
 
 .logo {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
@@ -128,7 +128,7 @@ h1 {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #C8F8AC;
     color: #fff;
     text-align: center;
     padding: 20px;
