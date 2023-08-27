@@ -248,8 +248,17 @@ Step into the realm of Funko's Galaxy and explore a universe of pop culture coll
 ## User Stories
 🚨**Required**
 
-User stories evolve over a project's lifetime. Start with a wish list, do a feasibility analysis then move the ones you
-will work on into gitHub, so you can track their progress.
+>   - When I visit the website, I should see a clear and prominently displayed navigation menu at the top.
+>   - The navigation menu should have links labeled "Home," "Shop," "Contact," and "Showcase."
+>   - Clicking on the "Home" link should take me to the home page of the website.
+>   - Clicking on the "Shop" link should take me to a page where I can browse and search for Funko figures.
+>   - Clicking on the "Contact" link should take me to a page where I can find contact information or a contact form.
+>   - Clicking on the "Showcase" link should take me to a page where I can view featured Funko figures.
+>   - The navigation menu should be visually appealing and easy to read.
+>   - The navigation menu should be responsive and adapt well to different screen sizes, including mobile devices.
+>   - This user story captures the perspective of a customer visiting your website and their need for easy navigation. The acceptance criteria provide specific details about what needs to be implemented to fulfill this user story.
+
+
 
 ## Initial Stories
 🚨**Required**
@@ -258,6 +267,9 @@ To start the agile process this section kicks off with a bullet list/brainstormi
 have. EVERYTHING write them out in bullet form:
 
 - As a 'user type' I 'to perform an action' so that I can 'achieve a goal'
+![Agile](https://github.com/ocimar84/funkosgalaxy/assets/79640465/413811fb-622f-4d4d-823e-dd8870bc3690)
+
+
 
 **Examples**
 
