@@ -248,8 +248,17 @@ Step into the realm of Funko's Galaxy and explore a universe of pop culture coll
 ## User Stories
 🚨**Required**
 
-User stories evolve over a project's lifetime. Start with a wish list, do a feasibility analysis then move the ones you
-will work on into gitHub, so you can track their progress.
+>   - When I visit the website, I should see a clear and prominently displayed navigation menu at the top.
+>   - The navigation menu should have links labeled "Home," "Shop," "Contact," and "Showcase."
+>   - Clicking on the "Home" link should take me to the home page of the website.
+>   - Clicking on the "Shop" link should take me to a page where I can browse and search for Funko figures.
+>   - Clicking on the "Contact" link should take me to a page where I can find contact information or a contact form.
+>   - Clicking on the "Showcase" link should take me to a page where I can view featured Funko figures.
+>   - The navigation menu should be visually appealing and easy to read.
+>   - The navigation menu should be responsive and adapt well to different screen sizes, including mobile devices.
+>   - This user story captures the perspective of a customer visiting your website and their need for easy navigation. The acceptance criteria provide specific details about what needs to be implemented to fulfill this user story.
+
+
 
 ## Initial Stories
 🚨**Required**
@@ -258,11 +267,10 @@ To start the agile process this section kicks off with a bullet list/brainstormi
 have. EVERYTHING write them out in bullet form:
 
 - As a 'user type' I 'to perform an action' so that I can 'achieve a goal'
+![Agile](https://github.com/ocimar84/funkosgalaxy/assets/79640465/413811fb-622f-4d4d-823e-dd8870bc3690)
 
-**Examples**
 
-- [radiology booking](https://github.com/DeannaCarina/ELHTRadiology#user-stories)
-- [places/events searching site](https://github.com/maliahavlicek/what2do2day#user-stories)
+
 
 ## Feasibility vs Importance
 🚀 **merit & beyhond**
@@ -284,13 +292,51 @@ will also be implemented such as nav-bar, footer, obvious website purpose etc.
 ## Scope
 🚀 **merit & beyhond**
 
-Now you have to talk about the scope to reduce things more, you don't necessarily need all the bells and whistles, they
-could be beyond your skill set. Think basic stuff.
+>   - Home Page: An engaging home page showcasing the Funkos Galaxy identity, featured products, and a brief description of the store's unique proposition.
+
+>   - Product Page: A page listing the products available for purchase, enabling users to view details, prices, and other vital information.
+
+>   - Contact Page: A contact page where users can send messages or inquiries directly to the Funkos Galaxy team.
+
+>   - Featured Page: A page highlighting featured products, presenting their distinct attributes and encouraging users to explore them.
+
+>   - User Authentication: Implementation of a user login system, allowing customers to create accounts, log in, and manage their profiles.
+
+>   - Payment Integration: Integration of a secure payment gateway to enable users to make purchases directly on the website.
+
+>   - Navigation: A navigation bar allowing users to move seamlessly between different pages of the site.
+
+>   - Footer: A footer containing contact information, links to social media, and copyright details.
+
+By focusing on these core functionalities, we will be able to create a functional initial version of Funkos Galaxy that meets the needs of our users and enables us to gradually expand with more advanced features in the future.
+
+
+
+
+
 
 ## Design Choices
 🚀 **merit & beyhond**
 
-Now that you have let the assessors know about the target audience and users, you can go into the design choices
+>   - Color Palette: We will use a vibrant and visually appealing color palette that reflects the energetic and dynamic world of pop culture. A combination of bold colors will be employed to evoke excitement and capture users' attention.
+
+>   - Typography: The typography will be carefully selected to ensure readability and convey a modern yet approachable feel. Clear and legible fonts will be used for headings and body text, enhancing user experience.
+
+>   - Imagery: High-quality images of collectible figures and pop culture icons will be strategically placed throughout the website. These visuals will showcase the unique and diverse products available, enticing users to explore further.
+
+>   - User Interface (UI): The UI will be designed to be intuitive and user-friendly. Clear navigation elements, buttons, and call-to-action prompts will guide users through the website seamlessly.
+
+>   - Responsive Design: The website will be designed with a responsive layout, ensuring optimal viewing and interaction across various devices, including desktops, tablets, and smartphones.
+
+>   - User Experience (UX): User experience is paramount. We will focus on creating a smooth and enjoyable journey for users, from easily finding products to a streamlined checkout process.
+
+>   - Icons and Graphics: Custom icons and graphics related to pop culture and collectibles will add a personalized touch to the website and enhance the overall theme.
+
+>   - Consistency: A consistent design language will be maintained throughout the website, from the homepage to product pages and beyond. This consistency ensures a cohesive and professional appearance.
+
+>   - Accessibility: We will prioritize accessibility by using contrasting colors, alt text for images, and ensuring that the website is usable by individuals with disabilities.
+
+By making these design choices, Funkos Galaxy will create a visually appealing and user-centric website that caters to the preferences and interests of our target audience.
 
 ### Colors
 🚀 **merit & beyhond**
