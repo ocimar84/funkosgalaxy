@@ -1,13 +1,22 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Product
+from .models import Category, Product
 import stripe
 from django.conf import settings
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def home(request):
-    return render(request, 'home.html')
+    categories = Category.objects.all()
+    return render(request, 'home.html', {'categories': categories})
+
+def profile(request):
+    return render(request, 'contact.html')
+
+def category_detail(request, category_id):
+    category = Category.objects.get(id=category_id)
+    products = category.products.all()
+    return render(request, 'category_detail.html', {'category': category, 'products': products})
 
 def product_list(request):
     products = Product.objects.all()
@@ -18,12 +27,11 @@ def product_detail(request, product_id):
     return render(request, 'product_detail.html', {'product': product})
 
 def contact_view(request):
-    # Lógica da view aqui
     return render(request, 'contact.html')
 
 def showcase_view(request):
-    return render(request, 'showcase.html')
-
+    products = Product.objects.all()
+    return render(request, 'showcase.html', {'products': products})
 
 def process_payment(request):
     if request.method == 'POST':

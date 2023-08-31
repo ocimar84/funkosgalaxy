@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>{{ product.name }}</h1>
-    <p>Descrição: {{ product.description }}</p>
-    <p>Preço: R$ {{ product.price }}</p>
-    <!-- Outras informações sobre o produto -->
+    <p>Description: {{ product.description }}</p>
+    <img src="{{ product.image.url }}" alt="Product image">
+    <div class="price">Price: $ {{ product.price }}</div>
+    <a href="{% url 'product_detail' product.id %}" class="btn-shop-now">Buy</a>
 {% endblock %}

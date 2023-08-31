@@ -11,11 +11,29 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
+
+if os.path.isfile("env.py"):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SITE_ID = 1
+ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_SESSION_REMEMBER = False
+
+IS_HEROKU = "DYNO" in os.environ
+
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp-relay.sendinblue.com"
+EMAIL_PORT = "587"
+EMAIL_HOST_USER = "ocimarcostaf@gmail.com"
+EMAIL_HOST_PASSWORD = os.environ.get('SMTP_PASSWORD')
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_TIMEOUT = 10
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -26,16 +44,17 @@ SECRET_KEY = "django-insecure-=2d5#b@$s&_*!hvkncky*1cju@@n&9u@lx1d-998yh88rx*&ma
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# SECURITY WARNING: don't run with debug turned on in production!
+if not IS_HEROKU:
+    DEBUG = True
 
+# Generally avoid wildcards(*). However since Heroku router provides hostname validation it is ok
+if IS_HEROKU:
+    ALLOWED_HOSTS = ["*"]
+else:
+    ALLOWED_HOSTS = ['localhost', 'gitpod.io', 'funkosgalaxy-ocimar.herokuapp.com', '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io']
 
-ALLOWED_HOSTS = ['8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-eu102.gitpod.io', '.gitpod.io', '*']
-
-CSRF_TRUSTED_ORIGINS = ['https://8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-eu102.gitpod.io', 'https://*.gitpod.io']
-
-
-
-
-
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io', 'https://*.herokuapp.com']
 
 
 # Application definition
@@ -47,9 +66,18 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    
     "django.contrib.staticfiles",
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'crispy_forms',
+    "crispy_bootstrap5",
 ]
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -79,8 +107,10 @@ TEMPLATES = [
     },
 ]
 
-
-
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
 
 WSGI_APPLICATION = "funkosgalaxy.wsgi.application"
 
@@ -89,10 +119,7 @@ WSGI_APPLICATION = "funkosgalaxy.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
@@ -133,8 +160,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'store', 'static'),
+    os.path.join(BASE_DIR, 'funkosgalaxy', 'store', 'static'),
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 # Chaves do Stripe
 STRIPE_PUBLIC_KEY = 'pk_test_51NalRtA60iQHN3CgZCsz52cwwNRJdfREiHy9aIG76bM31on6eAXPXJVancVNIVfbk6wNfBRu66sjV5TrGX5eEZfO00OCMCjIpA'
 STRIPE_SECRET_KEY = 'pk_test_51NalRtA60iQHN3CgZCsz52cwwNRJdfREiHy9aIG76bM31on6eAXPXJVancVNIVfbk6wNfBRu66sjV5TrGX5eEZfO00OCMCjIpA'
