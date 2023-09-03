@@ -7,23 +7,33 @@ from django.conf import settings
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def home(request):
-    categories = Category.objects.all()
-    return render(request, 'home.html', {'categories': categories})
+    categories = Category.objects.all().order_by('id')
+    products = Product.objects.all()[:2]
+
+    return render(request, 'home.html', {'categories': categories, 'products': products})
 
 def profile(request):
     return render(request, 'contact.html')
 
+def category_list(request):
+    categories = Category.objects.all().order_by('id')
+
+    return render(request, 'category_list.html', {'categories': categories})
+
 def category_detail(request, category_id):
     category = Category.objects.get(id=category_id)
     products = category.products.all()
+
     return render(request, 'category_detail.html', {'category': category, 'products': products})
 
 def product_list(request):
     products = Product.objects.all()
+
     return render(request, 'product_list.html', {'products': products})
 
 def product_detail(request, product_id):
     product = Product.objects.get(id=product_id)
+
     return render(request, 'product_detail.html', {'product': product})
 
 def contact_view(request):
@@ -31,6 +41,7 @@ def contact_view(request):
 
 def showcase_view(request):
     products = Product.objects.all()
+
     return render(request, 'showcase.html', {'products': products})
 
 def process_payment(request):

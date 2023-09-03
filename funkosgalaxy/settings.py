@@ -52,7 +52,7 @@ if not IS_HEROKU:
 if IS_HEROKU:
     ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = ['localhost', 'gitpod.io', 'funkosgalaxy-ocimar.herokuapp.com', '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io']
+    ALLOWED_HOSTS = ['localhost', 'gitpod.io', 'funkosgalaxy-ocimar.herokuapp.com', '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io', '*']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io', 'https://*.herokuapp.com']
 
@@ -102,6 +102,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "funkosgalaxy.store.context_processors.categories",
             ],
         },
     },

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "account/base.html" %}
 
 {% load crispy_forms_tags %}
 {% load i18n %}
@@ -41,7 +41,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
 
-  <button type="submit" class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">{% trans "Sign In" %}</button>
+  <button type="submit" class="btn btn-primary">{% trans "Sign In" %}</button>
   <a class="font-medium text-blue-600 underline hover:no-underline" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
 </form>
 
