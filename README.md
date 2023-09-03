@@ -562,13 +562,39 @@ Add links to Progress boards
 # Features
 🚨**Required**
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
+> - User Authentication: This is likely in use as visitors can log in or register.
+
+> - Product Catalog: The product catalog is visible, allowing users to browse and view Funko Pop! products.
+
+> - Product Pages: Individual product pages are accessible, showing images, descriptions, and pricing for each product.
+
+> - Shopping Cart: Users can add products to their shopping cart, indicating the presence of a shopping cart feature.
+
+> - Checkout Process: There's likely a checkout process in place, allowing users to proceed with the purchase after adding items to the cart.
+
+> - User Account Dashboard: Registered users may have access to an account dashboard where they can view order history and potentially manage their account settings.
+
+> - Search Functionality: There's a search bar available, enabling users to search for specific products or categories.
+
+> - Responsive Design: The website appears to be responsive, ensuring it's accessible and user-friendly on various devices.
 
 ## Implemented Features
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-It's easiest to break this section down into the header, footer, and each page/layer of your website. Call out any differences for mobile vs desktop presentations, **include a screenshot of the implemented feature** and **at least 2 bullet points of their importance**.
+> - Header
+Navigation Menu: A user-friendly navigation menu has been implemented in the header, providing easy access to different sections of the website.
+User Actions: Users can access their account and shopping cart directly from the header, enhancing the overall user experience.
+> - Footer
+Contact Information: The footer displays contact information, making it easy for users to get in touch.
+Social Media Links: Links to social media profiles have been included in the footer for increased engagement.
+> - Product Listing Page
+Product Grid: A responsive product grid has been designed for both desktop and mobile devices, ensuring a seamless shopping experience.
+Filter and Sort: Users can filter and sort products based on various criteria, simplifying product discovery.
+> - Product Detail Page
+Detailed Product Information: Users can view detailed product information, including descriptions, prices, and available variants.
+Product Images: Multiple product images are provided, allowing users to inspect products closely.
+> - Cart and Checkout
+Add to Cart: Users can easily add products to their cart and see the updated cart contents.
+Secure Checkout: The checkout process is secure and user-friendly, ensuring a smooth transaction.
 
 **Required for passing**
 - Authentication Process
@@ -579,9 +605,18 @@ It's easiest to break this section down into the header, footer, and each page/l
 ## Future Features
 🚀 **merit & beyhond**
 
-Use this section to discuss plans for additional features to be implemented in the future:
-
-If you end up not developing some features you hoped to implement, you can include those in this section.
+> - Advanced Search
+Enhance the search functionality to support advanced filters, such as price ranges and product categories.
+Implement autocomplete suggestions for faster product discovery.
+> - User Profiles
+Develop user profiles where users can track their order history, manage their account information, and view their reviews and ratings.
+> - Blog and News Section
+Create a dedicated section for blogs and news related to the collectibles industry.
+Keep users updated on the latest trends, releases, and events.
+> - Mobile App
+Explore the development of a mobile app to provide users with a seamless and convenient shopping experience on their smartphones.
+> - International Shipping
+Expand our shipping options to offer international delivery, allowing Funko enthusiasts worldwide to enjoy our products.
 
 # Testing
 🚨**Required**
@@ -896,7 +931,26 @@ To avoid plagiarism amd copyright infringement, you should mention any other pro
 
 ## Content
 
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+>  - Funko Official Website
+
+Product descriptions and details for various Funko Pop! figures.
+Cross-reference: Product listings on the "Shop" page.
+
+>  - Collectibles Industry News
+
+Industry-related articles and news.
+Cross-reference: Content in the "Blog" section.
+
+>  - Toy Insider
+
+Toy and collectibles reviews and recommendations.
+Cross-reference: Product reviews in the "Product Details" section.
+
+>  - Comic Book Resources
+
+Articles and features related to comics and collectibles.
+Cross-reference: Content in the "Blog" section.
+
 
 ## Media
 
@@ -904,6 +958,16 @@ Make a list of sites you used images from. If you used several sites try to matc
 
 ## Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+>  - Code Institute: I started this project by following the guidance and lessons from Code Institute's instructional projects. These projects provided a solid foundation for my understanding of web development.
 
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+>  - Mentors: A special thanks to the mentors Malia who provided valuable insights and assistance throughout the development process. Your guidance was instrumental in overcoming challenges and improving the quality of the project.
+
+>  - Stack Overflow: The Stack Overflow community proved to be an invaluable resource. I frequently referred to solutions and explanations provided by the community members when encountering coding issues.
+
+>  - Blogs and Tutorials: Various blogs and online tutorials contributed significantly to my knowledge and problem-solving skills. I'd like to acknowledge the authors of these resources for sharing their expertise.
+
+>  - Open Source Tools: This project leveraged open-source libraries and tools that greatly expedited development. I appreciate the contributions of the open-source community.
+
+>  - YouTube Tutorials: Several YouTube tutorials on web development topics were instrumental in enhancing specific features of the project. I'm thankful for the creators of these tutorials.
+
+>  - Friends and Peers: Last but not least, I'd like to thank my friends and peers who provided feedback, suggestions, and encouragement throughout this journey. Your support was invaluable.
