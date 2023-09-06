@@ -179,6 +179,16 @@ Understanding our target audience allows us to tailor our website to meet their 
 
 > 6. Community Engagement: Our website encourages community engagement through social media integration, allowing users to share their finds and connect with fellow fans.
 
+>  Facebook 
+
+>  https://www.facebook.com/profile.php?id=61550634398595  
+
+>  Instagram 
+
+>  https://www.instagram.com/funkosgalaxy/
+
+  
+
 Can be a paragraph or a list
 
 > **Paragraph Example**
