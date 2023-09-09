@@ -869,40 +869,43 @@ Optimize product pages and checkout process.
 
 ### Keywords
 
-- Short-Tail Keywords (General):
 
-Funko
-Collectibles
-Pop Culture
-Action Figures
-Limited Edition
-Vinyl Figures
-Exclusive Funkos
-Funko Store
-Pop Culture Collectibles
-Funko Pop Shop
 
-- Long-Tail Keywords (Specific and Descriptive):
+# Short-Tail Keywords (General):
 
-Buy Funko Pop Star Wars Collectibles
-Rare Limited Edition Funko Pops
-Best Place to Buy Funko Figures
-Exclusive Marvel Funko Pops
-Pop Culture Collectibles Store
-Funko Pop Batman vs Superman
-Where to Find Rare Funko Collectibles
-Disney Funko Pop Collection for Sale
-Funko Pop Collectors' Club
-Authentic Funko Pop Store
+- Funko
+- Collectibles
+- Pop Culture
+- Action Figures
+- Limited Edition
+- Vinyl Figures
+- Exclusive Funkos
+- Funko Store
+- Pop Culture Collectibles
+- Funko Pop Shop
 
-- Semantic Keywords (Related to Funko Pop):
+
+# Long-Tail Keywords (Specific and Descriptive):
+
+- Buy Funko Pop Star Wars Collectibles
+- Rare Limited Edition Funko Pops
+- Best Place to Buy Funko Figures
+- Exclusive Marvel Funko Pops
+- Pop Culture Collectibles Store
+- Funko Pop Batman vs Superman
+- Where to Find Rare Funko Collectibles
+- Disney Funko Pop Collection for Sale
+- Funko Pop Collectors' Club
+- Authentic Funko Pop Store
+
+# Semantic Keywords (Related to Funko Pop):
 
 - Funko Pop Vinyl Figures
-Funko Pop Animation Series
-Funko Pop TV Shows
-Funko Pop Movie Characters
-Funko Pop Comic Book Heroes
-Funko Pop Collectors' Community
+- Funko Pop Animation Series
+- Funko Pop TV Shows
+- Funko Pop Movie Characters
+- Funko Pop Comic Book Heroes
+- Funko Pop Collectors' Community
 
 ### Description
 Your ultimate source for Funko Pop collectibles and action figures. Explore exclusive figures from movies, TV shows, and comics. Start your collection today!
@@ -1051,7 +1054,10 @@ Make a list of sites you used images from. If you used several sites try to matc
 
 ## Acknowledgments
 
->  - Code Institute: I started this project by following the guidance and lessons from Code Institute's instructional projects. These projects provided a solid foundation for my understanding of web development.
+>  Acknowledgments
+
+> - Code Institute: I began this project by following the guidance and lessons from Code Institute's instructional projects. These projects laid a strong foundation for my understanding of web development.
+
 
 >  - Mentors: A special thanks to the mentors Malia who provided valuable insights and assistance throughout the development process. Your guidance was instrumental in overcoming challenges and improving the quality of the project.
 
