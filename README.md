@@ -799,9 +799,10 @@ In this section discuss your business model, how you use  SEO to get users to yo
 
 ## Facebook Business Page
 🚨**Required**
+![facebook](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c86ab289-6128-471e-b3a6-531eeb1758b4)
 
-- copy a screenshot of the FB page
-- add a couple of bulletpoints about the goals of what this fills for building out followers & special content
+![Instagram](https://github.com/ocimar84/funkosgalaxy/assets/79640465/cdce39e6-7ef5-4596-8ea0-0e500674f6c4)
+
 
 ## Newsletter Signup
 🚨**Required**
@@ -816,13 +817,95 @@ In this section discuss your business model, how you use  SEO to get users to yo
 ## SEO Strategy
 🚨**Required**
 
-In this section write out the process you used to come up with short tailed and long tailed results to help refine the keywords you came up with. You should call out attention to the following:
+- Keyword Research:
+
+Identify relevant short and long-tailed keywords related to Funko Pop and collectible toys.
+
+- On-Page Optimization:
+
+Optimize website content, titles, meta descriptions, and headers with chosen keywords.
+
+- Quality Content:
+
+Create valuable content around keywords, including product descriptions and blog posts.
+
+- Backlinks:
+
+Build high-quality backlinks from collectors' forums and related blogs.
+Mobile-Friendly:
+
+Ensure your site is mobile-friendly for a better user experience.
+
+- User Experience:
+
+Improve site speed, navigation, and product descriptions.
+
+- Monitoring:
+
+Track performance using Google Analytics and adjust strategies based on insights.
+
+- Social Media:
+
+Share content and products on social media for increased visibility.
+
+
+Ensure site security (HTTPS) and optimize loading times.
+
+- Structured Data:
+
+Implement schema markup for product listings.
+
+- Reviews:
+
+Encourage customer reviews and ratings.
+
+- Regular Updates:
+
+Keep content and product listings up to date.
+
+- E-commerce Optimization (if applicable):
+
+Optimize product pages and checkout process.
 
 ### Keywords
-Describe the process you went through identifiying keywords that you want Google and other search engines to relate to your site.
+
+- Short-Tail Keywords (General):
+
+Funko
+Collectibles
+Pop Culture
+Action Figures
+Limited Edition
+Vinyl Figures
+Exclusive Funkos
+Funko Store
+Pop Culture Collectibles
+Funko Pop Shop
+
+- Long-Tail Keywords (Specific and Descriptive):
+
+Buy Funko Pop Star Wars Collectibles
+Rare Limited Edition Funko Pops
+Best Place to Buy Funko Figures
+Exclusive Marvel Funko Pops
+Pop Culture Collectibles Store
+Funko Pop Batman vs Superman
+Where to Find Rare Funko Collectibles
+Disney Funko Pop Collection for Sale
+Funko Pop Collectors' Club
+Authentic Funko Pop Store
+
+- Semantic Keywords (Related to Funko Pop):
+
+- Funko Pop Vinyl Figures
+Funko Pop Animation Series
+Funko Pop TV Shows
+Funko Pop Movie Characters
+Funko Pop Comic Book Heroes
+Funko Pop Collectors' Community
 
 ### Description
-Note that you have a the meat description tag and if any of the content changes based on the page.
+Your ultimate source for Funko Pop collectibles and action figures. Explore exclusive figures from movies, TV shows, and comics. Start your collection today!
 
 ### Title
 Call out that you have this set in your base.html so it can be changed per page
