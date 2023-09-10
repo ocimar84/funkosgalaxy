@@ -453,7 +453,7 @@ Just state you used postgres as the database because the data is relational and 
 
 - Product Data Model
 
-- | DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
+| DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
 | ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
 | id      | AutoField       | Unique identifier for each product.  | None                                     | CREATE, READ, UPDATE, DELETE  |
 | name    | CharField       | Name of the product.                 | Required<br>Max 100 chars                | CREATE, READ, UPDATE, DELETE  |
