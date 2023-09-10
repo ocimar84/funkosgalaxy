@@ -285,19 +285,35 @@ have. EVERYTHING write them out in bullet form:
 ## Feasibility vs Importance
 🚀 **merit & beyhond**
 
-To scope the project for a MVP (minimally viable product) a feasibility analysis was done.
+## Feasibility vs Importance
 
-The features in the table below have been taken from the user stories above. Generic features found in most websites
-will also be implemented such as nav-bar, footer, obvious website purpose etc.
+To scope the project for a MVP (Minimally Viable Product), a feasibility analysis was done.
 
-| Opportunity/Feature | Feasibility/Viability (score out of 5) | PurposeLevel of Importance (score out of 5) | In Or Out |
-|---------------------|----------------------------------------|---------------------------------------------|-----------|
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
+The features in the table below have been taken from the user stories above. Generic features found in most websites will also be implemented such as nav-bar, footer, obvious website purpose, etc.
 
-> You should discuss the outcome of what you will be dropping based on the outcome. Making a scatter plot of the scores and coloring the dot
+| Feature                   | Feasibility (1-5) | Importance (1-5) |
+|---------------------------|-------------------|------------------|
+| User Signup               | 4                 | 5                |
+| Login and Logout          | 4                 | 5                |
+| User Profile Page         | 3                 | 4                |
+| User Payment Details      | 3                 | 4                |
+| Shopping Bag              | 3                 | 4                |
+| Search Product            | 4                 | 4                |
+| Sort Products             | 3                 | 4                |
+| All Products Page         | 4                 | 4                |
+| Selected Products on Home | 4                 | 3                |
+| Admin - Add Products      | 4                 | 5                |
+| Admin - Manage Banners    | 4                 | 4                |
+| Admin - Manage Reviews    | 3                 | 3                |
+| View Purchased Products   | 4                 | 3                |
+
+In this table:
+
+- Feasibility is rated on a scale of 1 to 5, with 5 being highly feasible. It assesses how easy it is to implement the feature.
+- Importance is rated on a scale of 1 to 5, with 5 being highly important. It assesses how crucial the feature is for the project's success.
+
+This table can help prioritize features for the MVP based on their feasibility and importance.
+
 
 ## Scope
 🚀 **merit & beyhond**
