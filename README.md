@@ -451,31 +451,28 @@ Just state you used postgres as the database because the data is relational and 
 ## Data Models
 🚨**Required**
 
-Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them.
+- Product Data Model
 
-Each data model that you created yourself should have its Fields, Field Type and any validation documented.  You should also cross-reference any code in your repository that relate to CREATE, READ, UPDATE, DELETE operations for these models.
+- | DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
+| ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
+| id      | AutoField       | Unique identifier for each product.  | None                                     | CREATE, READ, UPDATE, DELETE  |
+| name    | CharField       | Name of the product.                 | Required<br>Max 100 chars                | CREATE, READ, UPDATE, DELETE  |
+| description | TextField   | Detailed description of the product. | None                                    | CREATE, READ, UPDATE, DELETE  |
+| price   | DecimalField    | Price of the product.                | Decimal validation                       | CREATE, READ, UPDATE, DELETE  |
+| image   | ImageField      | Image representing the product.      | Image format validation                  | CREATE, READ, UPDATE, DELETE  |
+| category | ForeignKey to Category | Category to which the product belongs. | Existence validation                | CREATE, READ, UPDATE, DELETE  |
+| created_at | DateTimeField | Date and time when the product was added. | None                                 | CREATE, READ                  |
+| updated_at | DateTimeField | Date and time of the last product update. | None                             | UPDATE                        |
 
-*Below is an example of a write up for an Activities Data Model*
 
-> ### Activities Model
-> Activities is a table to hold a unique icon image and name values that users have associated with events and places. It helps with sorting events and prevents the need from carrying around two data objects in the larger Events and Places data structures. The purpose of an Activities object is to provide an imagery association to a category.
-> 
-> | DB Key 	| Data Type 	|          Purpose          	| Form Validation                        	| DB processing    	|
-> |--------	|:---------:	|:-------------------------:	|----------------------------------------	|------------------	|
-> | _id    	| ObjectId  	| unique identifier         	| None                                   	| n/a              	|
-> | name   	| String    	| Name of Activity          	| Required<br>Min 1 char<br>Max 50 chars 	| trim<br>to lower 	|
-> | icon   	| String    	| system path to image file 	| Required                               	|                  	|
-> 
-> Activity entries are used by events, places and filtering.
-> 
-> - [x] Create - An activity is potentially created when a user successfully creates a place, creates an event, updates an event, or updates a place.
-> - [x] Read - The Activities table is read when a user is adding an event, updating an event, adding a place or updating a place, to determine if a new value should be created or not. The activities table is queried for using the name and icon pair, if it is found, the ObjectId is passed to the event and places. If no match is found, a new Activity is created and that ObjectID is passed to the the place or event.
-> - [ ] Update
-> - [ ] Delete
-> 
->  This table has no deletion or updates associated with it. It's strictly create and read. Eventually, maintenance scripts should be written to delete unused/deprecated entries.
+- Category Data Model
 
-> The reading/writing of the activities table is housed in the [what2do2day/activities/views.py](what2do2day/activities/views.py) file.
+| DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
+| ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
+| id      | AutoField       | Unique identifier for each category. | None                                     | CREATE, READ, UPDATE, DELETE  |
+| name    | CharField       | Name of the category.                | Required<br>Max 50 chars                  | CREATE, READ, UPDATE, DELETE  |
+| image   | ImageField      | Image representing the category.      | Image format validation                  | CREATE, READ, UPDATE, DELETE  |
+
 
 ### CRUD Diagrams
 🚀 **merit & beyhond**
