@@ -477,11 +477,81 @@ Just state you used postgres as the database because the data is relational and 
 ### CRUD Diagrams
 🚀 **merit & beyhond**
 
-This is if you want to go for distinction.  You can also have CRUD diagrams to show them visually how the model is used in your site.
 
-I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive to create the screenshot below
+- Product CRUD Diagram:
 
-![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
++------------------------+
+|   Create Product       |
+|------------------------|
+| Fields:                |
+| - Name                 |
+| - Description          |
+| - Price                |
+| - Category             |
+| - Image                |
+|------------------------|
+| Validation:            |
+| - Name (Required)      |
+| - Description          |
+| - Price (Required)     |
+| - Category (Required)  |
+| - Image (Required)     |
+|------------------------|
+| Processing:            |
+| - Save to Database     |
++------------------------+
+
++------------------------+
+|   Read Product         |
+|------------------------|
+| Fields:                |
+| - Name                 |
+| - Description          |
+| - Price                |
+| - Category             |
+| - Image                |
+|------------------------|
+| Validation:            |
+| - None                 |
+|------------------------|
+| Processing:            |
+| - Retrieve from DB     |
++------------------------+
+
++------------------------+
+|   Update Product       |
+|------------------------|
+| Fields:                |
+| - Name                 |
+| - Description          |
+| - Price                |
+| - Category             |
+| - Image                |
+|------------------------|
+| Validation:            |
+| - Name (Required)      |
+| - Description          |
+| - Price (Required)     |
+| - Category (Required)  |
+| - Image                |
+|------------------------|
+| Processing:            |
+| - Update in Database   |
++------------------------+
+
++------------------------+
+|   Delete Product       |
+|------------------------|
+| Fields:                |
+| - Name                 |
+|------------------------|
+| Validation:            |
+| - Name (Required)      |
+|------------------------|
+| Processing:            |
+| - Remove from Database |
++------------------------+
+
 
 
 # Agile Process
