@@ -827,19 +827,90 @@ is what my custom tempalte looks like in the UX
 ## Defects of Note
 🚀 **merit & beyhond**
 
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and how you finally
-ended up resolving them. Just create a link to the issues/defect of note.
+
 
 ### Outstanding Defects
 
-It's ok to not resolve all the defects you found. If you know of something that isn't quite right, list it out and
-explain why you chose not to resolve it. Again, do this in gitHub and provide a link to the defects you are not closing
-and ensure they have a comment in them.
+## Defects of Note
+
+During the development of **Funko's Galaxy**, we encountered several bugs and issues that required careful attention and resolution. Here are a few notable defects that challenged us:
+
+1. **Shopping Cart Calculation Bug** - [Issue #1](link-to-issue)
+   - Description: The shopping cart wasn't calculating the total correctly when certain conditions were met.
+   - Resolution: After thorough debugging, we discovered that a decimal rounding issue was causing this bug. We implemented a more robust rounding algorithm to fix it.
+
+2. **Image Loading Error on Safari** - [Issue #2](link-to-issue)
+   - Description: Images weren't loading correctly on Safari browsers.
+   - Resolution: We found that Safari required specific image attributes. We updated our image tags to ensure compatibility with Safari.
+
+3. **Security Vulnerability in User Authentication** - [Issue #3](link-to-issue)
+   - Description: A security vulnerability was discovered during a security audit.
+   - Resolution: We immediately patched the vulnerability and conducted a comprehensive security review to ensure the safety of user data.
+
+4. **Performance Bottleneck During Checkout** - [Issue #4](link-to-issue)
+   - Description: Checkout was slower than expected when multiple users were making purchases simultaneously.
+   - Resolution: We optimized database queries and implemented caching to significantly improve checkout performance.
+
+5. **Responsive Design Issue on Mobile Devices** - [Issue #5](link-to-issue)
+   - Description: Some pages didn't render correctly on smaller mobile screens.
+   - Resolution: We applied responsive design principles, making adjustments to CSS and layout to ensure a seamless experience on all devices.
+
+These defects were addressed through collaboration and rigorous testing to ensure that **Funko's Galaxy** provides a smooth and bug-free experience for our users.
+
 
 # E-commerce Business Model
 🚨**Required**
 
-In this section discuss your business model, how you use  SEO to get users to your site and how you hope to generate more traffic and get sponsors to back link to your site. 
+## Business Model
+
+**Funko's Galaxy** operates on a multi-faceted business model designed to generate revenue while providing value to our users. Here are the key components:
+
+1. **E-commerce Sales:** The core of our business is selling collectibles, action figures, and exclusive Funko Pop! figures through our online store. We generate revenue through product sales, including limited edition and exclusive items.
+
+2. **Subscription Box:** We offer a monthly subscription box service that delivers curated collectibles and exclusive items to subscribers. This provides a steady stream of recurring revenue and fosters customer loyalty.
+
+3. **Advertising and Affiliate Marketing:** We partner with relevant brands and companies in the collectibles and pop culture niche for advertising and affiliate marketing. This includes promoting related products and earning commissions on sales generated through our affiliate links.
+
+4. **Premium Memberships:** We offer premium memberships that provide exclusive benefits, such as early access to product releases, special discounts, and access to members-only content. These memberships generate subscription-based revenue.
+
+5. **Sponsorships and Collaborations:** We collaborate with pop culture events, conventions, and influencers within the niche. These partnerships can lead to sponsorships and promotional opportunities, driving traffic and revenue.
+
+6. **Social Media Promotion:** We leverage social media platforms, including Facebook and Instagram, for promotional purposes. This includes sponsored posts, product showcases, and engaging with our audience.
+
+## SEO Strategy
+
+SEO (Search Engine Optimization) is a crucial component of our traffic generation strategy. Here's how we utilize SEO to attract users to our site:
+
+1. **Keyword Research:** We conduct thorough keyword research to identify high-volume and relevant keywords within the collectibles and pop culture niche. This informs our content creation and optimization efforts.
+
+2. **Content Creation:** We regularly produce high-quality, informative, and engaging content related to collectibles, action figures, and pop culture. This includes blog posts, product descriptions, and guides that incorporate targeted keywords.
+
+3. **On-Page Optimization:** Each page on our website is optimized for SEO. This includes optimizing meta titles, descriptions, header tags, and image alt text. We also ensure fast page loading times and mobile responsiveness.
+
+4. **Backlink Building:** We actively work on building high-quality backlinks to our site. This involves reaching out to relevant websites, blogs, and influencers for guest posting, collaborations, and link-sharing opportunities.
+
+5. **User Experience:** We prioritize user experience as it indirectly affects SEO. A seamless, user-friendly website with easy navigation, clear calls to action, and fast load times leads to lower bounce rates and higher search engine rankings.
+
+## Traffic Generation and Backlinks
+
+To generate more traffic and acquire backlinks, we employ the following strategies:
+
+1. **Content Marketing:** We consistently create and promote valuable content, including blog posts, videos, and infographics. This content is shared on social media, in email newsletters, and through outreach to influencers and bloggers in our niche.
+
+2. **Social Media Engagement:** We maintain an active presence on social media platforms, including Facebook and Instagram, engaging with our audience, sharing content, and collaborating with influencers to expand our reach.
+
+3. **Email Marketing:** Our email newsletters include exclusive offers, new product announcements, and valuable content. This keeps our audience engaged and encourages them to visit our site.
+
+4. **Partnerships and Collaborations:** We collaborate with pop culture events, influencers, and other businesses in our niche to co-create content and promotional campaigns. This often leads to backlinks from our partners' websites.
+
+5. **Community Building:** We foster a strong online community through forums, discussion boards, and social media groups related to collectibles and pop culture. Engaging with this community helps drive organic traffic.
+
+6. **Press Releases and PR:** Major product launches, events, and milestones are accompanied by press releases and PR efforts. This can result in media coverage and backlinks from news outlets.
+
+7. **Guest Posting:** We actively contribute guest posts to reputable websites and blogs in the collectibles and pop culture space. This not only builds backlinks but also establishes us as an authority in the niche.
+
+By implementing these strategies, we aim to continuously increase traffic to **Funko's Galaxy** and attract sponsors interested in backlinking to our site due to our strong online presence and authority within the collectibles and pop culture community.
+
 
 ## Facebook Business Page
 🚨**Required**
