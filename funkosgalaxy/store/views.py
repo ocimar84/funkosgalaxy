@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Category, Product
-import stripe
+from django.shortcuts import get_object_or_404
 from django.conf import settings
+import stripe
+import random
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
@@ -39,10 +41,30 @@ def product_detail(request, product_id):
 def contact_view(request):
     return render(request, 'contact.html')
 
-def showcase_view(request):
-    products = Product.objects.all()
+def cart_view(request):
+    bag = request.session.get('bag', {})
+    bag_items = []
+    bag_total = 0
+    bag_products_count = 0
 
-    return render(request, 'showcase.html', {'products': products})
+    products = Product.objects.all()
+    for product in products:
+        bag[product.id] = random.randint(1, 4)
+
+    for item_id, item_data in bag.items():
+        if isinstance(item_data, int):
+            product = get_object_or_404(Product, pk=item_id)
+            total = item_data * product.price
+            bag_total += total
+            bag_products_count += item_data
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': item_data,
+                'total': total,
+                'product': product,
+            })
+
+    return render(request, 'cart.html', { 'items': bag_items, 'total': bag_total, 'count': bag_products_count })
 
 def process_payment(request):
     if request.method == 'POST':
