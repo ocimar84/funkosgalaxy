@@ -1145,6 +1145,14 @@ This section should describe the process someone would have to go through to get
 - Preload data: Sometimes you might want to include steps to create data in the admin or preload a data dump [coderwall blog](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) has examples on how to dump data and load it which saves a bunch of time when deploying the application from a local database to a hosted database but you don’t  have to do this step
 - Start the server `python3 manage.py runserver`
 
+- Category details
+![categoydetails](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c91befbc-5b8b-4930-8a7f-237c25a1eac2)
+
+- Product list
+![productlist](https://github.com/ocimar84/funkosgalaxy/assets/79640465/db81844d-5827-4896-a742-8cc7f62f58a3)
+
+Category
+![category](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4efc182d-66f5-4052-bcb2-5f023279940b)
 
 ## Production Deployment
 🚨**Required** 
