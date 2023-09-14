@@ -395,7 +395,29 @@ In summary, Funko's Galaxy thoughtfully employs these color choices to communica
 ### Typography
 🚀 **merit & beyhond**
 
-- discuss font size, font types for headers vs buttons vs general text and how it ties into users' emotions or target
+Font Size:
+
+- Headers: We use larger font sizes for headers, such as page titles and section headings. This not only makes them stand out but also helps users quickly identify the main topics and navigate through the website effortlessly.
+
+- Buttons: Button text is slightly larger than general text but smaller than headers. This provides a balance, making buttons noticeable and clickable without overwhelming the user.
+
+- General Text: The main body text maintains a standard font size that ensures readability without distracting users. It strikes a balance between being too small and too large, making it comfortable to read.
+
+Font Types:
+
+- Headers: For headers, we opt for bold and expressive fonts. This choice adds a touch of creativity and captures users' attention, making it clear that these are important sections or titles.
+
+- Buttons: Button text uses a clean and easily readable sans-serif font. The goal here is clarity and simplicity, making it evident that these are interactive elements.
+
+- General Text: General text relies on a legible and classic sans-serif font. This enhances readability and ensures that users can comfortably consume content without strain.
+
+Emotions and Target Audience:
+
+- Trust and Professionalism: The choice of clean and straightforward fonts for buttons and general text communicates professionalism and trustworthiness. It assures users that Funko's Galaxy is a reliable platform.
+
+- Creativity: Expressive fonts for headers inject creativity and enthusiasm into the website, which is appropriate for a site centered around fun collectibles like Funko Pop! figures.
+
+- Readability: Legible fonts across the board prioritize the audience's ease of reading and navigation. It caters to a broad audience, including those who may visit the site for extended periods.
   audience.
 - include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
 
