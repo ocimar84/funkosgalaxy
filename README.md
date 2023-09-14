@@ -367,8 +367,30 @@ By making these design choices, Funkos Galaxy will create a visually appealing a
 ### Colors
 🚀 **merit & beyhond**
 
-- Discuss your color pallet choices and how it ties into users' emotions or target audience.
-- include a screenshot of your pallet using a tool like coolors.co
+Funko's Galaxy Website Color Choices:
+
+- Blue: The primary color theme of the site, symbolizing trust and professionalism.
+
+- Orange: Reserved for action buttons, designed to encourage user engagement and excitement.
+
+- White: The backdrop color, ensuring content remains clear and straightforward.
+
+- Black: Utilized for text and icons, enhancing readability and lending an air of sophistication.
+
+User Emotions and Target Audience:
+
+- Trust: Blue instills trust, making it ideal for websites handling transactions or critical information.
+
+- Action: Orange prompts users to take action, such as exploring products or making purchases.
+
+- Readability: White backgrounds with black text guarantee easy reading and comprehension.
+
+- Sophistication: The use of black text and icons imparts a polished and refined appearance to the site.
+
+In summary, Funko's Galaxy thoughtfully employs these color choices to communicate trust, inspire user action, and maintain a clean, sophisticated aesthetic. These choices align with the preferences of its target audience.
+
+![Colors](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4cbd64fe-b1d9-4ffa-a398-d4f210ccd74f)
+
 
 ### Typography
 🚀 **merit & beyhond**
