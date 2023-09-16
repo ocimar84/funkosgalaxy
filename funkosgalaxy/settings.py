@@ -39,7 +39,7 @@ EMAIL_TIMEOUT = 10
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-=2d5#b@$s&_*!hvkncky*1cju@@n&9u@lx1d-998yh88rx*&ma"
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,7 +52,7 @@ if not IS_HEROKU:
 if IS_HEROKU:
     ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = ['localhost', 'gitpod.io', 'funkosgalaxy-ocimar.herokuapp.com', '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io', '*']
+    ALLOWED_HOSTS = ['localhost', 'gitpod.io', 'funkogalaxys-9966c091c723.herokuapp.com', '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io', '*']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io', 'https://*.herokuapp.com']
 

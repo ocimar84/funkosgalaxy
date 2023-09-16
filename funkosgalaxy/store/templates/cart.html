@@ -6,9 +6,15 @@
 			<p class="col-lg-8 mx-auto lead">
 			See all of your products
 			</p>
-            <p class="col-lg-8 mx-auto">
-                Items: {{ count }}, Total: ${{ total }}
-            </p>
+            {% if count > 0 %}
+                <p class="col-lg-8 mx-auto">
+                    Items: {{ count }}, Total: €{{ total }}
+                </p>
+            {% else %}
+                <p class="col-lg-8 mx-auto">
+                    Empty
+                </p>
+            {% endif %}
 		</div>
 	</div>
 
@@ -24,9 +30,9 @@
                 <h2 class="display-7 text-primary">{{ item.product.name }}</h2>
                 <div class="justify-content-center d-flex flex-row my-3 gap-3">
                     <h2>Qty: {{ item.quantity }}</h2>
-                    <h2>Total: ${{ item.total }}</h2>
+                    <h2>Total: €{{ item.total }}</h2>
                 </div>
-                <a href="{% url 'product_detail' item.product.id %}" type="button" class="btn btn-lg btn-danger">Remove</a>
+                <a href="{% url 'remove_from_cart' item.product.id %}" type="button" class="btn btn-lg btn-danger">Remove</a>
             </div>
             <div
                 class="bg-dark shadow-sm mx-auto overflow-hidden"

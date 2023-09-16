@@ -52,10 +52,9 @@
         data-bs-theme="dark"
     >
         <div class="container">
-            <a class="navbar-brand d-md-none" href="#">
+            <a class="navbar-brand d-md-none" href="{% url 'home' %}">
                 <svg class="bi" width="24" height="24">
-                    <img src="funkosgalaxy/store/static/image/funkosgalaxy.logo2.png" alt="Descrição da imagem" width="30" height="20">
-
+                    <use xlink:href="#funkosgalaxy"></use>
                 </svg>
                 Funko's Galaxy
             </a>
@@ -207,5 +206,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

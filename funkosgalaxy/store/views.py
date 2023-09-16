@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from .models import Category, Product
 from django.shortcuts import get_object_or_404
@@ -15,7 +15,7 @@ def home(request):
     return render(request, 'home.html', {'categories': categories, 'products': products})
 
 def profile(request):
-    return render(request, 'contact.html')
+    return render(request, 'profile.html')
 
 def category_list(request):
     categories = Category.objects.all().order_by('id')
@@ -45,29 +45,42 @@ def privacy_view(request):
     return render(request, 'privacy.html')
 
 def cart_view(request):
-    bag = request.session.get('bag', {})
-    bag_items = []
-    bag_total = 0
-    bag_products_count = 0
+    cart = request.session.get('cart', {})
+    cart_items = []
+    cart_total = 0
+    cart_count = 0
 
-    products = Product.objects.all()[:3]
-    for product in products:
-        bag[product.id] = random.randint(1, 4)
+    for product_id, quantity in cart.items():
+        product = Product.objects.get(id=product_id)
+        total = quantity * product.price
+        cart_count += quantity
+        cart_total += total
 
-    for item_id, item_data in bag.items():
-        if isinstance(item_data, int):
-            product = get_object_or_404(Product, pk=item_id)
-            total = item_data * product.price
-            bag_total += total
-            bag_products_count += item_data
-            bag_items.append({
-                'item_id': item_id,
-                'quantity': item_data,
-                'total': total,
-                'product': product,
-            })
+        cart_items.append({'product': product, 'quantity': quantity, 'total': total})
 
-    return render(request, 'cart.html', { 'items': bag_items, 'total': bag_total, 'count': bag_products_count })
+    return render(request, 'cart.html', { 'items': cart_items, 'total': cart_total, 'count': cart_count })
+
+def add_to_cart(request, product_id):
+    cart = request.session.get('cart', {})
+    if product_id in cart:
+        cart[product_id] += 1
+    else:
+        cart[product_id] = 1
+    request.session['cart'] = cart
+    return redirect('cart')
+
+def remove_from_cart(request, product_id):
+    cart = request.session.get('cart', {})
+    if product_id in cart:
+        cart[product_id] -= 1
+        if cart[product_id] == 0:
+            del cart[product_id]
+    request.session['cart'] = cart
+    return redirect('cart')
+
+def clear_cart(request):
+    request.session['cart'] = {}
+    return redirect('cart')
 
 def process_payment(request):
     if request.method == 'POST':

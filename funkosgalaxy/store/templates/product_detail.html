@@ -5,7 +5,7 @@
         <h1>{{ product.name }}</h1>
         <p class="product-description">{{ product.description }}</p>
         <img src="{{ product.image.url }}" alt="{{ product.name }} Image">
-        <div class="product-price">Price: ${{ product.price }}</div>
+        <div class="product-price">Price: €{{ product.price }}</div>
         <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Buy Now</a>
     </div>
 {% endblock %}
