@@ -44,6 +44,9 @@ def contact_view(request):
 def privacy_view(request):
     return render(request, 'privacy.html')
 
+def terms_view(request):
+    return render(request, 'terms.html')
+
 def cart_view(request):
     cart = request.session.get('cart', {})
     cart_items = []
