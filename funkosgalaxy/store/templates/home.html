@@ -40,7 +40,7 @@
                 <div
                     class="bg-dark shadow-sm mx-auto overflow-hidden"
                     style="
-                        width: 80%;
+                        width: 50%;
                         height: 300px;
                         border-radius: 21px 21px 0 0;
                     "
@@ -54,7 +54,7 @@
 		{% for product in products %}
 			<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
 				<div class="my-3 py-3">
-					<h2 class="display-5 text-primary">{{ product.name }}</h2>
+					<h2 class="display-7 text-primary">{{ product.name }}</h2>
 					<h1>${{ product.price }}</h1>
 					<div class="justify-content-center d-flex flex-row my-3 gap-3">
 						<a href="{% url 'product_detail' product.id %}" type="button" class="btn btn-lg btn-primary">Buy</a>
@@ -64,7 +64,7 @@
 				<div
 					class="bg-dark shadow-sm mx-auto overflow-hidden"
 					style="
-						width: 80%;
+						width: 50%;
 						max-width: 500px;
 						height: 300px;
 						border-radius: 21px 21px 0 0;

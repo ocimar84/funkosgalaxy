@@ -41,13 +41,16 @@ def product_detail(request, product_id):
 def contact_view(request):
     return render(request, 'contact.html')
 
+def privacy_view(request):
+    return render(request, 'privacy.html')
+
 def cart_view(request):
     bag = request.session.get('bag', {})
     bag_items = []
     bag_total = 0
     bag_products_count = 0
 
-    products = Product.objects.all()
+    products = Product.objects.all()[:3]
     for product in products:
         bag[product.id] = random.randint(1, 4)
 
