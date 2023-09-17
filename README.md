@@ -89,6 +89,8 @@ Welcome to the Funko Store!  Discover the world of Funko! We offer a wide variet
 
 - Screenshot of logo/navigation of mobile deployed site
 - Include a link to deployed project with one line explanation of project
+![Normal](https://github.com/ocimar84/funkosgalaxy/assets/79640465/3e6070b0-4bc7-430c-9380-5379e89568bb)
+![390x855](https://github.com/ocimar84/funkosgalaxy/assets/79640465/08de5079-c1ae-4277-ad07-8b8455a662d8)
 
 
 ## Author
@@ -101,6 +103,7 @@ Ocimar Felipe Costa
 - Include a picture of site that shows it in responsive states and links to deployed
   code: [https://ui.dev/amiresponsive](https://funkogalaxys-9966c091c723.herokuapp.com/)
   
+  
 Welcome to Funko's Galaxy – Your One-Stop Pop Culture Haven!
 
 Discover a universe of collectibles and treasures at Funko's Galaxy, where every corner of popular culture comes alive. Our online emporium is more than just a store – it's an immersive experience that caters to every fandom. From iconic movie and TV characters to beloved superheroes and more, we've curated a stellar collection that will ignite your passion.
@@ -109,9 +112,8 @@ Our user-friendly interface ensures that browsing, selecting, and purchasing you
 
 Explore our virtual shelves now and embark on a journey through the cosmos of pop culture. Elevate your collection and join the ranks of our satisfied customers who have turned their passion into a lifestyle.
 
-Website Link:
+Website Link: https://funkogalaxys-9966c091c723.herokuapp.com
 
-Experience Funko's Galaxy: Click here to explore
 
 # UX
 
