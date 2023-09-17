@@ -793,6 +793,9 @@ to the test case too.
 >
 > To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
 > - [site tabbed navigation test](https://github.com/maliahavlicek/ci_mentor_insights/issues/10)
+>
+> - ![lighhouse](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4eff85ad-aacb-4642-b1ad-294eff5f60bd)
+
 
 You can totally combine the tabbed navigation in the accessibility test and have 2 expected criteria, it's all up to
 you!
