@@ -23,6 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_SESSION_REMEMBER = False
+ACCOUNT_LOGOUT_ON_GET = True
+ACCOUNT_LOGOUT_REDIRECT_URL = "/"
 
 IS_HEROKU = "DYNO" in os.environ
 
@@ -168,8 +170,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Chaves do Stripe
-STRIPE_PUBLIC_KEY = 'pk_test_51NalRtA60iQHN3CgZCsz52cwwNRJdfREiHy9aIG76bM31on6eAXPXJVancVNIVfbk6wNfBRu66sjV5TrGX5eEZfO00OCMCjIpA'
-STRIPE_SECRET_KEY = 'pk_test_51NalRtA60iQHN3CgZCsz52cwwNRJdfREiHy9aIG76bM31on6eAXPXJVancVNIVfbk6wNfBRu66sjV5TrGX5eEZfO00OCMCjIpA'
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

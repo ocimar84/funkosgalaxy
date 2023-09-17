@@ -4,19 +4,43 @@
 		<div class="container py-5">
 			<h1 class="text-body-emphasis fw-bold">Cart</h1>
 			<p class="col-lg-8 mx-auto lead">
-			See all of your products
+			See all of your cart items
 			</p>
             {% if count > 0 %}
                 <p class="col-lg-8 mx-auto">
                     Items: {{ count }}, Total: €{{ total }}
                 </p>
-            {% else %}
-                <p class="col-lg-8 mx-auto">
-                    Empty
+                <p>
+                    <a href="{% url 'create_order' %}" type="button" class="btn btn-lg btn-primary">Checkout</a>
+                </p>
+                <p>
+                    <a href="{% url 'clear_cart' %}" class="font-medium text-blue-600 underline hover:no-underline">Clear</a>
                 </p>
             {% endif %}
 		</div>
 	</div>
+
+    {% if messages %}
+        <div class="p-1 bg-body-tertiary">
+            <div class="container">
+                {% for message in messages %}
+                    <div class="alert {% if message.tags == 'error' %}alert-danger{% else %}alert-{{ message.tags }}{% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if count == 0 %}
+        <div class="p-1 bg-body-tertiary">
+            <div class="container">
+                <div class="alert alert-info" role="alert">
+                You have no items
+                </div>
+            </div>
+        </div>
+    {% endif %}
 
     {% for item in items %}
         {% if forloop.counter > 1 and forloop.counter0|divisibleby:3 %}
@@ -48,4 +72,3 @@
         </div>
     {% endfor %}
 {% endblock %}
-	

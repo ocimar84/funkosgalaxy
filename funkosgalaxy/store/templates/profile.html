@@ -6,7 +6,56 @@
 			<p class="col-lg-8 mx-auto lead">
 			See all of your orders
 			</p>
+            <p>
+                <a class="font-medium text-blue-600 underline hover:no-underline" href="{% url 'account_logout' %}">Logout</a>
+            </p>
 		</div>
 	</div>
+    {% if messages %}
+        <div class="p-1 bg-body-tertiary">
+            <div class="container">
+                {% for message in messages %}
+                    <div class="alert {% if message.tags == 'error' %}alert-danger{% else %}alert-{{ message.tags }}{% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    {% if orders|length > 0 %}
+        <div class="container mt-5">
+            <h1 class="mb-4">Your orders</h1>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        <tr>
+                            <td>{{ order.id }}</td>
+                            <td>{{ order.created_at }}</td>
+                            <td>€{% if order.status == 'paid' %}{{ order.total }}{% else %}{{ order.temporary_total }}{% endif %}</td>
+                            <td>
+                                <span class="badge {% if order.status == 'paid' %}bg-success{% elif order.status == 'pending' %}bg-warning{% else %}bg-danger{% endif %}">
+                                    {{ order.get_status_display }}
+                                </span>
+                            </td>
+                            <td>
+                                <a href="{% url 'checkout' order.id %}">See more</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
 {% endblock %}
 	

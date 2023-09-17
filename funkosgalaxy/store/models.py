@@ -1,6 +1,5 @@
-# No arquivo models.py
-
 from django.db import models
+from django.contrib.auth.models import User
 
 # Modelo para representar as categorias dos produtos
 class Category(models.Model):
@@ -20,3 +19,33 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class Order(models.Model):
+    STATUS_CHOICES = (
+        ('pending', 'Pending'),
+        ('paid', 'Paid'),
+        ('cancel', 'Cancel'),
+    )
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    total = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=200, choices=STATUS_CHOICES, default='pending')
+
+    def __str__(self):
+        return self.id
+
+class OrderItem(models.Model):
+    order = models.ForeignKey(Order, related_name='itens', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.IntegerField()
+
+    def __str__(self):
+        return self.id
+
+class Contact(models.Model):
+    name = models.CharField("Name", max_length=255)
+    email = models.EmailField("Email")
+    message = models.TextField("Message")
+
+    def __str__(self):
+        return self.email
