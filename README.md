@@ -87,10 +87,17 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 
 Welcome to the Funko Store!  Discover the world of Funko! We offer a wide variety of collectibles, from our famous Pop! Vinyl collection to other Funko products that you'll love. Our items are perfect for die-hard fans of movies, TV shows, video games, and more. Explore our selection and start your collection today!
 
-- Screenshot of logo/navigation of mobile deployed site
-- Include a link to deployed project with one line explanation of project
-![Normal](https://github.com/ocimar84/funkosgalaxy/assets/79640465/3e6070b0-4bc7-430c-9380-5379e89568bb)
-![390x855](https://github.com/ocimar84/funkosgalaxy/assets/79640465/08de5079-c1ae-4277-ad07-8b8455a662d8)
+- 375x1180
+- ![375 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/e6fe11cc-9ca1-40a8-b33d-44fedb575727)
+
+- 768x1180
+- ![768 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/305caeaf-e10e-492d-9026-8dd9384d9036)
+- 1024x1180
+- ![1024 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/37620bb7-ace4-453f-a8fa-1f77e3a8e7e7)
+- 1440x1180
+- ![1440 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/9342c8a3-37a9-434d-b946-894e863f3af1)
+
+
 
 
 ## Author
