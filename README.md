@@ -99,7 +99,7 @@ Ocimar Felipe Costa
 🚨**Required**
 
 - Include a picture of site that shows it in responsive states and links to deployed
-  code: https://ui.dev/amiresponsive
+  code: [https://ui.dev/amiresponsive](https://funkogalaxys-9966c091c723.herokuapp.com/)
   
 Welcome to Funko's Galaxy – Your One-Stop Pop Culture Haven!
 
@@ -794,7 +794,8 @@ to the test case too.
 > To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
 > - [site tabbed navigation test](https://github.com/maliahavlicek/ci_mentor_insights/issues/10)
 >
-> - ![lighhouse](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4eff85ad-aacb-4642-b1ad-294eff5f60bd)
+> - ![lighthouse2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4e6c558-e4c3-4877-8271-e0ef262e6295)
+
 
 
 You can totally combine the tabbed navigation in the accessibility test and have 2 expected criteria, it's all up to
