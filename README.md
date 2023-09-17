@@ -88,14 +88,14 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 Welcome to the Funko Store!  Discover the world of Funko! We offer a wide variety of collectibles, from our famous Pop! Vinyl collection to other Funko products that you'll love. Our items are perfect for die-hard fans of movies, TV shows, video games, and more. Explore our selection and start your collection today!
 
 - 375x1180
-- ![375 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/e6fe11cc-9ca1-40a8-b33d-44fedb575727)
+![375 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/e6fe11cc-9ca1-40a8-b33d-44fedb575727)
 
 - 768x1180
-- ![768 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/305caeaf-e10e-492d-9026-8dd9384d9036)
+![768 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/305caeaf-e10e-492d-9026-8dd9384d9036)
 - 1024x1180
-- ![1024 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/37620bb7-ace4-453f-a8fa-1f77e3a8e7e7)
+![1024 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/37620bb7-ace4-453f-a8fa-1f77e3a8e7e7)
 - 1440x1180
-- ![1440 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/9342c8a3-37a9-434d-b946-894e863f3af1)
+![1440 x 1180](https://github.com/ocimar84/funkosgalaxy/assets/79640465/9342c8a3-37a9-434d-b946-894e863f3af1)
 
 
 
@@ -329,19 +329,38 @@ This table can help prioritize features for the MVP based on their feasibility a
 
 >   - Home Page: An engaging home page showcasing the Funkos Galaxy identity, featured products, and a brief description of the store's unique proposition.
 
+![home1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/6617452a-4faa-46cc-b20f-f5ac317b7b6f)
+![home2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/764287eb-8578-4a8c-a14a-4cefa2e7bd4f)
+![home3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/1a9c0ac7-e147-48c9-b02e-2ddaf882d1d0)
+
 >   - Product Page: A page listing the products available for purchase, enabling users to view details, prices, and other vital information.
 
+
+
+https://github.com/ocimar84/funkosgalaxy/assets/79640465/b14f8a73-d759-45d4-9a9b-a10ad741ee1a
+
+
+
 >   - Contact Page: A contact page where users can send messages or inquiries directly to the Funkos Galaxy team.
+
+![Contact page](https://github.com/ocimar84/funkosgalaxy/assets/79640465/ecdaecfb-9749-483e-9c40-16a936103014)
 
 >   - Featured Page: A page highlighting featured products, presenting their distinct attributes and encouraging users to explore them.
 
 >   - User Authentication: Implementation of a user login system, allowing customers to create accounts, log in, and manage their profiles.
+![login](https://github.com/ocimar84/funkosgalaxy/assets/79640465/3e036108-fa3c-4c10-bfa1-c20e5e342858)
 
 >   - Payment Integration: Integration of a secure payment gateway to enable users to make purchases directly on the website.
+
+![Productlist](https://github.com/ocimar84/funkosgalaxy/assets/79640465/cb06fe27-fa08-416e-b656-7a7032c61232)
+![Paid2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/88c5e5f6-526c-43d1-8318-2a8786f1de96)
+![paid3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4909f90b-05f4-4e16-8e80-91c3b87d796c)
 
 >   - Navigation: A navigation bar allowing users to move seamlessly between different pages of the site.
 
 >   - Footer: A footer containing contact information, links to social media, and copyright details.
+
+
 
 By focusing on these core functionalities, we will be able to create a functional initial version of Funkos Galaxy that meets the needs of our users and enables us to gradually expand with more advanced features in the future.
 
@@ -379,8 +398,6 @@ By making these design choices, Funkos Galaxy will create a visually appealing a
 Funko's Galaxy Website Color Choices:
 
 - Blue: The primary color theme of the site, symbolizing trust and professionalism.
-
-- Orange: Reserved for action buttons, designed to encourage user engagement and excitement.
 
 - White: The backdrop color, ensuring content remains clear and straightforward.
 
@@ -433,14 +450,22 @@ Emotions and Target Audience:
 ### Images
 🚀 **merit & beyhond**
 
-Explain why you used certain icons and images on your site
+**Purpose**: Explain the rationale behind using icons and images on your website.
+
+1. **Visual Appeal**: Enhances the visual attractiveness of the site.
+2. **Comprehension**: Simplifies content understanding.
+3. **Brand Identity**: Reinforces brand recognition.
+4. **Emotional Impact**: Evokes emotions and connects with visitors.
+5. **Navigation**: Facilitates user navigation.
+6. **Storytelling**: Effectively communicates stories or messages.
+7. **Accessibility**: Ensures inclusivity with alt text.
+8. **Cultural Relevance**: Establishes connections with specific audiences.
+
+In summary, icons and images are crucial for improving design, usability, and engagement on your website, aligning with your site's purpose and identity.
+
 
 ### Design Elements
 🚀 **merit & beyhond**
-
-- list out the type of elements you want to use on your site, this will help you when choosing a framework and goes hand
-  in hand when doing the wireframes. If you did something out of the ordinary, or think something was particularly
-  clever, add a sentence and a screenshot or reference the file the code or css is in.
 
 > - desktop navigation
 > - mobile navigation
@@ -465,23 +490,58 @@ Explain why you used certain icons and images on your site
 > - video players
 > - audio players
 
-### Animations and Transitions
-🚀 **merit & beyhond**
 
-- discuss any special animations or transitions you've programmed
-- special hover state effects
 
 ### Frameworks
 🚨**Required**
 
-- If you use bootstrap, tailwind, bulma, materialize or some other JS/CSS framework, call it out here and why you made
-  that choice. (Typically I look at the design elements I want and make sure the framework supports them)
+### Choice of CSS Framework
+
+**Framework Used**: Bootstrap
+
+**Reasons for Choosing Bootstrap**:
+
+1. **Responsive Design**: Bootstrap provides a solid foundation for creating responsive web designs, ensuring compatibility across various devices and screen sizes.
+
+2. **Rich Component Library**: Bootstrap offers a comprehensive set of pre-built UI components like buttons, navigation bars, and modals, which saves development time and ensures consistency in design.
+
+3. **Community Support**: Bootstrap has a large and active community, which means readily available documentation, tutorials, and third-party plugins. This makes it easier to find solutions to common design and functionality challenges.
+
+4. **Customization**: While Bootstrap provides a set of default styles and components, it also allows for extensive customization. This flexibility enables us to create a unique design while still benefiting from Bootstrap's responsive grid system.
+
+5. **Compatibility**: Bootstrap is well-maintained and regularly updated, ensuring compatibility with modern browsers and reducing the risk of security vulnerabilities.
+
+In summary, Bootstrap was chosen as the CSS framework for its versatility, robust component library, and strong community support, aligning with our design and development requirements.
+
 
 ### Custom Styles
-🚨**Required**
 
-- call out any overrides you did for bootstrap styles or the framework you used, even if they are fonts and colors,
-  perhaps lead assessors to the file of interest in your repo
+**Overrides for Bootstrap Styles**
+
+In our project, we made several customizations to the Bootstrap styles to align the design with our specific requirements. Below are some of the key overrides:
+
+1. **Custom Color Palette**: We defined a custom color palette to match our brand identity. This involved modifying Bootstrap's default color variables in the `_variables.scss` file. You can find these customizations in the [`/scss/_variables.scss`](/scss/_variables.scss) file.
+
+2. **Typography**: While Bootstrap provides a range of typography options, we adjusted font sizes and line heights to achieve a harmonious and consistent text style throughout the website. These modifications can be found in the [`/scss/_typography.scss`](/scss/_typography.scss) file.
+
+3. **Button Styles**: We customized button styles to better fit our design language. The changes to button styles can be located in the [`/scss/_buttons.scss`](/scss/_buttons.scss) file.
+
+4. **Navigation Bar**: Our navigation bar required specific layout adjustments, including changes to spacing and the addition of custom icons. You can review these modifications in the [`/scss/_navbar.scss`](/scss/_navbar.scss) file.
+
+5. **Form Styling**: To match our overall design, we made alterations to form elements like input fields, buttons, and validation messages. These adjustments can be seen in the [`/scss/_forms.scss`](/scss/_forms.scss) file.
+
+**File References**
+
+For a detailed view of all our custom styles and overrides, please refer to the respective SCSS files in our repository:
+
+- [**/scss/_variables.scss**](/scss/_variables.scss)
+- [**/scss/_typography.scss**](/scss/_typography.scss)
+- [**/scss/_buttons.scss**](/scss/_buttons.scss)
+- [**/scss/_navbar.scss**](/scss/_navbar.scss)
+- [**/scss/_forms.scss**](/scss/_forms.scss)
+
+
+
 
 ### Custom Javascript
 🚨**Required**
