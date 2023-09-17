@@ -62,14 +62,15 @@ CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io', 'https://*
 # Application definition
 
 INSTALLED_APPS = [
-    "funkosgalaxy.store",
+    # Use WhiteNoise's runserver implementation instead of the Django default, for dev-prod parity.
+    "whitenoise.runserver_nostatic",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    
     "django.contrib.staticfiles",
+    "funkosgalaxy.store",
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -83,6 +84,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -160,7 +162,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_HOST = os.environ.get("DJANGO_STATIC_HOST", "")
+STATIC_URL = STATIC_HOST + "/static/"
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'funkosgalaxy', 'store', 'static'),
