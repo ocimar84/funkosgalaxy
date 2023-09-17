@@ -821,9 +821,9 @@ The following site were used to aid in validation testing:
 > if using ES6, add this before pasting in your file: `/*jshint esversion: 6 */ `, similarily you can update it to 7 if you see warnings about ES7 syntax `/*jshint esversion: 7 */ `
 
 - **[CI's pep8 tool](https://pep8ci.herokuapp.com/)** 
+![pythonlinter](https://github.com/ocimar84/funkosgalaxy/assets/79640465/5cfc28e3-9ce7-4595-ba2f-8ce1a2b8a924)
 
-> for each .py file you created, copy the source code and paste it into this site, and have a test case for it linked to from here.
-> include a screenshot of results in the test case showing NO ERRORS. (you should do this for all .py files in your repo)
+I shortened all the fabrics, but in the case of this error I couldn't do it because it was a long line, even though I tried several models and none of them shortened.
 > 
 > **run.py**
 > 
