@@ -50,19 +50,30 @@ DEBUG = True
 if not IS_HEROKU:
     DEBUG = True
 
-# Generally avoid wildcards(*). However since Heroku router provides hostname validation it is ok
+# Generally avoid wildcards(*). However since Heroku
 if IS_HEROKU:
     ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = ['localhost', 'gitpod.io', 'funkogalaxys-9966c091c723.herokuapp.com', '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io', '*']
+    ALLOWED_HOSTS = [
+        'localhost',
+        'gitpod.io',
+        'funkogalaxys-9966c091c723.herokuapp.com',
+        '8000-ocimar84-funkosgalaxy-y6yp3ea4whw.ws-us104.gitpod.io',
+        '*'
+    ]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io', 'https://*.herokuapp.com']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.127.0.0.1',
+    'https://*.gitpod.io',
+    'https://*.herokuapp.com'
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    # Use WhiteNoise's runserver implementation instead of the Django default, for dev-prod parity.
+
     "whitenoise.runserver_nostatic",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -132,20 +143,11 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-    },
+    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
+    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
+    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
+    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
