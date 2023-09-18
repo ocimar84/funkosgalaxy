@@ -108,7 +108,10 @@ def create_order(request):
     cart = request.session.get('cart', {})
     if not cart:
         return redirect('cart')
-
+        
+    if not request.user.is_authenticated:
+        return redirect('/accounts/login/')
+        
     order = Order.objects.create(user=request.user, status='pending')
 
     # Adicionar itens ao pedido
