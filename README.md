@@ -874,44 +874,34 @@ you!
 ## Validation Testing
 🚨**Required**
 
-You should try to ensure you code is valid and follows proper indentation. In this section you should write up any
-websites you used to validate your code so there is credit given to those sites. Then add links to the test cases you
-put into GitHub for the validation. You can copy your validation success to those tests.
-
-The following site were used to aid in validation testing:
 
 - **[CSS Validator](https://jigsaw.w3.org/css-validator/)**
 
-> If you only have one CSS file, you can just run the validator through one deployed page URL, if you have custom CSS for diffent pages, make sure you hit those different URLS
+> The errors below are caused by my bootstrap, in fact these errors do not affect my project at all.
+
+![CSS check](https://github.com/ocimar84/funkosgalaxy/assets/79640465/894743e6-c71c-457f-9d65-a0ece5f9126a)
 
 - **[HTML Validator](https://validator.w3.org/)**
 
-> For each view you wrote, you should validate the HTML and have a test case for it linked to from here
-> NOTE: You may need to right-click to view the source of each page and paste that into the validator if you need to go through authentication to get to the page.
+> The errors below are caused by my bootstrap, in fact these errors do not change my project at all. I tried to improve the error but I couldn't.
+![html-1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2f972671-c39c-4441-b21a-7de1ce87ad37)
+![html-2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/8dc5ae0e-d669-4f5e-973e-48295fc312d0)
 
 - **[JS validation](https://jshint.com)**
 
-> for each .js file, copy the code and paste it into this site, and have a test case for it linked to from here. You can have warnings, but no errors.
-> if using ES6, add this before pasting in your file: `/*jshint esversion: 6 */ `, similarily you can update it to 7 if you see warnings about ES7 syntax `/*jshint esversion: 7 */ `
+> I didn't use JS
+![js](https://github.com/ocimar84/funkosgalaxy/assets/79640465/b1def750-ac85-4c72-919a-ebca3afd3595)
 
 - **[CI's pep8 tool](https://pep8ci.herokuapp.com/)** 
 ![pythonlinter](https://github.com/ocimar84/funkosgalaxy/assets/79640465/5cfc28e3-9ce7-4595-ba2f-8ce1a2b8a924)
 
-I shortened all the fabrics, but in the case of this error I couldn't do it because it was a long line, even though I tried several models and none of them shortened.
+This error I couldn't do it because it was a long line, even though I tried several models and none of them shortened.
 > 
 > **run.py**
 > 
 > ![image](https://user-images.githubusercontent.com/23039742/212106175-36b2f18a-7c75-458d-94dd-9886e81c71f3.png)
 
-> Ideally you would have no errors remaining outside of line too long which you can fix by 
-> 
-> adding
-> ```$python 
-> # noqa
-> ```
-> There is a space before the # and after it to skip the quality assurance for that line.
-> 
-> Note any errors or warnings you are ignoring and why.
+
 
 - **[JSON validation](https://jsonlint.com/)**
 
