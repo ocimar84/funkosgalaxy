@@ -22,7 +22,7 @@
         <div class="container mt-5">
             <h1 class="text-body-emphasis fw-bold mb-4">Resume</h1>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <table class="table">
                         <thead>
                             <tr>
@@ -44,16 +44,39 @@
                         </tbody>
                     </table>
                     <h5>Total: €{{ total }}</h5>
+                    {% if order.status == 'paid' and order.zip_code != None %}
+                        <div class="mt-3">
+                            <label for="street_address" class="form-label">Street Address</label>
+                            <p>{{ order.street_address }} - {{ order.city }}/{{ order.state }} - {{ order.zip_code }}</p>
+                        </div>
+                    {% endif %}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card {% if order.status == 'paid' %}bg-success-subtle{% endif %}">
                         <div class="card-body">
                             {% if order.status == 'paid' %}
                                 <h5 class="card-title m-0">Paid</h5>
                             {% else %}
-                                <h5 class="card-title">Payment</h5>
                                 <form action="{% url 'checkout' order.id %}" method="post" id="payment-form">
                                     {% csrf_token %}
+                                    <h5 class="card-title">Address</h5>
+                                    <div class="mb-3 text-left">
+                                        <label for="street_address" class="form-label">Street Address</label>
+                                        <input type="text" class="form-control" id="street_address" name="street_address" value="{{ order.street_address|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="mb-3 text-left">
+                                        <label for="city" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="city" name="city" value="{{ order.city|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="mb-3 text-left">
+                                        <label for="state" class="form-label">State</label>
+                                        <input type="text" class="form-control" id="state" name="state" value="{{ order.state|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="mb-3 text-left">
+                                        <label for="zip_code" class="form-label">Zip code</label>
+                                        <input type="text" class="form-control" id="zip_code" name="zip_code" value="{{ order.zip_code|default_if_none:'' }}" required>
+                                    </div>
+                                    <h5 class="card-title">Payment</h5>
                                     <div id="card-element">
                                         <!-- Elemento de cartão Stripe será inserido aqui -->
                                     </div>
@@ -72,7 +95,7 @@
         <script>
             var stripe = Stripe("{{ stripe_public_key }}");
             var elements = stripe.elements();
-            var card = elements.create('card');
+            var card = elements.create('card', { hidePostalCode: true });
             card.mount('#card-element');
         
             var form = document.getElementById('payment-form');

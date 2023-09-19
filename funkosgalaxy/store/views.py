@@ -89,6 +89,18 @@ def add_to_cart(request, product_id):
     messages.success(request, 'Product added to cart!')
     return redirect('cart')
 
+def update_cart(request, product_id):
+    cart = request.session.get('cart', {})
+    if request.method == 'POST':
+        quantity = int(request.POST.get('quantity'))
+        if quantity > 0:
+            cart[product_id] = quantity
+        else:
+            del cart[product_id]  # Remove o produto se a quantidade for menor ou igual a zero
+        request.session['cart'] = cart
+    messages.success(request, 'Product quantity updated!')
+    return redirect('cart')
+
 def remove_from_cart(request, product_id):
     cart = request.session.get('cart', {})
     if product_id in cart:
@@ -110,7 +122,7 @@ def create_order(request):
         return redirect('cart')
         
     if not request.user.is_authenticated:
-        return redirect('/accounts/login/')
+        return redirect('/accounts/login/?next=' + request.path)
         
     order = Order.objects.create(user=request.user, status='pending')
 
@@ -143,6 +155,10 @@ def checkout(request, order_id):
                 description=f'Order #{order.id}',
                 source=request.POST['stripeToken']
             )
+            order.street_address = request.POST.get('street_address')
+            order.city = request.POST.get('city')
+            order.state = request.POST.get('state')
+            order.zip_code = request.POST.get('zip_code')
             order.total = total
             order.status = 'paid'
             order.save()

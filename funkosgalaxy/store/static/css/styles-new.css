@@ -13,6 +13,10 @@ main {
     max-width: 960px;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .icon-link>.bi {
     width: .75em;
     height: .75em;

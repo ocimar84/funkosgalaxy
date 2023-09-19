@@ -31,6 +31,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Date</th>
+                            <th>Address</th>
                             <th>Total</th>
                             <th>Status</th>
                             <th>Action</th>
@@ -41,6 +42,7 @@
                         <tr>
                             <td>{{ order.id }}</td>
                             <td>{{ order.created_at }}</td>
+                            <td>{% if order.zip_code != None %}{{ order.street_address }} - {{ order.city }}/{{ order.state }} - {{ order.zip_code }}{% else %}#{% endif %}</td>
                             <td>€{% if order.status == 'paid' %}{{ order.total }}{% else %}{{ order.temporary_total }}{% endif %}</td>
                             <td>
                                 <span class="badge {% if order.status == 'paid' %}bg-success{% elif order.status == 'pending' %}bg-warning{% else %}bg-danger{% endif %}">

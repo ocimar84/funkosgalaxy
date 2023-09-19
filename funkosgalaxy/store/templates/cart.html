@@ -52,8 +52,13 @@
         <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 py-3">
                 <h2 class="display-7 text-primary">{{ item.product.name }}</h2>
-                <div class="justify-content-center d-flex flex-row my-3 gap-3">
-                    <h2>Qty: {{ item.quantity }}</h2>
+                <div class="justify-content-center my-3 gap-3">
+                    <form id="form-{{ item.product.id }}" action="{% url 'update_cart' item.product.id %}" method="post" class="mb-2">
+                        {% csrf_token %}
+                        <label for="quantity-{{ item.product.id }}">Quantity:</label>
+                        <input type="number" id="quantity-{{ item.product.id }}" name="quantity" value="{{ item.quantity }}" min="1" onchange="document.getElementById('form-{{ item.product.id }}').submit()" class="text-center" style="width: 75px;">
+                    </form>
+
                     <h2>Total: €{{ item.total }}</h2>
                 </div>
                 <a href="{% url 'remove_from_cart' item.product.id %}" type="button" class="btn btn-lg btn-danger">Remove</a>
