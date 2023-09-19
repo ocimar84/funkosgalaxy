@@ -892,20 +892,12 @@ you!
 > I didn't use JS
 ![js](https://github.com/ocimar84/funkosgalaxy/assets/79640465/b1def750-ac85-4c72-919a-ebca3afd3595)
 
-- **[CI's pep8 tool](https://pep8ci.herokuapp.com/)** 
+- **[CI's pep8 tool](https://pep8ci.herokuapp.com/)**
+
+> This error I couldn't do it because it was a long line, even though I tried several models and none of them shortened.
 ![pythonlinter](https://github.com/ocimar84/funkosgalaxy/assets/79640465/5cfc28e3-9ce7-4595-ba2f-8ce1a2b8a924)
 
-This error I couldn't do it because it was a long line, even though I tried several models and none of them shortened.
-> 
-> **run.py**
-> 
-> ![image](https://user-images.githubusercontent.com/23039742/212106175-36b2f18a-7c75-458d-94dd-9886e81c71f3.png)
 
-
-
-- **[JSON validation](https://jsonlint.com/)**
-
-> for each .json file, you should copy the code and paste it into this site, and have a test case for it linked to from here.
 
 ## Automated Testing
 🚀 **merit & beyhond**
