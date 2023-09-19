@@ -355,6 +355,7 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/b14f8a73-d759-45d4-9a9b
 ![Productlist](https://github.com/ocimar84/funkosgalaxy/assets/79640465/cb06fe27-fa08-416e-b656-7a7032c61232)
 ![Paid2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/88c5e5f6-526c-43d1-8318-2a8786f1de96)
 ![paid3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4909f90b-05f4-4e16-8e80-91c3b87d796c)
+![stripe](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2d46867a-7c47-40dd-8378-22fab91b7a41)
 
 >   - Navigation: A navigation bar allowing users to move seamlessly between different pages of the site.
 
