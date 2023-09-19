@@ -1144,62 +1144,35 @@ Call out how you purposefully incorporated keywords into your content, H1, meta 
 # Deployment
 🚨**Required** 
 
-## Prerequisits
-🚀 **merit & beyond**
+# Welcome to Our Website Deployment
 
-If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information. ex)
+We're thrilled to announce that our website is now officially deployed and ready for access! After countless hours of hard work and dedication, our online project is accessible to all our visitors.
 
-1. **Gmail Account:** In order to have verification and forgot password emails sent to registered users you need a
-   google account. 
-  - [create a gmail accoount](https://accounts.google.com/signup) 
-  - [downgrade to less secure](https://myaccount.google.com/lesssecureapps?pli=1) after you are signed into the gmail account, downgrade to less secure
-2. **Couldinary URL**
-  - [create an account](https://cloudinary.com/)
-  - go to the dashboard and copy your API environmental variable
-   
-    <img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png">     
- 
-## Fork and Clone the Repository
-🚀 **merit & beyond**
-To keep the main reposotory for this project clean, please fork the repostiory into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
-1. login to your own gitHub account
-2. navigate to [my repository](URL OF YOUR LIVE REPOSITORY)
-3. In the top right corner of the page, click fork 
+## What to Expect from Our Website
 
-![image](https://user-images.githubusercontent.com/23039742/213840378-e785eaa0-712b-468c-bcda-64fde56eae44.png)
+Our website is a place where you can discover [brief description of your website's content]. We are committed to [your goals with the website, e.g., sharing knowledge, offering services, etc.], and we are excited to share this with you.
 
-4. set yourself as the owner
-5. change the name of the repo if you want
-6. add a description if you want
-7. choose what to copy, typicall the main branch only
-8. click the snazy green button
+## Explore Our Content
 
-![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
+Feel free to navigate through the different sections of our website. We have [list the sections or features of your website] available for you to explore. Whether you're looking for [specify what visitors can find on the site], you've come to the right place!
 
-9. To get files to your local environment, you need to clone it: click the code button
-10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
+## How You Found Us
+
+We extend our gratitude to all our supporters, followers, and those who have helped us along the way. If you discovered our website through [mention sources like social media, search engines, referrals, etc.], we want to thank you for finding us, and we hope you enjoy your visit.
+
+## Get in Touch
+
+We want to hear from you! If you have any comments, suggestions, or just want to say hello, please don't hesitate to contact us via [mention contact methods like a contact form, email, social media, etc.]. We love hearing from our visitors and are here to assist.
+
+Once again, thank you for visiting our website. We look forward to sharing helpful and engaging content with you, and we hope your visit is an enjoyable experience.
+
 
 
 
 ## Development Deployment 
 🚨**Required** 
 
-This section should describe the process someone would have to go through to get the local working in GitPod, or your preferred IDE. Start from installing the chrome extension then clicking the green gitpod button in THEIR FORKED repository, the enumerate the steps to walk them through the process as if they were brand new to this proccess. **Include screenshots** where applicable.
 
-**Key points to cover** 
-- Install required python packages: `pip3 install -r requirements.txt`
-- Create env.py
-- What to put in the env.py, don’t disclose real values
->  - EMAIL_HOST_PASSWORD=<YOUR_VALUE>
->  - DEFAULT_FROM_EMAIL=<YOUR_VALUE>
->  - EMAIL_USERNAME=<YOUR_VALUE>
->  - SECRET_KEY=<YOUR_VALUE>
->  - CLOUDINARY_URL=<YOUR_VALUE>
->  - DEV=True
-- Apply Database Migrations so the database starts up `python3 manage.py migrate`
-- Create a super user so you can add and inspect things via django admin  `python3 manage.py createsuperuser`
-- Preload data: Sometimes you might want to include steps to create data in the admin or preload a data dump [coderwall blog](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) has examples on how to dump data and load it which saves a bunch of time when deploying the application from a local database to a hosted database but you don’t  have to do this step
-- Start the server `python3 manage.py runserver`
 
 - Category details
 ![categoydetails](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c91befbc-5b8b-4930-8a7f-237c25a1eac2)
@@ -1213,40 +1186,23 @@ Category
 ## Production Deployment
 🚨**Required** 
 
-This section should describe the process you went through to deploy the project to a server where anyone can access the url without your machine running. This is typically Heroku. **Include screenshots** if you think they would make the process easier. Start with getting an heroku account and then setting up databases and other packages.
+![heroku](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4a3e879-cdea-4c10-b1a6-90a854fcff36)
 
-If you have project settings required for Heroku, provide a table of the keys and values. Do not share your personal
-keys but either cut them out of the screenshot or say <YOUR_VALUE> and include links on how the user would obtain such
-values.
-
-**Key points to cover** 
-- cerating new app
-- setting app name
-- setting region
-- entering dreaded billing info
-- subscribing to a plan
-- setting up db
-- adding environmental values- have a list or table so user has less chance of typos
->  - EMAIL_HOST_PASSWORD
->  - DEFAULT_FROM_EMAIL
->  - EMAIL_USERNAME
->  - SECRET_KEY
->  - CLOUDINARY_URL
->  - COLLECT_STATIC
-- adding build packages
-- deploy
-- gitHub connection
-- auto vs manul deploy
-- monotior logs
+![heroku2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2002482c-0e39-481b-a995-a8f4fc458159)
 
 
 # Credits
 🚨**Required**
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did.
 
--[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
-    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+- Paystripe
+- Github
+- Youtube
+- facebook
+- instagram
+- funko references
+- google
+  
 
 ## Content
 
