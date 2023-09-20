@@ -1030,12 +1030,10 @@ By implementing these strategies, we aim to continuously increase traffic to **F
 ## Newsletter Signup
 🚨**Required**
 
-- copy a screenshot of the signup 
-- add a couple of bullet oints outlining the goals of what this functionality provides for building out followers
+- Boost User Engagement: Encourage user interactions by allowing them to follow each other. 
+- Improve Content Discovery: Help users discover relevant content and profiles through a curated feed.
+![sign in ](https://github.com/ocimar84/funkosgalaxy/assets/79640465/1af3bd20-e1e2-49fa-b2e8-282b4bb04faa)
 
-## Links
-- sponsored links are flagged with rel="sponsored"
-- social links and other links that go outside domain have `rel="nofollower"` to signal to search engines that those links are not associated with our specific domain
 
 ## SEO Strategy
 🚨**Required**
