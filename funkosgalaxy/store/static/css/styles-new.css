@@ -6,6 +6,7 @@ body {
 }
 
 main {
+    font-family: 'Roboto', sans-serif; /* Por exemplo, aplicando a 'Roboto' a elementos 'main' */
     background: white;
 }
 
