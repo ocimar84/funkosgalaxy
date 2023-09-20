@@ -288,7 +288,15 @@ have. EVERYTHING write them out in bullet form:
 - As a 'user type' I 'to perform an action' so that I can 'achieve a goal'
 ![Agile](https://github.com/ocimar84/funkosgalaxy/assets/79640465/413811fb-622f-4d4d-823e-dd8870bc3690)
 
+- Wireframes
 
+  ![Payment](https://github.com/ocimar84/funkosgalaxy/assets/79640465/f41e30d8-e8e7-4373-854a-c5a77ffa4154)
+
+![Register](https://github.com/ocimar84/funkosgalaxy/assets/79640465/8b2adfab-df03-4383-a9a2-3b56c34dbc85)
+
+![Home](https://github.com/ocimar84/funkosgalaxy/assets/79640465/febd6bc3-29b3-4d0f-8337-50e0d78b64dd)
+
+![Products](https://github.com/ocimar84/funkosgalaxy/assets/79640465/8f4e6bce-fe00-443e-8a09-b4238e331cf9)
 
 
 ## Feasibility vs Importance
