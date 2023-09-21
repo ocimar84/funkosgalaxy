@@ -471,6 +471,7 @@ In summary, icons and images are crucial for improving design, usability, and en
 ### Frameworks
 🚨**Required**
 
+
 ### Choice of CSS Framework
 
 **Framework Used**: Bootstrap
@@ -541,6 +542,7 @@ For a detailed view of all our custom styles and overrides, please refer to the 
 
 ## Generating an Entity-Relationship Diagram (ERD) for Django Applications
 
+<img width="654" alt="Relationship" src="https://github.com/ocimar84/funkosgalaxy/assets/79640465/4accb10a-4943-4d53-8ee0-ef8683a9af28">
 
 ## Database Choice
 🚀 **merit & beyhond**
@@ -672,14 +674,9 @@ have refined stories from Epics to Generic User stories.
 ### Product Backlog
 🚨**Required**
 
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
-This is the MILESTONE where you grab stories from the issues or USER stories you created and prioritize them and order
-them, leave the epics out.
+![milestone](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2d7766e4-ebba-4399-af47-7397103ed2aa)
 
-**What to keep in this section**
-Include a link to your Product Catalog Milestone,
-
-an initial screenshot, mid-point and final will help document the agile process.
+https://github.com/ocimar84/funkosgalaxy/milestones?state=closed
 
 ## Iterations
 🚀 **merit & beyhond**
