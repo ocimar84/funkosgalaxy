@@ -541,28 +541,6 @@ For a detailed view of all our custom styles and overrides, please refer to the 
 
 ## Generating an Entity-Relationship Diagram (ERD) for Django Applications
 
-To create an Entity-Relationship Diagram (ERD) for your Django application, follow these steps:
-
-### Step 1: Install Django Extensions
-
-Make sure the `django-extensions` package is installed in your Django application. You can do this using pip:
-
-```bash
-pip install django-extensions
-
-### Step 2: Add 'django_extensions' to Installed Apps
-
-INSTALLED_APPS = [
-    # ...
-    'django_extensions',
-    # ...
-]
-
-### Step 3 Run the Generate Models Command
-Use the graph_models command provided by django-extensions to create a DOT file that represents your Django models:
-
-python manage.py graph_models -a -o my_erd.dot
-
 
 ## Database Choice
 🚀 **merit & beyhond**
