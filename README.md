@@ -481,34 +481,6 @@ In summary, icons and images are crucial for improving design, usability, and en
 In summary, Bootstrap was chosen as the CSS framework for its versatility, robust component library, and strong community support, aligning with our design and development requirements.
 
 
-### Custom Styles
-
-**Overrides for Bootstrap Styles**
-
-In our project, we made several customizations to the Bootstrap styles to align the design with our specific requirements. Below are some of the key overrides:
-
-1. **Custom Color Palette**: We defined a custom color palette to match our brand identity. This involved modifying Bootstrap's default color variables in the `_variables.scss` file. You can find these customizations in the [`/scss/_variables.scss`](/scss/_variables.scss) file.
-
-2. **Typography**: While Bootstrap provides a range of typography options, we adjusted font sizes and line heights to achieve a harmonious and consistent text style throughout the website. These modifications can be found in the [`/scss/_typography.scss`](/scss/_typography.scss) file.
-
-3. **Button Styles**: We customized button styles to better fit our design language. The changes to button styles can be located in the [`/scss/_buttons.scss`](/scss/_buttons.scss) file.
-
-4. **Navigation Bar**: Our navigation bar required specific layout adjustments, including changes to spacing and the addition of custom icons. You can review these modifications in the [`/scss/_navbar.scss`](/scss/_navbar.scss) file.
-
-5. **Form Styling**: To match our overall design, we made alterations to form elements like input fields, buttons, and validation messages. These adjustments can be seen in the [`/scss/_forms.scss`](/scss/_forms.scss) file.
-
-**File References**
-
-For a detailed view of all our custom styles and overrides, please refer to the respective SCSS files in our repository:
-
-- [**/scss/_variables.scss**](/scss/_variables.scss)
-- [**/scss/_typography.scss**](/scss/_typography.scss)
-- [**/scss/_buttons.scss**](/scss/_buttons.scss)
-- [**/scss/_navbar.scss**](/scss/_navbar.scss)
-- [**/scss/_forms.scss**](/scss/_forms.scss)
-
-
-
 
 ### Custom Javascript
 🚨**Required**
