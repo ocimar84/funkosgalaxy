@@ -304,38 +304,38 @@ This table can help prioritize features for the MVP based on their feasibility a
 
 >   - Home Page: An engaging home page showcasing the Funkos Galaxy identity, featured products, and a brief description of the store's unique proposition.
 
-![home1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/6617452a-4faa-46cc-b20f-f5ac317b7b6f)
-![home2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/764287eb-8578-4a8c-a14a-4cefa2e7bd4f)
-![home3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/1a9c0ac7-e147-48c9-b02e-2ddaf882d1d0)
+https://github.com/ocimar84/funkosgalaxy/assets/79640465/4cf3178f-8285-46a7-980f-fdfdb44fb4b3
+
+![categories](https://github.com/ocimar84/funkosgalaxy/assets/79640465/1499ffbd-10ae-41a7-8882-9c7aa45eea29)
+
+>   - Featured Page: A page highlighting featured products, presenting their distinct attributes and encouraging users to explore them.
+>   - 
+https://github.com/ocimar84/funkosgalaxy/assets/79640465/79e9909e-f34e-4015-b2f6-77b125a31b92
 
 >   - Product Page: A page listing the products available for purchase, enabling users to view details, prices, and other vital information.
 
-
-
-https://github.com/ocimar84/funkosgalaxy/assets/79640465/b14f8a73-d759-45d4-9a9b-a10ad741ee1a
-
-
+![product](https://github.com/ocimar84/funkosgalaxy/assets/79640465/fd846d74-4fd0-4bc5-9983-a23f0091c374)
 
 >   - Contact Page: A contact page where users can send messages or inquiries directly to the Funkos Galaxy team.
 
-![Contact page](https://github.com/ocimar84/funkosgalaxy/assets/79640465/ecdaecfb-9749-483e-9c40-16a936103014)
-
->   - Featured Page: A page highlighting featured products, presenting their distinct attributes and encouraging users to explore them.
-
->   - User Authentication: Implementation of a user login system, allowing customers to create accounts, log in, and manage their profiles.
-![login](https://github.com/ocimar84/funkosgalaxy/assets/79640465/3e036108-fa3c-4c10-bfa1-c20e5e342858)
+![contact](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2796f5f6-f6ad-4d69-a80f-8cbc8029f9b7)
 
 >   - Payment Integration: Integration of a secure payment gateway to enable users to make purchases directly on the website.
 
-![Productlist](https://github.com/ocimar84/funkosgalaxy/assets/79640465/cb06fe27-fa08-416e-b656-7a7032c61232)
-![Paid2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/88c5e5f6-526c-43d1-8318-2a8786f1de96)
-![paid3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4909f90b-05f4-4e16-8e80-91c3b87d796c)
-![stripe](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2d46867a-7c47-40dd-8378-22fab91b7a41)
+![card](https://github.com/ocimar84/funkosgalaxy/assets/79640465/891cc48a-6085-43b1-bef4-19e9f4571ae4)
+
+>   - User Authentication: Implementation of a user login system, allowing customers to create accounts, log in, and manage their profiles.
+
+![login](https://github.com/ocimar84/funkosgalaxy/assets/79640465/054382f6-c96d-4b73-bda6-a7dd31467271)
+
 
 >   - Navigation: A navigation bar allowing users to move seamlessly between different pages of the site.
 
+![Navegation ](https://github.com/ocimar84/funkosgalaxy/assets/79640465/1fdccb59-fa7b-494b-85bd-1051d8405f50)
+
 >   - Footer: A footer containing contact information, links to social media, and copyright details.
 
+![footer](https://github.com/ocimar84/funkosgalaxy/assets/79640465/49bb7c68-99c6-4a6b-8cfd-401fac495062)
 
 
 By focusing on these core functionalities, we will be able to create a functional initial version of Funkos Galaxy that meets the needs of our users and enables us to gradually expand with more advanced features in the future.
@@ -522,31 +522,54 @@ For a detailed view of all our custom styles and overrides, please refer to the 
 ### Custom Javascript
 🚨**Required**
 
-- call attention to any custom javascript you created to help your User Experience you can organize this by functions or
-  files
+- I only used Java than what was in my bootstrap.
 
 ## Wireframes
 🚨**Required**
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of
-the design process. These files should themselves either be included as a pdf file in the project itself (in a separate
-directory), or hosted elsewhere online and can be in any format that is viewable inside the browser.
+![Payment](https://github.com/ocimar84/funkosgalaxy/assets/79640465/93ac3570-8ece-4cad-90b9-7ecc59eb6b39)
 
-- You should minimally have wireframes for desktop and mobile for the pages you are making for you register, login,
-  read(list/detail), add, update, delete functionality. Adding a Tablet view will help you get into merit and
-  distinction.
+![Register](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4bbb54ae-6002-4ad8-a3b5-343ab66ca2c7)
 
-You can hand draw these, but CI posts a yearly license in the general channel for Balsamiq which is pretty easy to use.
-Here is the [2022 announcement](https://code-institute-room.slack.com/archives/C0L316Z96/p1640099614368000)
+![Home](https://github.com/ocimar84/funkosgalaxy/assets/79640465/a3586e2b-2e05-4408-bcf0-f18c6b29a079)
 
+![Products](https://github.com/ocimar84/funkosgalaxy/assets/79640465/756d50c1-06c5-4012-bd41-ea7da61fb265)
 
-# Information Architecture
-As part of the requirements for this project you need to have at **least 3 custom data models**.  It's still under discussion what that means, but I'd make 1 original and then update the products to be custom to what you are selling and create another new one. It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built. You must have CREATE, READ, UPDATE & DELETE for at least one model.
 
 ## Entity Relationship Diagram
 🚨**Required**
 
-Wade Williams wrote a great blog about how to add a django extension to auto create an ERD. https://wadewilliams.com/technology-software/generating-erd-for-django-applications/ You can always draw one out by hand or google sheets. You can also draw this up by hand if you want or use a spreadsheet to show your data model.
+## Generating an Entity-Relationship Diagram (ERD) for Django Applications
+
+To create an Entity-Relationship Diagram (ERD) for your Django application, follow these steps:
+
+### Step 1: Install Django Extensions
+
+Make sure the `django-extensions` package is installed in your Django application. You can do this using pip:
+
+```bash
+pip install django-extensions
+
+### Step 2: Add 'django_extensions' to Installed Apps
+
+INSTALLED_APPS = [
+    # ...
+    'django_extensions',
+    # ...
+]
+
+### Step 3 Run the Generate Models Command
+Use the graph_models command provided by django-extensions to create a DOT file that represents your Django models:
+
+python manage.py graph_models -a -o my_erd.dot
+
+### Step 4 Convert the DOT File to an Image
+To visualize the ERD, you need to convert the DOT file to an image format (e.g., PNG or PDF). Ensure that you have Graphviz installed on your system. Use the following command to generate a PNG image from the DOT file:
+
+dot -Tpng my_erd.dot -o my_erd.png
+
+
+
 
 ## Database Choice
 🚀 **merit & beyhond**
