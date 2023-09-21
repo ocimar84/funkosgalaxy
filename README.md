@@ -563,13 +563,6 @@ Use the graph_models command provided by django-extensions to create a DOT file 
 
 python manage.py graph_models -a -o my_erd.dot
 
-### Step 4 Convert the DOT File to an Image
-To visualize the ERD, you need to convert the DOT file to an image format (e.g., PNG or PDF). Ensure that you have Graphviz installed on your system. Use the following command to generate a PNG image from the DOT file:
-
-dot -Tpng my_erd.dot -o my_erd.png
-
-
-
 
 ## Database Choice
 🚀 **merit & beyhond**
