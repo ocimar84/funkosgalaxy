@@ -76,8 +76,14 @@ Ocimar Felipe Costa
 
 - Include a picture of site that shows it in responsive states and links to deployed
   code: [https://funkogalaxys-9966c091c723.herokuapp.com](https://funkogalaxys-9966c091c723.herokuapp.com/)
-  
-  
+
+# Brand
+
+![funkosgalaxy logo2 (1)](https://github.com/ocimar84/funkosgalaxy/assets/79640465/bb03aca3-cc2d-4804-9a57-0ae920bfce6f)
+
+- The logo was custom designed myself using Canva.
+
+    
 Welcome to Funko's Galaxy – Your One-Stop Pop Culture Haven!
 
 Discover a universe of collectibles and treasures at Funko's Galaxy, where every corner of popular culture comes alive. Our online emporium is more than just a store – it's an immersive experience that caters to every fandom. From iconic movie and TV characters to beloved superheroes and more, we've curated a stellar collection that will ignite your passion.
@@ -698,21 +704,47 @@ Secure Checkout: The checkout process is secure and user-friendly, ensuring a sm
 - Facebook Business page
 - Newsletter signup Form
 
-## Future Features
-🚀 **merit & beyhond**
+# Future Features
 
-> - Advanced Search
-Enhance the search functionality to support advanced filters, such as price ranges and product categories.
-Implement autocomplete suggestions for faster product discovery.
-> - User Profiles
-Develop user profiles where users can track their order history, manage their account information, and view their reviews and ratings.
-> - Blog and News Section
-Create a dedicated section for blogs and news related to the collectibles industry.
-Keep users updated on the latest trends, releases, and events.
-> - Mobile App
-Explore the development of a mobile app to provide users with a seamless and convenient shopping experience on their smartphones.
-> - International Shipping
-Expand our shipping options to offer international delivery, allowing Funko enthusiasts worldwide to enjoy our products.
+🚀 **Merit & Beyhond Collectibles**
+
+## Overview
+
+This README outlines the exciting future features that we plan to implement for the Merit & Beyhond Collectibles website. We are dedicated to improving our user experience and expanding our offerings in the collectibles industry.
+
+## Features
+
+### Advanced Search
+
+- Enhance the search functionality to support advanced filters, such as price ranges and product categories.
+- Implement autocomplete suggestions for faster product discovery.
+
+### User Profiles
+
+- Develop user profiles where users can track their order history, manage their account information, and view their reviews and ratings.
+
+### Blog and News Section
+
+- Create a dedicated section for blogs and news related to the collectibles industry.
+- Keep users updated on the latest trends, releases, and events.
+
+### Mobile App
+
+- Explore the development of a mobile app to provide users with a seamless and convenient shopping experience on their smartphones.
+
+### International Shipping
+
+- Expand our shipping options to offer international delivery, allowing Funko enthusiasts worldwide to enjoy our products.
+
+## How to Contribute
+
+We welcome contributions from the community to help us implement these exciting features. If you'd like to get involved, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m "Add your feature description"`.
+4. Push to your fork: `git push origin feature/your-feature-name`.
+5. Create a pull request, and we'll review your contribution.
 
 # Testing
 🚨**Required**
