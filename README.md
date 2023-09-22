@@ -736,9 +736,7 @@ This README outlines the exciting future features that we plan to implement for 
 
 - Expand our shipping options to offer international delivery, allowing Funko enthusiasts worldwide to enjoy our products.
 
-## How to Contribute
 
-We welcome contributions from the community to help us implement these exciting features. If you'd like to get involved, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature: `git checkout -b feature/your-feature-name`.
