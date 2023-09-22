@@ -1112,6 +1112,10 @@ Supabase
 
 ![Supabase](https://github.com/ocimar84/funkosgalaxy/assets/79640465/d98c1604-31eb-438e-a67f-40911ffa8c20)
 
+Paystripe
+
+![stripe](https://github.com/ocimar84/funkosgalaxy/assets/79640465/965b87fb-95ce-4e7c-8a00-a2a820278265)
+
 
 # Credits
 🚨**Required**
