@@ -796,27 +796,21 @@ Note, you might find it easier to create a test case for each tool/device and li
 > To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
 > - Home
 >
-> - ![lighthouse2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4e6c558-e4c3-4877-8271-e0ef262e6295)
+> ![lighthouse2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4e6c558-e4c3-4877-8271-e0ef262e6295)
 >
 > - Products
->
-> - ![all categorys](https://github.com/ocimar84/funkosgalaxy/assets/79640465/41fd337e-3a29-484c-aa04-d55b3a0300f0)
+>![Product](https://github.com/ocimar84/funkosgalaxy/assets/79640465/fe440220-25e4-4928-b835-9b854f3deeee)
+
+> ![all categorys](https://github.com/ocimar84/funkosgalaxy/assets/79640465/41fd337e-3a29-484c-aa04-d55b3a0300f0)
 >
 > - Contact
 >
-> - ![contact](https://github.com/ocimar84/funkosgalaxy/assets/79640465/eadf16e3-53c6-46cf-af0f-9dade60e70c9)
+> ![contact](https://github.com/ocimar84/funkosgalaxy/assets/79640465/eadf16e3-53c6-46cf-af0f-9dade60e70c9)
 >
 > - Card
 >
-> - ![card](https://github.com/ocimar84/funkosgalaxy/assets/79640465/fecc1bec-84a8-45bf-9d6c-65a1a347099b)
+> ![card](https://github.com/ocimar84/funkosgalaxy/assets/79640465/fecc1bec-84a8-45bf-9d6c-65a1a347099b)
 
-
-
-
-
-
-You can totally combine the tabbed navigation in the accessibility test and have 2 expected criteria, it's all up to
-you!
 
 ## Validation Testing
 🚨**Required**
@@ -1169,7 +1163,7 @@ Cross-reference: Content in the "Blog" section.
 > - Code Institute: I began this project by following the guidance and lessons from Code Institute's instructional projects. These projects laid a strong foundation for my understanding of web development.
 
 
->  - Mentors: A special thanks to the mentors Malia who provided valuable insights and assistance throughout the development process. Your guidance was instrumental in overcoming challenges and improving the quality of the project.
+>  - Mentors: A special thanks to the mentors Malia and Vitor who provided valuable insights and assistance throughout the development process. Your guidance was instrumental in overcoming challenges and improving the quality of the project.
 
 >  - Stack Overflow: The Stack Overflow community proved to be an invaluable resource. I frequently referred to solutions and explanations provided by the community members when encountering coding issues.
 
