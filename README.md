@@ -708,12 +708,6 @@ Secure Checkout: The checkout process is secure and user-friendly, ensuring a sm
 
 🚀 **Merit & Beyhond Collectibles**
 
-## Overview
-
-This README outlines the exciting future features that we plan to implement for the Merit & Beyhond Collectibles website. We are dedicated to improving our user experience and expanding our offerings in the collectibles industry.
-
-## Features
-
 ### Advanced Search
 
 - Enhance the search functionality to support advanced filters, such as price ranges and product categories.
@@ -736,13 +730,6 @@ This README outlines the exciting future features that we plan to implement for 
 
 - Expand our shipping options to offer international delivery, allowing Funko enthusiasts worldwide to enjoy our products.
 
-
-
-1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -m "Add your feature description"`.
-4. Push to your fork: `git push origin feature/your-feature-name`.
-5. Create a pull request, and we'll review your contribution.
 
 # Testing
 🚨**Required**
