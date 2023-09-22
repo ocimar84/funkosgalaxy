@@ -792,24 +792,26 @@ Note, you might find it easier to create a test case for each tool/device and li
 
 ## Accessibility Testing
 🚨**Required**
-
-You should have test cases for accessibility and links to them here. Start with a brief paragraph and then link to the
-test cases. If you are ambitious you can record the screen of you using the keyboard, convert it to a gif and upload it
-to the test case too.
-
-**example**
-> To ensure that the site was accessible to people with visual impairments, I used chrome's dev tools, lighthouse audits to ensure I had a score in the green for accessibility and that I could keyboard navigate through the page.
->
-> Here are links to the test cases for each which contains the screenshot for the lighthouse audit.
-> - [home page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/12)
-> - [experience page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/13)
-> - [skills page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/14)
-> - [recommendations page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/15)
 >
 > To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
-> - [site tabbed navigation test](https://github.com/maliahavlicek/ci_mentor_insights/issues/10)
+> - Home
 >
 > - ![lighthouse2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4e6c558-e4c3-4877-8271-e0ef262e6295)
+>
+> - Products
+>
+> - ![all categorys](https://github.com/ocimar84/funkosgalaxy/assets/79640465/41fd337e-3a29-484c-aa04-d55b3a0300f0)
+>
+> - Contact
+>
+> - ![contact](https://github.com/ocimar84/funkosgalaxy/assets/79640465/eadf16e3-53c6-46cf-af0f-9dade60e70c9)
+>
+> - Card
+>
+> - ![card](https://github.com/ocimar84/funkosgalaxy/assets/79640465/fecc1bec-84a8-45bf-9d6c-65a1a347099b)
+
+
+
 
 
 
@@ -844,33 +846,8 @@ you!
 
 
 
-## Automated Testing
-🚀 **merit & beyhond**
-
-**NOTE: If you want MERIT or Higher, you MUST have some automated testing**
-If you managed to write jasmine tests or some django tests, note those files out here and how to run them.
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write up about my automated testing and how I ran them, but a simple test I'd recommend is a views test that tests authentication and any views you limit to superusers or logged in users.
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py
-
 ## Defects
 🚨**Required**
-
-At this point you really should be using GITHUB's Issues to track these as it helps you with the AGILE process
-requirement as it's really easy to copy/paste screenshots in and then write up how you closed them.
-
-[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.542xzc8ufx4x)
-I put together on how to do this.
-
-is what my custom tempalte looks like in the UX
-![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
-
-
-
-
-## Defects of Note
-🚀 **merit & beyhond**
 
 
 
@@ -880,23 +857,23 @@ is what my custom tempalte looks like in the UX
 
 During the development of **Funko's Galaxy**, we encountered several bugs and issues that required careful attention and resolution. Here are a few notable defects that challenged us:
 
-1. **Shopping Cart Calculation Bug** - [Issue #1](link-to-issue)
+1. **Shopping Cart Calculation Bug** 
    - Description: The shopping cart wasn't calculating the total correctly when certain conditions were met.
    - Resolution: After thorough debugging, we discovered that a decimal rounding issue was causing this bug. We implemented a more robust rounding algorithm to fix it.
 
-2. **Image Loading Error on Safari** - [Issue #2](link-to-issue)
+2. **Image Loading Error on Safari** 
    - Description: Images weren't loading correctly on Safari browsers.
    - Resolution: We found that Safari required specific image attributes. We updated our image tags to ensure compatibility with Safari.
 
-3. **Security Vulnerability in User Authentication** - [Issue #3](link-to-issue)
+3. **Security Vulnerability in User Authentication** 
    - Description: A security vulnerability was discovered during a security audit.
    - Resolution: We immediately patched the vulnerability and conducted a comprehensive security review to ensure the safety of user data.
 
-4. **Performance Bottleneck During Checkout** - [Issue #4](link-to-issue)
+4. **Performance Bottleneck During Checkout** 
    - Description: Checkout was slower than expected when multiple users were making purchases simultaneously.
    - Resolution: We optimized database queries and implemented caching to significantly improve checkout performance.
 
-5. **Responsive Design Issue on Mobile Devices** - [Issue #5](link-to-issue)
+5. **Responsive Design Issue on Mobile Devices** 
    - Description: Some pages didn't render correctly on smaller mobile screens.
    - Resolution: We applied responsive design principles, making adjustments to CSS and layout to ensure a seamless experience on all devices.
 
@@ -1072,15 +1049,6 @@ Call out that you have this set in your base.html so it can be changed per page
 ### Relevant Content
 Call out how you purposefully incorporated keywords into your content, H1, meta data etc. 
 
-### Sitemap
-🚨**Required**
-
-- [sitemap.xml file]() call out files that exist so browsers can easily crawl site
-
-### Robots.txt
-🚨**Required**
-
-- [robots.txt file]() to restrict pages that are should be searched by google, authentication and others are blocked to only allow relevant pages to be searched by google
 
 # Deployment
 🚨**Required** 
@@ -1089,9 +1057,24 @@ Call out how you purposefully incorporated keywords into your content, H1, meta 
 
 We're thrilled to announce that our website is now officially deployed and ready for access! After countless hours of hard work and dedication, our online project is accessible to all our visitors.
 
+Thank you for visiting, and we hope you enjoy exploring our website. If you have any questions, feedback, or suggestions, please don't hesitate to reach out. Your input is valuable to us as we continue to improve and expand our online presence.
+
+Once again, welcome, and happy browsing!
+
+## What to Expect from Our Website
+
 ## What to Expect from Our Website
 
 Our website is a place where you can discover [brief description of your website's content]. We are committed to [your goals with the website, e.g., sharing knowledge, offering services, etc.], and we are excited to share this with you.
+
+We've designed our website to provide you with [mention any unique features or benefits]. Whether you're [mention your target audience, e.g., a student, a professional, a hobbyist], you'll find valuable resources and information tailored to your needs.
+
+We are continuously updating and expanding our content to ensure you have access to the latest and most relevant information. If you have any questions or suggestions, please feel free to [contact us](#contact).
+
+Thank you for visiting our website, and we look forward to helping you [achieve your goal, learn something new, etc.].
+
+[Visit FunkoGalaxy](https://funkogalaxys-9966c091c723.herokuapp.com/)
+
 
 ## Explore Our Content
 
@@ -1130,6 +1113,10 @@ Category
 ![heroku](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4a3e879-cdea-4c10-b1a6-90a854fcff36)
 
 ![heroku2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2002482c-0e39-481b-a995-a8f4fc458159)
+
+Supabase
+
+![Supabase](https://github.com/ocimar84/funkosgalaxy/assets/79640465/d98c1604-31eb-438e-a67f-40911ffa8c20)
 
 
 # Credits
