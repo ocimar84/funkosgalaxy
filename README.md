@@ -1170,7 +1170,10 @@ Cross-reference: Content in the "Blog" section.
 
 ## Media
 
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+- https://funkoeurope.com/
+- https://funkoeurope.com/
+- https://funko.com/
+- https://www.emp.ie/fun-lifestyle/homeware/figures/funko-pops
 
 ## Acknowledgments
 
