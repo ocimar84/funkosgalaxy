@@ -980,10 +980,8 @@ By implementing these strategies, we aim to continuously increase traffic to **F
 ## Newsletter Signup
 🚨**Required**
 
-- Boost User Engagement: Encourage user interactions by allowing them to follow each other. 
-- Improve Content Discovery: Help users discover relevant content and profiles through a curated feed.
-![sign in ](https://github.com/ocimar84/funkosgalaxy/assets/79640465/1af3bd20-e1e2-49fa-b2e8-282b4bb04faa)
 
+![news](https://github.com/ocimar84/funkosgalaxy/assets/79640465/9374c37a-4558-4864-bf1f-430d319c86a9)
 
 ## SEO Strategy
 🚨**Required**
