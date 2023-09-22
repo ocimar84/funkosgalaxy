@@ -1,6 +1,6 @@
 
-# Table of Contents
-Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
+# FUNKOS GALAXY - TOYSHOP
+
 
 - [PROJECT_NAME](#project_name)
   - [Author](#author)
