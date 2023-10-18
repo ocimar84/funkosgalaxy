@@ -72,7 +72,7 @@ Ocimar Felipe Costa
 
 
 ## Project Overview
-🚨**Required**
+
 
 - Include a picture of site that shows it in responsive states and links to deployed
   code: [https://funkogalaxys-9966c091c723.herokuapp.com](https://funkogalaxys-9966c091c723.herokuapp.com/)
@@ -238,7 +238,7 @@ Step into the realm of Funko's Galaxy and explore a universe of pop culture coll
 
 
 ## User Stories
-🚨**Required**
+
 
 >   - When I visit the website, I should see a clear and prominently displayed navigation menu at the top.
 >   - The navigation menu should have links labeled "Home," "Shop," "Contact," and "Showcase."
@@ -253,7 +253,7 @@ Step into the realm of Funko's Galaxy and explore a universe of pop culture coll
 
 
 ## Initial Stories
-🚨**Required**
+
 
 To start the agile process this section kicks off with a bullet list/brainstorming dump about features you'd like to
 have. EVERYTHING write them out in bullet form:
@@ -263,7 +263,7 @@ have. EVERYTHING write them out in bullet form:
 
 
 ## Feasibility vs Importance
-🚀 **merit & beyhond**
+
 
 ## Feasibility vs Importance
 
@@ -296,7 +296,7 @@ This table can help prioritize features for the MVP based on their feasibility a
 
 
 ## Scope
-🚀 **merit & beyhond**
+
 
 >   - Home Page: An engaging home page showcasing the Funkos Galaxy identity, featured products, and a brief description of the store's unique proposition.
 
@@ -342,7 +342,7 @@ By focusing on these core functionalities, we will be able to create a functiona
 
 
 ## Design Choices
-🚀 **merit & beyhond**
+
 
 >   - Color Palette: We will use a vibrant and visually appealing color palette that reflects the energetic and dynamic world of pop culture. A combination of bold colors will be employed to evoke excitement and capture users' attention.
 
@@ -365,7 +365,7 @@ By focusing on these core functionalities, we will be able to create a functiona
 By making these design choices, Funkos Galaxy will create a visually appealing and user-centric website that caters to the preferences and interests of our target audience.
 
 ### Colors
-🚀 **merit & beyhond**
+
 
 Funko's Galaxy Website Color Choices:
 
@@ -391,7 +391,7 @@ In summary, Funko's Galaxy thoughtfully employs these color choices to communica
 
 
 ### Typography
-🚀 **merit & beyhond**
+
 
 Font Size:
 
@@ -420,7 +420,7 @@ Emotions and Target Audience:
 - include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
 
 ### Images
-🚀 **merit & beyhond**
+
 
 **Purpose**: Explain the rationale behind using icons and images on your website.
 
@@ -437,7 +437,7 @@ In summary, icons and images are crucial for improving design, usability, and en
 
 
 ### Design Elements
-🚀 **merit & beyhond**
+
 
 > - desktop navigation
 > - mobile navigation
@@ -465,7 +465,7 @@ In summary, icons and images are crucial for improving design, usability, and en
 
 
 ### Frameworks
-🚨**Required**
+
 
 
 ### Choice of CSS Framework
@@ -489,12 +489,12 @@ In summary, Bootstrap was chosen as the CSS framework for its versatility, robus
 
 
 ### Custom Javascript
-🚨**Required**
+
 
 - I only used Java than what was in my bootstrap.
 
 ## Wireframes
-🚨**Required**
+
 
 ![Payment](https://github.com/ocimar84/funkosgalaxy/assets/79640465/93ac3570-8ece-4cad-90b9-7ecc59eb6b39)
 
@@ -506,26 +506,26 @@ In summary, Bootstrap was chosen as the CSS framework for its versatility, robus
 
 
 ## Entity Relationship Diagram
-🚨**Required**
+
 
 ## Generating an Entity-Relationship Diagram (ERD) for Django Applications
 
 <img width="654" alt="Relationship" src="https://github.com/ocimar84/funkosgalaxy/assets/79640465/4accb10a-4943-4d53-8ee0-ef8683a9af28">
 
 ## Database Choice
-🚀 **merit & beyhond**
+
 
 Just state you used postgres as the database because the data is relational and heroku serves this up realitvely easily with no cost.
 
 ## Data Models
-🚨**Required**
+
 
 - Product Data Model
 
 | DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
 | ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
 | id      | AutoField       | Unique identifier for each product.  | None                                     | CREATE, READ, UPDATE, DELETE  |
-| name    | CharField       | Name of the product.                 | Required<br>Max 100 chars                | CREATE, READ, UPDATE, DELETE  |
+| name    | CharField       | Name of the product.                 | <br>Max 100 chars                | CREATE, READ, UPDATE, DELETE  |
 | description | TextField   | Detailed description of the product. | None                                    | CREATE, READ, UPDATE, DELETE  |
 | price   | DecimalField    | Price of the product.                | Decimal validation                       | CREATE, READ, UPDATE, DELETE  |
 | image   | ImageField      | Image representing the product.      | Image format validation                  | CREATE, READ, UPDATE, DELETE  |
@@ -539,12 +539,12 @@ Just state you used postgres as the database because the data is relational and 
 | DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
 | ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
 | id      | AutoField       | Unique identifier for each category. | None                                     | CREATE, READ, UPDATE, DELETE  |
-| name    | CharField       | Name of the category.                | Required<br>Max 50 chars                  | CREATE, READ, UPDATE, DELETE  |
+| name    | CharField       | Name of the category.                | <br>Max 50 chars                  | CREATE, READ, UPDATE, DELETE  |
 | image   | ImageField      | Image representing the category.      | Image format validation                  | CREATE, READ, UPDATE, DELETE  |
 
 
 ### CRUD Diagrams
-🚀 **merit & beyhond**
+
 
 
 - Product CRUD Diagram:
@@ -560,11 +560,11 @@ Just state you used postgres as the database because the data is relational and 
 | - Image                |
 |------------------------|
 | Validation:            |
-| - Name (Required)      |
+| - Name ()      |
 | - Description          |
-| - Price (Required)     |
-| - Category (Required)  |
-| - Image (Required)     |
+| - Price ()     |
+| - Category ()  |
+| - Image ()     |
 |------------------------|
 | Processing:            |
 | - Save to Database     |
@@ -598,10 +598,10 @@ Just state you used postgres as the database because the data is relational and 
 | - Image                |
 |------------------------|
 | Validation:            |
-| - Name (Required)      |
+| - Name ()      |
 | - Description          |
-| - Price (Required)     |
-| - Category (Required)  |
+| - Price ()     |
+| - Category ()  |
 | - Image                |
 |------------------------|
 | Processing:            |
@@ -615,7 +615,7 @@ Just state you used postgres as the database because the data is relational and 
 | - Name                 |
 |------------------------|
 | Validation:            |
-| - Name (Required)      |
+| - Name ()      |
 |------------------------|
 | Processing:            |
 | - Remove from Database |
@@ -626,13 +626,13 @@ Just state you used postgres as the database because the data is relational and 
 # Agile Process
 
 ## GitHub User Stories
-🚨**Required**
+
 
 Now you are ready to start using Git Hub Issues to write your user stories. To get to merit levels you need to show you
 have refined stories from Epics to Generic User stories.
 
 ### User Story Templates
-🚨**Required**
+
 
 ![Issues1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/e8d0ba26-cac5-4e7d-862a-9323692f0f97)
 
@@ -640,14 +640,14 @@ have refined stories from Epics to Generic User stories.
 
 
 ### Product Backlog
-🚨**Required**
+
 
 ![milestone](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2d7766e4-ebba-4399-af47-7397103ed2aa)
 
 https://github.com/ocimar84/funkosgalaxy/milestones?state=closed
 
 ## Iterations
-🚀 **merit & beyhond**
+
 
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/71fe6c52cccf477688e924c9889f5fec/?child=first
 
@@ -656,13 +656,13 @@ it could be that you won't have all your product backlog worked in the end, and 
 might find other stories you want instead, it's OK.
 
 ## Progress Boards
-🚀 **merit & beyhond**
+
 
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/7ad7f487cc6148ecb182d77feaeda269/?child=first
 Add links to Progress boards
 
 # Features
-🚨**Required**
+
 
 > - User Authentication: This is likely in use as visitors can log in or register.
 
@@ -698,7 +698,7 @@ Product Images: Multiple product images are provided, allowing users to inspect 
 Add to Cart: Users can easily add products to their cart and see the updated cart contents.
 Secure Checkout: The checkout process is secure and user-friendly, ensuring a smooth transaction.
 
-**Required for passing**
+** for passing**
 - Authentication Process
 - Custom 404 
 - Facebook Business page
@@ -732,7 +732,7 @@ Secure Checkout: The checkout process is secure and user-friendly, ensuring a sm
 
 
 # Testing
-🚨**Required**
+
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that
 the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and
@@ -746,7 +746,7 @@ I put together for this process.
 
 You should make sure your test cases cover the following: 
 ## Cross Browser and Cross Device Testing
-🚨**Required**
+
 
 To save time, you can create this type of table
 in [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
@@ -791,7 +791,7 @@ you took or write it out here:
 Note, you might find it easier to create a test case for each tool/device and link to the test case in the table here.
 
 ## Accessibility Testing
-🚨**Required**
+
 >
 > To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
 > - Home
@@ -813,7 +813,7 @@ Note, you might find it easier to create a test case for each tool/device and li
 
 
 ## Validation Testing
-🚨**Required**
+
 
 
 - **[CSS Validator](https://jigsaw.w3.org/css-validator/)**
@@ -841,7 +841,7 @@ Note, you might find it easier to create a test case for each tool/device and li
 
 
 ## Defects
-🚨**Required**
+
 
 
 
@@ -849,7 +849,7 @@ Note, you might find it easier to create a test case for each tool/device and li
 
 ## Defects of Note
 
-During the development of **Funko's Galaxy**, we encountered several bugs and issues that required careful attention and resolution. Here are a few notable defects that challenged us:
+During the development of **Funko's Galaxy**, we encountered several bugs and issues that  careful attention and resolution. Here are a few notable defects that challenged us:
 
 1. **Shopping Cart Calculation Bug** 
    - Description: The shopping cart wasn't calculating the total correctly when certain conditions were met.
@@ -857,7 +857,7 @@ During the development of **Funko's Galaxy**, we encountered several bugs and is
 
 2. **Image Loading Error on Safari** 
    - Description: Images weren't loading correctly on Safari browsers.
-   - Resolution: We found that Safari required specific image attributes. We updated our image tags to ensure compatibility with Safari.
+   - Resolution: We found that Safari  specific image attributes. We updated our image tags to ensure compatibility with Safari.
 
 3. **Security Vulnerability in User Authentication** 
    - Description: A security vulnerability was discovered during a security audit.
@@ -875,7 +875,7 @@ These defects were addressed through collaboration and rigorous testing to ensur
 
 
 # E-commerce Business Model
-🚨**Required**
+
 
 ## Business Model
 
@@ -929,20 +929,20 @@ By implementing these strategies, we aim to continuously increase traffic to **F
 
 
 ## Facebook Business Page
-🚨**Required**
+
 ![facebook](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c86ab289-6128-471e-b3a6-531eeb1758b4)
 
 ![Instagram](https://github.com/ocimar84/funkosgalaxy/assets/79640465/cdce39e6-7ef5-4596-8ea0-0e500674f6c4)
 
 
 ## Newsletter Signup
-🚨**Required**
+
 
 
 ![news](https://github.com/ocimar84/funkosgalaxy/assets/79640465/9374c37a-4558-4864-bf1f-430d319c86a9)
 
 ## SEO Strategy
-🚨**Required**
+
 
 - Keyword Research:
 
@@ -1045,7 +1045,7 @@ Call out how you purposefully incorporated keywords into your content, H1, meta 
 
 
 # Deployment
-🚨**Required** 
+ 
 
 # Welcome to Our Website Deployment
 
@@ -1088,7 +1088,7 @@ Once again, thank you for visiting our website. We look forward to sharing helpf
 
 
 ## Development Deployment 
-🚨**Required** 
+ 
 
 
 
@@ -1102,7 +1102,7 @@ Category
 ![category](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4efc182d-66f5-4052-bcb2-5f023279940b)
 
 ## Production Deployment
-🚨**Required** 
+ 
 
 ![heroku](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4a3e879-cdea-4c10-b1a6-90a854fcff36)
 
@@ -1118,7 +1118,7 @@ Paystripe
 
 
 # Credits
-🚨**Required**
+
 
 
 - Paystripe
