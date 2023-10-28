@@ -20,8 +20,8 @@
                 <h2 class="display-7 text-primary">{{ product.name }}</h2>
                 <h1>€{{ product.price }}</h1>
                 <div class="justify-content-center d-flex flex-row my-3 gap-3">
-                    <a href="{% url 'add_to_cart' product.id %}" type="button" class="btn btn-lg btn-primary">Buy</a>
-                    <a href="{% url 'product_detail' product.id %}" type="button" class="btn btn-lg btn-light">See more</a>
+                    <a href="{% url 'add_to_cart' product.id %}"  class="btn btn-lg btn-primary">Buy</a>
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-lg btn-light">See more</a>
                 </div>
             </div>
             <div
@@ -32,7 +32,7 @@
                     border-radius: 21px;
                 "
             >
-                <img src="{{ product.image.url }}" alt="Product image" class="w-100" />
+                <img src="{{ product.image.url }}" alt="Product image" class="w-100" >
             </div>
         </div>
     {% endfor %}

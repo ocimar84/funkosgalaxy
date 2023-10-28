@@ -1,60 +1,53 @@
 {% extends "base.html" %} {% block main_content %} {% load static %}
-    <div
-        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
-    >
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
-            <img src="{% static 'image/funkosgalaxy.logo2.png' %}" width="350" alt="Logo" class="my-3" />
-            <h1 class="display-3 fw-bold">Funko's Galaxy</h1>
-            <h3 class="fw-normal text-muted mb-3">
-                Your store to buy Funkos
-            </h3>
-        </div>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <img src="{% static 'image/funkosgalaxy.logo2.png' %}" width="350" alt="Logo" class="my-3">
+        <h1 class="display-3 fw-bold">Funko's Galaxy</h1>
+        <h3 class="fw-normal text-muted mb-3">
+            Your store to buy Funkos
+        </h3>
     </div>
+</div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        {% for category in categories %}
-            <div class="text-bg-dark me-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5 mb-3">{{ category.name }}</h2>
-                    <div class="justify-content-center d-flex flex-row my-3 gap-3">
-                        <a href="{% url 'category_detail' category.id %}" type="button" class="btn btn-lg btn-primary">See products</a>
-                    </div>
-                </div>
-                <div
-                    class="bg-dark shadow-sm mx-auto overflow-hidden"
-                    style="
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    {% for category in categories %}
+    <div class="text-bg-dark me-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5 mb-3">{{ category.name }}</h2>
+            <div class="justify-content-center d-flex flex-row my-3 gap-3">
+                <a href="{% url 'category_detail' category.id %}" class="btn btn-lg btn-primary">See
+                    products</a>
+            </div>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto overflow-hidden" style="
                         width: 50%;
                         max-width: 500px;
                         border-radius: 21px;
-                    "
-                >
-                    <img src="{{ category.image.url }}" alt="Category image" class="w-100" />
-                </div>
-            </div>
-        {% endfor %}
+                    ">
+            <img src="{{ category.image.url }}" alt="Category image" class="w-100">
+        </div>
     </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-		{% for product in products %}
-			<div class="bg-body-tertiary me-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
-				<div class="my-3 py-3">
-					<h2 class="display-7 text-primary">{{ product.name }}</h2>
-					<h1>€{{ product.price }}</h1>
-					<div class="justify-content-center d-flex flex-row my-3 gap-3">
-						<a href="{% url 'add_to_cart' product.id %}" type="button" class="btn btn-lg btn-primary">Buy</a>
-						<a href="{% url 'product_detail' product.id %}" type="button" class="btn btn-lg btn-light">See more</a>
-					</div>
-				</div>
-				<div
-					class="bg-dark shadow-sm mx-auto overflow-hidden"
-					style="
+    {% endfor %}
+</div>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    {% for product in products %}
+    <div class="bg-body-tertiary me-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-7 text-primary">{{ product.name }}</h2>
+            <h1>€{{ product.price }}</h1>
+            <div class="justify-content-center d-flex flex-row my-3 gap-3">
+                <a href="{% url 'add_to_cart' product.id %}" class="btn btn-lg btn-primary">Buy</a>
+                <a href="{% url 'product_detail' product.id %}" class="btn btn-lg btn-light">See more</a>
+            </div>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto overflow-hidden" style="
 						width: 50%;
 						max-width: 500px;
 						border-radius: 21px;
-					"
-				>
-					<img src="{{ product.image.url }}" alt="Product image" class="w-100" />
-				</div>
-			</div>
-		{% endfor %}
-	</div>
+					">
+            <img src="{{ product.image.url }}" alt="Product image" class="w-100">
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
