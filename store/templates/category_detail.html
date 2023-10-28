@@ -9,9 +9,6 @@
         </div>
     </div>
     {% for product in products %}
-        {% if forloop.counter > 1 and forloop.counter0|divisibleby:3 %}
-            </div>
-        {% endif %}
         {% if forloop.counter0|divisibleby:3 %}
             <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         {% endif %}
@@ -35,6 +32,9 @@
                 <img src="{{ product.image.url }}" alt="Product image" class="w-100" >
             </div>
         </div>
+        {% if forloop.counter|divisibleby:3 or forloop.last %}
+            </div>
+        {% endif %}
     {% endfor %}
 {% endblock %}
     
