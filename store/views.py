@@ -27,10 +27,13 @@ def category_list(request):
     return render(request, 'category_list.html', {'categories': categories})
 
 def category_detail(request, category_id):
-    category = Category.objects.get(id=category_id)
-    products = category.products.all()
+    try: 
+        category = Category.objects.get(id=category_id)
+        products = category.products.all()
+        return render(request, 'category_detail.html', {'category': category, 'products': products})
 
-    return render(request, 'category_detail.html', {'category': category, 'products': products})
+    except:
+        return render(request, '404.html')
 
 def product_list(request):
     products = Product.objects.all()
@@ -38,9 +41,11 @@ def product_list(request):
     return render(request, 'product_list.html', {'products': products})
 
 def product_detail(request, product_id):
-    product = Product.objects.get(id=product_id)
-
-    return render(request, 'product_detail.html', {'product': product})
+    try:
+        product = Product.objects.get(id=product_id)
+        return render(request, 'product_detail.html', {'product': product})
+    except:
+        return render(request, '404.html')
 
 def contact_view(request):
     if request.method == 'POST':
@@ -81,7 +86,7 @@ def cart_view(request):
         return render(request, 'cart.html', { 'items': cart_items, 'total': cart_total, 'count': cart_count })
     except:
         return render(request, '404.html')
-        
+
 def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
     if product_id in cart:
@@ -142,34 +147,37 @@ def create_order(request):
     return redirect('checkout', order.id)
 
 def checkout(request, order_id):
-    order = Order.objects.get(user=request.user, id=order_id)
+    try:
+        order = Order.objects.get(user=request.user, id=order_id)
 
-    items = OrderItem.objects.filter(order=order)
-    total = sum([item.quantity * item.product.price for item in items])
+        items = OrderItem.objects.filter(order=order)
+        total = sum([item.quantity * item.product.price for item in items])
 
-    stripe.api_key = settings.STRIPE_SECRET_KEY
-    stripe.public_key = settings.STRIPE_PUBLIC_KEY
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.public_key = settings.STRIPE_PUBLIC_KEY
 
-    if request.method == 'POST':
-        try:
-            charge = stripe.Charge.create(
-                amount=int(total * 100),  # em centavos
-                currency='eur',
-                description=f'Order #{order.id}',
-                source=request.POST['stripeToken']
-            )
-            order.street_address = request.POST.get('street_address')
-            order.city = request.POST.get('city')
-            order.state = request.POST.get('state')
-            order.zip_code = request.POST.get('zip_code')
-            order.total = total
-            order.status = 'paid'
-            order.save()
+        if request.method == 'POST':
+            try:
+                charge = stripe.Charge.create(
+                    amount=int(total * 100),  # em centavos
+                    currency='eur',
+                    description=f'Order #{order.id}',
+                    source=request.POST['stripeToken']
+                )
+                order.street_address = request.POST.get('street_address')
+                order.city = request.POST.get('city')
+                order.state = request.POST.get('state')
+                order.zip_code = request.POST.get('zip_code')
+                order.total = total
+                order.status = 'paid'
+                order.save()
 
-            messages.success(request, 'Order paided!')
-        except Exception as e:
-            messages.error(request, 'Payment refused!')
+                messages.success(request, 'Order paided!')
+            except Exception as e:
+                messages.error(request, 'Payment refused!')
 
-        return redirect('checkout', order.id)    
+            return redirect('checkout', order.id)    
 
-    return render(request, 'checkout.html', { 'order': order, 'items': items, 'total': total, 'stripe_public_key': stripe.public_key })
+        return render(request, 'checkout.html', { 'order': order, 'items': items, 'total': total, 'stripe_public_key': stripe.public_key })
+    except:
+        return render(request, '404.html')
