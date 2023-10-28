@@ -64,21 +64,24 @@ def terms_view(request):
     return render(request, 'terms.html')
 
 def cart_view(request):
-    cart = request.session.get('cart', {})
-    cart_items = []
-    cart_total = 0
-    cart_count = 0
+    try:
+        cart = request.session.get('cart', {})
+        cart_items = []
+        cart_total = 0
+        cart_count = 0
 
-    for product_id, quantity in cart.items():
-        product = Product.objects.get(id=product_id)
-        total = quantity * product.price
-        cart_count += quantity
-        cart_total += total
+        for product_id, quantity in cart.items():
+            product = Product.objects.get(id=product_id)
+            total = quantity * product.price
+            cart_count += quantity
+            cart_total += total
 
-        cart_items.append({'product': product, 'quantity': quantity, 'total': total})
+            cart_items.append({'product': product, 'quantity': quantity, 'total': total})
 
-    return render(request, 'cart.html', { 'items': cart_items, 'total': cart_total, 'count': cart_count })
-
+        return render(request, 'cart.html', { 'items': cart_items, 'total': cart_total, 'count': cart_count })
+    except:
+        return render(request, '404.html')
+        
 def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
     if product_id in cart:
