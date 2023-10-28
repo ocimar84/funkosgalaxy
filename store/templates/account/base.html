@@ -1,0 +1,30 @@
+{% extends "base.html" %}{% load i18n %}{% block main_content %}
+<div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+        <h1 class="text-body-emphasis fw-bold">Account</h1>
+        <p class="col-lg-8 mx-auto lead">
+        Leave your message below
+        </p>
+    </div>
+</div>
+<div class="container py-5">
+    {% block body %}
+    {% if messages %}
+        <div>
+            <strong>{% trans "Messages:" %}</strong>
+            <ul>
+            {% for message in messages %}
+                <li>{{message}}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+   
+    {% block content %}
+    {% endblock %}
+    {% endblock %}
+    {% block extra_body %}
+    {% endblock %}
+</div>
+{% endblock %}

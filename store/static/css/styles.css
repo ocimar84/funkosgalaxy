@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+header {
+    background-color: black;
+}
+
+header .container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header .container nav ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+header .container nav ul a {
+    color: #48A54E;
+    font-weight: bold;
+}
+
+main {
+    background-color: #f2f2f2;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    color: #000;
+}
+
+.banner-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner {
+    flex: 1 1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+.btn-shop-now {
+    display: inline-block;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.products h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.products .price {
+    font-size: 18px;
+    color: #FF0000;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #4CAF50;
+}
+
+/* Estilo adicional para expandir o background verde do cabeçalho */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex: 0 1 100%;
+    }
+
+    .banner h2 {
+        font-size: 26px;
+    }
+}

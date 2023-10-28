@@ -81,7 +81,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "funkosgalaxy.store",
+    "store",
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -98,7 +98,6 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    'allauth.account.middleware.AccountMiddleware',
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -173,7 +172,7 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'funkosgalaxy', 'store', 'static'),
+    os.path.join(BASE_DIR, 'store', 'static'),
 ]
 
 MEDIA_URL = '/media/'

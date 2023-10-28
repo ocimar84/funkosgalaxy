@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block main_content %}
+	<div class="p-5 text-center bg-body-tertiary">
+		<div class="container py-5">
+			<h1 class="text-body-emphasis fw-bold">Cart</h1>
+			<p class="col-lg-8 mx-auto lead">
+			See all of your cart items
+			</p>
+            {% if count > 0 %}
+                <p class="col-lg-8 mx-auto">
+                    Items: {{ count }}, Total: €{{ total }}
+                </p>
+                <p>
+                    <a href="{% url 'create_order' %}" type="button" class="btn btn-lg btn-primary">Checkout</a>
+                </p>
+                <p>
+                    <a href="{% url 'clear_cart' %}" class="font-medium text-blue-600 underline hover:no-underline">Clear</a>
+                </p>
+            {% endif %}
+		</div>
+	</div>
+
+    {% if messages %}
+        <div class="p-1 bg-body-tertiary">
+            <div class="container">
+                {% for message in messages %}
+                    <div class="alert {% if message.tags == 'error' %}alert-danger{% else %}alert-{{ message.tags }}{% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if count == 0 %}
+        <div class="p-1 bg-body-tertiary">
+            <div class="container">
+                <div class="alert alert-info" role="alert">
+                You have no items
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% for item in items %}
+        {% if forloop.counter > 1 and forloop.counter0|divisibleby:3 %}
+            </div>
+        {% endif %}
+        {% if forloop.counter0|divisibleby:3 %}
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        {% endif %}
+        <div class="bg-body-tertiary me-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-7 text-primary">{{ item.product.name }}</h2>
+                <div class="justify-content-center my-3 gap-3">
+                    <form id="form-{{ item.product.id }}" action="{% url 'update_cart' item.product.id %}" method="post" class="mb-2">
+                        {% csrf_token %}
+                        <label for="quantity-{{ item.product.id }}">Quantity:</label>
+                        <input type="number" id="quantity-{{ item.product.id }}" name="quantity" value="{{ item.quantity }}" min="1" onchange="document.getElementById('form-{{ item.product.id }}').submit()" class="text-center" style="width: 75px;">
+                    </form>
+
+                    <h2>Total: €{{ item.total }}</h2>
+                </div>
+                <a href="{% url 'remove_from_cart' item.product.id %}" type="button" class="btn btn-lg btn-danger">Remove</a>
+            </div>
+            <div
+                class="bg-dark shadow-sm mx-auto overflow-hidden"
+                style="
+                    width: 50%;
+                    max-width: 500px;
+                    border-radius: 21px;
+                "
+            >
+                <img src="{{ item.product.image.url }}" alt="Product image" class="w-100" />
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
