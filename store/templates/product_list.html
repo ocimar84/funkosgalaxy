@@ -32,8 +32,8 @@
                 <img src="{{ product.image.url }}" alt="Product image" class="w-100" >
             </div>
         </div>
-        {% if forloop.counter > 1 and forloop.counter0|divisibleby:3 %}
-             </div>
+        {% if forloop.counter|divisibleby:3 or forloop.last %}
+            </div>
         {% endif %}
     {% endfor %}
 {% endblock %}
