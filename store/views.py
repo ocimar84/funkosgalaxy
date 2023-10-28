@@ -13,14 +13,14 @@ def home(request):
     return render(request, 'home.html', {'categories': categories, 'products': products})
 
 def profile(request):
-    orders = Order.objects.filter(user=request.user).order_by('-created_at')
-
-    for order in orders:
-        items = OrderItem.objects.filter(order=order)
-        order.temporary_total = sum([item.quantity * item.product.price for item in items])
-
-    return render(request, 'profile.html', { 'orders': orders })
-
+    try:
+        orders = Order.objects.filter(user=request.user).order_by('-created_at')
+        for order in orders:
+            items = OrderItem.objects.filter(order=order)
+            order.temporary_total = sum([item.quantity * item.product.price for item in items])
+        return render(request, 'profile.html', { 'orders': orders })
+    except:
+        return render(request, '404.html')
 def category_list(request):
     categories = Category.objects.all().order_by('id')
 
