@@ -1,4 +1,11 @@
-{% extends "base.html" %} {% block main_content %} {% load static %}
+{% extends "base.html" %}
+
+{% block title %}Funko's Galaxy - Home{% endblock %}
+{% block meta_content %}
+<meta name="description" content="Funko's Galaxy is your store to buy Funkos">
+{% endblock %}
+
+{% block main_content %} {% load static %}
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
         <img src="{% static 'image/funkosgalaxy.logo2.png' %}" width="350" alt="Logo" class="my-3">
