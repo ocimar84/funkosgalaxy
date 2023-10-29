@@ -3,7 +3,9 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.conf import settings
+from .models import NewsletterSubscription
 from django.contrib import messages
+from django.views.decorators.csrf import csrf_exempt
 import stripe
 
 def home(request):
@@ -201,3 +203,20 @@ def checkout(request, order_id):
 
 def error_404_view(request, exception):
     return render(request, '404.html')
+
+@csrf_exempt  # To allow POST requests without CSRF token for simplicity
+def subscribe_to_newsletter(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        if email:
+            # Check if the email already exists
+            if NewsletterSubscription.objects.filter(email=email).exists():
+                return JsonResponse({'status': 'error', 'message': 'This email is already subscribed.'})
+
+            # Create new subscriber
+            NewsletterSubscription.objects.create(email=email)
+            return JsonResponse({'status': 'success', 'message': 'Thank you for subscribing to our newsletter.'})
+
+        return JsonResponse({'status': 'error', 'message': 'Email is required.'})
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request.'})

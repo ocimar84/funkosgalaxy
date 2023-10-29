@@ -21,5 +21,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('product/<int:product_id>/toggle_favorite/', views.toggle_favorite, name='toggle_favorite'),
     path('favorites/', views.user_favorites, name='user_favorites'),
+    path('subscribe_to_newsletter/', views.subscribe_to_newsletter, name='subscribe_to_newsletter'),
 
 ]
