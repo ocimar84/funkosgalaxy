@@ -57,9 +57,11 @@ def toggle_favorite(request, product_id):
     return redirect('product_detail', product_id=product.id)
 
 def user_favorites(request):
-    favorited_products = Product.objects.filter(favorites=request.user)
-    return render(request, 'user_favorites.html', {'favorited_products': favorited_products})
-
+    try:
+        favorited_products = Product.objects.filter(favorites=request.user)
+        return render(request, 'user_favorites.html', {'favorited_products': favorited_products})
+    except:
+        return render(request, '404.html')
 
 def contact_view(request):
     if request.method == 'POST':
