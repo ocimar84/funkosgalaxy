@@ -5,7 +5,9 @@ from django.shortcuts import get_object_or_404
 from django.conf import settings
 from .models import NewsletterSubscription
 from django.contrib import messages
+from .forms import ProductForm, CategoryForm
 from django.views.decorators.csrf import csrf_exempt
+from django.urls import reverse
 import stripe
 
 def home(request):
@@ -223,3 +225,78 @@ def subscribe_to_newsletter(request):
         return JsonResponse({'status': 'error', 'message': 'Invalid request.'})
     except:
         return JsonResponse({'status': 'error', 'message': 'Something worng!'})
+
+
+def dashboard(request):
+    if request.user.is_superuser:
+        return render(request, 'dashboard/dashboard.html')
+    else:
+        return render(request, '404.html')
+
+def manage_products(request):
+    products = Product.objects.all()
+    return render(request, 'dashboard/manage_products.html', {'products': products})
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('manage_products')
+    else:
+        form = ProductForm()
+    return render(request, 'dashboard/add_product.html', {'form': form})
+
+def edit_product(request, product_id):
+    product = Product.objects.get(id=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect('manage_products')
+    else:
+        form = ProductForm(instance=product)
+    return render(request, 'dashboard/edit_product.html', {'form': form, 'product': product})
+
+def delete_product(request, product_id):
+    product = Product.objects.get(id=product_id)
+    product.delete()
+    return redirect('manage_products')
+
+def manage_categories(request):
+    categories = Category.objects.all()
+    return render(request, 'dashboard/manage_categories.html', {'categories': categories})
+# View for adding a category
+def add_category(request):
+    if request.method == "POST":
+        form = CategoryForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('manage_categories'))
+    else:
+        form = CategoryForm()
+    return render(request, 'dashboard/add_category.html', {'form': form})
+
+# View for editing a category
+def edit_category(request,  category_id):
+    category = get_object_or_404(Category, id=category_id)
+    if request.method == "POST":
+        form = CategoryForm(request.POST, request.FILES, instance=category)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('manage_categories'))
+    else:
+        form = CategoryForm(instance=category)
+    return render(request, 'dashboard/edit_category.html', {'form': form, 'category': category})
+
+# View for deleting a category
+def delete_category(request, category_id):
+    try:
+        category = Category.objects.get(id=category_id)
+        category.delete()
+        return redirect('manage_categories')
+    except:
+        return render(request, '404.html')
+def view_contacts(request):
+    contacts = Contact.objects.all()
+    return render(request, 'dashboard/view_contacts.html', {'contacts': contacts})

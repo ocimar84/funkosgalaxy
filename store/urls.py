@@ -22,5 +22,15 @@ urlpatterns = [
     path('product/<int:product_id>/toggle_favorite/', views.toggle_favorite, name='toggle_favorite'),
     path('favorites/', views.user_favorites, name='user_favorites'),
     path('subscribe_to_newsletter/', views.subscribe_to_newsletter, name='subscribe_to_newsletter'),
+    path('dashboard/', views.dashboard, name='dashboard'),
+    path('dashboard/products/', views.manage_products, name='manage_products'),
+    path('dashboard/create-product/', views.add_product, name='add_product'),
+    path('dashboard/edit-product/<int:product_id>/', views.edit_product, name='edit_product'),
+    path('dashboard/delete-product/<int:product_id>/', views.delete_product, name='delete_product'),
+    path('dashboard/categories/', views.manage_categories, name='manage_categories'),
+    path('dashboard/create-category/', views.add_category, name='add_category'),
+    path('dashboard/edit-category/<int:category_id>/', views.edit_category, name='edit_category'),
+    path('dashboard/delete-category/<int:category_id>/', views.delete_category, name='delete_category'),
+    path('dashboard/contacts/', views.view_contacts, name='view_contacts'),
 
 ]

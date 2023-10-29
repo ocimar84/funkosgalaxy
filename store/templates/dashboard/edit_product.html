@@ -1,0 +1,12 @@
+{% extends "dashboard/dashboard.html" %}
+{% block title %}Edit Product - Funko's Galaxy{% endblock %}
+{% block main_content %}
+<div class="container py-5 dash-form-container">
+    <h2>Edit Product - {{ product.name }}</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Update Product</button>
+    </form>
+</div>
+{% endblock %}
