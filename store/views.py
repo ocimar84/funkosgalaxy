@@ -181,3 +181,7 @@ def checkout(request, order_id):
         return render(request, 'checkout.html', { 'order': order, 'items': items, 'total': total, 'stripe_public_key': stripe.public_key })
     except:
         return render(request, '404.html')
+
+
+def error_404_view(request, exception):
+    return render(request, '404.html')

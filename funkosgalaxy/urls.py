@@ -37,3 +37,5 @@ urlpatterns = [
     path("robots.txt",TemplateView.as_view(template_name="seo/robots.txt", content_type="text/plain")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+
+handler404= 'store.views.error_404_view'
