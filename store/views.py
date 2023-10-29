@@ -206,17 +206,20 @@ def error_404_view(request, exception):
 
 @csrf_exempt  # To allow POST requests without CSRF token for simplicity
 def subscribe_to_newsletter(request):
-    if request.method == 'POST':
-        email = request.POST.get('email')
-        if email:
-            # Check if the email already exists
-            if NewsletterSubscription.objects.filter(email=email).exists():
-                return JsonResponse({'status': 'error', 'message': 'This email is already subscribed.'})
+    try:
+        if request.method == 'POST':
+            email = request.POST.get('email')
+            if email:
+                # Check if the email already exists
+                if NewsletterSubscription.objects.filter(email=email).exists():
+                    return JsonResponse({'status': 'error', 'message': 'This email is already subscribed.'})
 
-            # Create new subscriber
-            NewsletterSubscription.objects.create(email=email)
-            return JsonResponse({'status': 'success', 'message': 'Thank you for subscribing to our newsletter.'})
+                # Create new subscriber
+                NewsletterSubscription.objects.create(email=email)
+                return JsonResponse({'status': 'success', 'message': 'Thank you for subscribing to our newsletter.'})
 
-        return JsonResponse({'status': 'error', 'message': 'Email is required.'})
+            return JsonResponse({'status': 'error', 'message': 'Email is required.'})
 
-    return JsonResponse({'status': 'error', 'message': 'Invalid request.'})
+        return JsonResponse({'status': 'error', 'message': 'Invalid request.'})
+    except:
+        return JsonResponse({'status': 'error', 'message': 'Something worng!'})
