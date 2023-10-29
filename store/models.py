@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 # Modelo para representar as categorias dos produtos
 class Category(models.Model):
@@ -19,6 +20,8 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    def get_absolute_url(self):
+        return reverse("product_detail",args=[self.id])
 
 class Order(models.Model):
     STATUS_CHOICES = (
