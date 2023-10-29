@@ -20,7 +20,7 @@ if os.path.isfile("env.py"):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SITE_ID = 1
+# SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_SESSION_REMEMBER = False
 ACCOUNT_LOGOUT_ON_GET = True
@@ -44,10 +44,11 @@ EMAIL_TIMEOUT = 10
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU:
+if IS_HEROKU:
+    DEBUG = True
+else:
     DEBUG = True
 
 # Generally avoid wildcards(*). However since Heroku
@@ -77,6 +78,8 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     "django.contrib.admin",
     "django.contrib.auth",
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
@@ -88,6 +91,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     "crispy_bootstrap5",
 ]
+SITE_ID = 1
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
@@ -98,6 +102,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
+    # 'allauth.account.middleware.AccountMiddleware',
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
