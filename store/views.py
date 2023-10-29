@@ -234,69 +234,97 @@ def dashboard(request):
         return render(request, '404.html')
 
 def manage_products(request):
-    products = Product.objects.all()
-    return render(request, 'dashboard/manage_products.html', {'products': products})
+    if request.user.is_superuser:
+        products = Product.objects.all()
+        return render(request, 'dashboard/manage_products.html', {'products': products})
+    else:
+        return render(request, '404.html')
 
 def add_product(request):
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('manage_products')
+    if request.user.is_superuser:
+        if request.method == 'POST':
+            form = ProductForm(request.POST, request.FILES)
+            if form.is_valid():
+                form.save()
+                return redirect('manage_products')
+        else:
+            form = ProductForm()
+        return render(request, 'dashboard/add_product.html', {'form': form})
     else:
-        form = ProductForm()
-    return render(request, 'dashboard/add_product.html', {'form': form})
+        return render(request, '404.html')
 
 def edit_product(request, product_id):
-    product = Product.objects.get(id=product_id)
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            form.save()
-            return redirect('manage_products')
+    if request.user.is_superuser:
+        product = Product.objects.get(id=product_id)
+        if request.method == 'POST':
+            form = ProductForm(request.POST, request.FILES, instance=product)
+            if form.is_valid():
+                form.save()
+                return redirect('manage_products')
+        else:
+            form = ProductForm(instance=product)
+        return render(request, 'dashboard/edit_product.html', {'form': form, 'product': product})
     else:
-        form = ProductForm(instance=product)
-    return render(request, 'dashboard/edit_product.html', {'form': form, 'product': product})
+        return render(request, '404.html')
 
 def delete_product(request, product_id):
-    product = Product.objects.get(id=product_id)
-    product.delete()
-    return redirect('manage_products')
+    if request.user.is_superuser:
+        product = Product.objects.get(id=product_id)
+        product.delete()
+        return redirect('manage_products')
+    else:
+        return render(request, '404.html')
 
 def manage_categories(request):
-    categories = Category.objects.all()
-    return render(request, 'dashboard/manage_categories.html', {'categories': categories})
+    if request.user.is_superuser:
+        categories = Category.objects.all()
+        return render(request, 'dashboard/manage_categories.html', {'categories': categories})
+    else:
+        return render(request, '404.html')
+
 # View for adding a category
 def add_category(request):
-    if request.method == "POST":
-        form = CategoryForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect(reverse('manage_categories'))
+    if request.user.is_superuser:
+        if request.method == "POST":
+            form = CategoryForm(request.POST, request.FILES)
+            if form.is_valid():
+                form.save()
+                return redirect(reverse('manage_categories'))
+        else:
+            form = CategoryForm()
+        return render(request, 'dashboard/add_category.html', {'form': form})
     else:
-        form = CategoryForm()
-    return render(request, 'dashboard/add_category.html', {'form': form})
+        return render(request, '404.html')
 
 # View for editing a category
 def edit_category(request,  category_id):
-    category = get_object_or_404(Category, id=category_id)
-    if request.method == "POST":
-        form = CategoryForm(request.POST, request.FILES, instance=category)
-        if form.is_valid():
-            form.save()
-            return redirect(reverse('manage_categories'))
+    if request.user.is_superuser:
+        category = get_object_or_404(Category, id=category_id)
+        if request.method == "POST":
+            form = CategoryForm(request.POST, request.FILES, instance=category)
+            if form.is_valid():
+                form.save()
+                return redirect(reverse('manage_categories'))
+        else:
+            form = CategoryForm(instance=category)
+        return render(request, 'dashboard/edit_category.html', {'form': form, 'category': category})
     else:
-        form = CategoryForm(instance=category)
-    return render(request, 'dashboard/edit_category.html', {'form': form, 'category': category})
+        return render(request, '404.html')
 
 # View for deleting a category
 def delete_category(request, category_id):
     try:
-        category = Category.objects.get(id=category_id)
-        category.delete()
-        return redirect('manage_categories')
+        if request.user.is_superuser:
+            category = Category.objects.get(id=category_id)
+            category.delete()
+            return redirect('manage_categories')
+        else:
+            return render(request, '404.html')
     except:
         return render(request, '404.html')
 def view_contacts(request):
-    contacts = Contact.objects.all()
-    return render(request, 'dashboard/view_contacts.html', {'contacts': contacts})
+    if request.user.is_superuser:
+        contacts = Contact.objects.all()
+        return render(request, 'dashboard/view_contacts.html', {'contacts': contacts})
+    else:
+        return render(request, '404.html')
