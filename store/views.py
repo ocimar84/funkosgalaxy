@@ -43,9 +43,23 @@ def product_list(request):
 def product_detail(request, product_id):
     try:
         product = Product.objects.get(id=product_id)
-        return render(request, 'product_detail.html', {'product': product})
+        is_favorite = product.favorites.filter(id=request.user.id).exists()
+        return render(request, 'product_detail.html', {'product': product, 'is_favorite': is_favorite})
     except:
         return render(request, '404.html')
+
+def toggle_favorite(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    if product.favorites.filter(id=request.user.id).exists():
+        product.favorites.remove(request.user)
+    else:
+        product.favorites.add(request.user)
+    return redirect('product_detail', product_id=product.id)
+
+def user_favorites(request):
+    favorited_products = Product.objects.filter(favorites=request.user)
+    return render(request, 'user_favorites.html', {'favorited_products': favorited_products})
+
 
 def contact_view(request):
     if request.method == 'POST':

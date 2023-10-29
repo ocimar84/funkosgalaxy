@@ -19,4 +19,7 @@ urlpatterns = [
     path('create_order/', views.create_order, name='create_order'),
     path('checkout/<int:order_id>/', views.checkout, name='checkout'),
     path('', views.home, name='home'),
+    path('product/<int:product_id>/toggle_favorite/', views.toggle_favorite, name='toggle_favorite'),
+    path('favorites/', views.user_favorites, name='user_favorites'),
+
 ]

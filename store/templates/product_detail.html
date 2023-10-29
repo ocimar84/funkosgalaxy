@@ -24,6 +24,15 @@
                     <p>{{ product.description }}</p>
                     <h1>€{{ product.price }}</h1>
                     <a href="{% url 'add_to_cart' product.id %}" class="btn btn-lg btn-primary">Buy</a>
+                     <!-- Favorite Button Form -->
+                    <form method="post" action="{% url 'toggle_favorite' product.id %}" style="margin-top:20px;">
+                    {% csrf_token %}
+                    {% if is_favorite %}
+                        <button type="submit" class="btn btn-warning">Unfavorite</button>
+                    {% else %}
+                        <button type="submit" class="btn btn-success">Favorite</button>
+                    {% endif %}
+                    </form>
                 </div>
             </div>
         </div>
