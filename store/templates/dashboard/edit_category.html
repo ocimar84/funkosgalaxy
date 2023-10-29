@@ -1,7 +1,7 @@
 {% extends "dashboard/dashboard.html" %}
 {% block title %}Edit Category - Funko's Galaxy{% endblock %}
 {% block main_content %}
-<div class="container py-5">
+<div class="container py-5 dash-form-container">
     <h2>Edit Category: {{ category.name }}</h2>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
