@@ -9,6 +9,7 @@ from .forms import ProductForm, CategoryForm
 from django.views.decorators.csrf import csrf_exempt
 from django.urls import reverse
 import stripe
+from django.core.mail import send_mail
 
 def home(request):
     categories = Category.objects.all().order_by('id')
@@ -242,13 +243,32 @@ def add_product(request):
         if request.method == 'POST':
             form = ProductForm(request.POST, request.FILES)
             if form.is_valid():
-                form.save()
+                new_product = form.save()
+                send_newsletter(request, new_product)
                 return redirect('manage_products')
         else:
             form = ProductForm()
         return render(request, 'dashboard/add_product.html', {'form': form})
     else:
         return render(request, 'error/404.html')
+
+def send_newsletter(request, new_product):
+    subscribers = NewsletterSubscription.objects.all()
+    subject = f"New Product Alert: {new_product.name}"
+    
+    # Generate absolute URL
+    product_url = request.build_absolute_uri(new_product.get_absolute_url())
+
+    message = f"Check out our new product: {new_product.name}! Find it here: {product_url}"
+
+    for subscriber in subscribers:
+        send_mail(
+            subject,
+            message,
+            settings.EMAIL_HOST_USER,
+            [subscriber.email],
+            fail_silently=False,
+        )
 
 def edit_product(request, product_id):
     if request.user.is_superuser:
