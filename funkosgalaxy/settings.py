@@ -31,7 +31,12 @@ IS_HEROKU = "DYNO" in os.environ
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "ocimarcostaf@gmail.com"
+
+if IS_HEROKU:
+    EMAIL_HOST_USER = os.environ.get('SMTP_EMAIL')
+else:
+    EMAIL_HOST_USER = "ocimarcostaf@gmail.com"
+
 EMAIL_HOST_PASSWORD = os.environ.get('SMTP_PASSWORD')
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
