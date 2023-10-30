@@ -41,7 +41,7 @@ class Order(models.Model):
     zip_code = models.CharField("ZIP Code", max_length=10, blank=True, null=True)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name='itens', on_delete=models.CASCADE)
@@ -49,7 +49,7 @@ class OrderItem(models.Model):
     quantity = models.IntegerField()
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 class Contact(models.Model):
     name = models.CharField("Name", max_length=255)
