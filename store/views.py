@@ -24,7 +24,7 @@ def profile(request):
             order.temporary_total = sum([item.quantity * item.product.price for item in items])
         return render(request, 'profile.html', { 'orders': orders })
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 def category_list(request):
     categories = Category.objects.all().order_by('id')
 
@@ -37,7 +37,7 @@ def category_detail(request, category_id):
         return render(request, 'category_detail.html', {'category': category, 'products': products})
 
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def product_list(request):
     products = Product.objects.all()
@@ -50,7 +50,7 @@ def product_detail(request, product_id):
         is_favorite = product.favorites.filter(id=request.user.id).exists()
         return render(request, 'product_detail.html', {'product': product, 'is_favorite': is_favorite})
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def toggle_favorite(request, product_id):
     product = get_object_or_404(Product, id=product_id)
@@ -65,7 +65,7 @@ def user_favorites(request):
         favorited_products = Product.objects.filter(favorites=request.user)
         return render(request, 'user_favorites.html', {'favorited_products': favorited_products})
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def contact_view(request):
     if request.method == 'POST':
@@ -105,7 +105,7 @@ def cart_view(request):
 
         return render(request, 'cart.html', { 'items': cart_items, 'total': cart_total, 'count': cart_count })
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
@@ -200,11 +200,8 @@ def checkout(request, order_id):
 
         return render(request, 'checkout.html', { 'order': order, 'items': items, 'total': total, 'stripe_public_key': stripe.public_key })
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
-
-def error_404_view(request, exception):
-    return render(request, '404.html')
 
 @csrf_exempt  # To allow POST requests without CSRF token for simplicity
 def subscribe_to_newsletter(request):
@@ -231,14 +228,14 @@ def dashboard(request):
     if request.user.is_superuser:
         return render(request, 'dashboard/dashboard.html')
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def manage_products(request):
     if request.user.is_superuser:
         products = Product.objects.all()
         return render(request, 'dashboard/manage_products.html', {'products': products})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def add_product(request):
     if request.user.is_superuser:
@@ -251,7 +248,7 @@ def add_product(request):
             form = ProductForm()
         return render(request, 'dashboard/add_product.html', {'form': form})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def edit_product(request, product_id):
     if request.user.is_superuser:
@@ -265,7 +262,7 @@ def edit_product(request, product_id):
             form = ProductForm(instance=product)
         return render(request, 'dashboard/edit_product.html', {'form': form, 'product': product})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def delete_product(request, product_id):
     if request.user.is_superuser:
@@ -273,14 +270,14 @@ def delete_product(request, product_id):
         product.delete()
         return redirect('manage_products')
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 def manage_categories(request):
     if request.user.is_superuser:
         categories = Category.objects.all()
         return render(request, 'dashboard/manage_categories.html', {'categories': categories})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 # View for adding a category
 def add_category(request):
@@ -294,7 +291,7 @@ def add_category(request):
             form = CategoryForm()
         return render(request, 'dashboard/add_category.html', {'form': form})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 # View for editing a category
 def edit_category(request,  category_id):
@@ -309,7 +306,7 @@ def edit_category(request,  category_id):
             form = CategoryForm(instance=category)
         return render(request, 'dashboard/edit_category.html', {'form': form, 'category': category})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 
 # View for deleting a category
 def delete_category(request, category_id):
@@ -319,12 +316,26 @@ def delete_category(request, category_id):
             category.delete()
             return redirect('manage_categories')
         else:
-            return render(request, '404.html')
+            return render(request, 'error/404.html')
     except:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
 def view_contacts(request):
     if request.user.is_superuser:
         contacts = Contact.objects.all()
         return render(request, 'dashboard/view_contacts.html', {'contacts': contacts})
     else:
-        return render(request, '404.html')
+        return render(request, 'error/404.html')
+
+
+
+def error_400_view(request, exception):
+    return render(request, 'error/400.html')
+
+def error_403_view(request, exception):
+    return render(request, 'error/403.html')
+
+def error_500_view(request):
+    return render(request, 'error/500.html')
+
+def error_404_view(request, exception):
+    return render(request, 'error/404.html')
