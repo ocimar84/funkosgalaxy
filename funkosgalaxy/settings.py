@@ -33,8 +33,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "ocimarcostaf@gmail.com"
 EMAIL_HOST_PASSWORD = os.environ.get('SMTP_PASSWORD')
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 EMAIL_TIMEOUT = 10
 
 # Quick-start development settings - unsuitable for production
