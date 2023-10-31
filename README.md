@@ -818,9 +818,10 @@ Note, you might find it easier to create a test case for each tool/device and li
 
 - **[CSS Validator](https://jigsaw.w3.org/css-validator/)**
 
-> The errors below are caused by my bootstrap, in fact these errors do not affect my project at all.
+> No errors
 
-![CSS check](https://github.com/ocimar84/funkosgalaxy/assets/79640465/894743e6-c71c-457f-9d65-a0ece5f9126a)
+![image](https://github.com/ocimar84/funkosgalaxy/assets/79640465/93572d72-4da0-4023-960d-6c5d5df21d52)
+
 
 - **[HTML Validator](https://validator.w3.org/)**
 
