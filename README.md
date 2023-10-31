@@ -824,9 +824,10 @@ Note, you might find it easier to create a test case for each tool/device and li
 
 - **[HTML Validator](https://validator.w3.org/)**
 
-> The errors below are caused by my bootstrap, in fact these errors do not change my project at all. I tried to improve the error but I couldn't.
-![html-1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2f972671-c39c-4441-b21a-7de1ce87ad37)
-![html-2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/8dc5ae0e-d669-4f5e-973e-48295fc312d0)
+> No errors
+
+![image](https://github.com/ocimar84/funkosgalaxy/assets/79640465/3efca9fd-9fb3-401c-b13f-208200334d50)
+
 
 - **[JS validation](https://jshint.com)**
 
