@@ -78,11 +78,14 @@ I used the Project page of Github to help keep track of my work. You can find it
 
 ## Site Structure
 
-The aim of the site is offer an easy to navigate and accesible uer experience.
-The different elements on the site (header/footer/nav links) remain the same across the site but will be displayed differently from mobile to other devices. The header will always contain a link to the products page and different links based on whether a user is logged in or a super*user.
+By focusing on responsive design, consistent navigation, mobile-friendly layouts, clear CTAs, user-based customization, and accessibility features, you can create a user-friendly and accessible website that provides a seamless experience for all visitors, regardless of the device they are using.
 
 ### Other links:
-* User not logged in: 
+* User not logged in:
+    * Home
+    * Categories
+    * Products
+    * Contact  
     * Register
     * Login
 
@@ -96,27 +99,30 @@ The different elements on the site (header/footer/nav links) remain the same acr
             * My profile
             * Explore management
             * Product management
+            * Check menssenger contact
 
 ### Wireframes 
 
 The wireframes of the site can be found in the following links: 
 
-* ![Homepage](https://github.com/KateEllen/shoe_shop/blob/main/media/home-wireframe.png)
-* ![All products](https://github.com/KateEllen/shoe_shop/blob/main/media/all-products-wireframe.png)
-* ![Product detail](https://github.com/KateEllen/shoe_shop/blob/main/media/product-detail-wireframe.png)
-* ![Profile](https://github.com/KateEllen/shoe_shop/blob/main/media/profile-wireframe.png)
-* ![Bag](https://github.com/KateEllen/shoe_shop/blob/main/media/bag-wireframe.png)
-* ![Checkout](https://github.com/KateEllen/shoe_shop/blob/main/media/checkout-wireframe.png)
+* ![wireframes1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2580da7c-44b6-4285-af84-3ef8730661ee)
+* ![wireframe2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/d92bfce8-4c11-456a-8599-40ff6e0bf053)
+* ![wireframe3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/28701def-873d-4124-af20-b4d0f05bac9d)
+* ![wireframe4](https://github.com/ocimar84/funkosgalaxy/assets/79640465/7f28bc39-0fc5-4772-a8f7-2996f9142cbb)
 
-The final result is slightly different as during the development stage the way things were displayed was not as user friendly as expected. 
+
+
+
+The end outcome is somewhat altered as throughout the development phase, the manner in which things were presented was not as intuitive as anticipated.
 
 ## Styling
 
 ### Colours
 
-The palette of colors for the site is simple, the main colors are black and white. I added a pop of yellow to catch the eye. 
+The palette of colors for the site is simple, the main colors are black and white. I added a pop of blue to catch the eye. 
 
-![Color-palette](https://github.com/KateEllen/shoe_shop/blob/main/media/colour-scheme.png)
+![collors](https://github.com/ocimar84/funkosgalaxy/assets/79640465/f7caecb4-95ed-42cb-9408-8b43eac5c947)
+
 
 # Features
 
@@ -146,8 +152,14 @@ The palette of colors for the site is simple, the main colors are black and whit
 
 ### Features on the Home Page
 * Home Image 
-  * An image that shows to the user what the site is about.
-![Home page](https://github.com/KateEllen/shoe_shop/blob/main/media/homepage.png)
+  * An video that shows to the user what the site is about.
+
+https://github.com/ocimar84/funkosgalaxy/assets/79640465/54b3d8a0-7246-4818-a3a6-a38e37e46182
+
+### Products
+* Produtcs list
+
+https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45-3d9834d52c4d
 
 ### Features on the Sign Up Page 
 * Sign Up Form 
