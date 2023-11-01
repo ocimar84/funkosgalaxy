@@ -177,16 +177,13 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
 * Sign Up  
   * This button generates and sends a verification email link, to the email address provided. 
  
-![sign In](https://github.com/ocimar84/funkosgalaxy/assets/79640465/427a2898-7e40-42ab-9680-211f300e634a)
-
-
 
 ### Features on the Sign In Page 
 * Sign In Form 
   * Another easy Form, with instructions on how to log into the site. 
   * Form control.
   * Includes a username and password field, with a link at the top to direct users who haven't registered to the Sign Up page.
-  * Within the form there is also a remember me tick box which will save your login information for future visits.
+  ![sign In](https://github.com/ocimar84/funkosgalaxy/assets/79640465/427a2898-7e40-42ab-9680-211f300e634a)
 
 * Home Button 
   * Button to return to the home page.
@@ -195,22 +192,24 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
   *  Authenticates the user and return to the home page.
 
 * Unique Email Required. 
-  * ![Unique Email](https://github.com/KateEllen/shoe_shop/blob/main/media/unique-email.png)
+  * ![resetpass](https://github.com/ocimar84/funkosgalaxy/assets/79640465/42d0d258-27c2-47c3-a9a4-edd4c157defb)
+
 
 * Forgotten Password Link 
   * Users can reset their password if they've forgotten it. An email containing a link that directs users to simple instructions on how to reset their password. 
-    ![Sign In](https://github.com/KateEllen/shoe_shop/blob/main/media/login.png)
+    
+    ![email prove](https://github.com/ocimar84/funkosgalaxy/assets/79640465/3f5a6fcd-07d9-4cc7-83c5-427f57708573)
 
 ### Features on All Products
 * Page Title 
   * Helps the user to make sure they are on the correct page.
 
-* Sort By Dropdown 
-  * Sort All Products by price (high/low) or alphabetically.
 
 * Edit/Delete links 
   * (Superusers Only) Access to the Edit/Delete links allowing them to delete products and directing them to the Edit page to edit the different products.
-      ![All products](https://github.com/KateEllen/shoe_shop/blob/main/media/product-example.png)
+      
+    ![Super user add](https://github.com/ocimar84/funkosgalaxy/assets/79640465/6c98ee96-cf80-49e5-b009-2505287cf343)
+
 
 
 ### Features on the Products Information Page
@@ -222,26 +221,24 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
   * Price
   * Category
   * Description
-  * Size selector
-  * Quantity selector
-![Product Information](https://github.com/KateEllen/shoe_shop/blob/main/media/product-info.png)
+ 
+![edit](https://github.com/ocimar84/funkosgalaxy/assets/79640465/79c63770-a54f-4d3a-8599-96f28a913f4c)
 
 ### Features on the Profile Page  
 
 * Delivery Information Form 
-  * This form shows the user's default delivery information. 
+  
   * There are required fields that need to be filled/updated before being able to save it.
   * The information from this form will automatically be taken from the order form when the user is buying something if they have filled out the checkout form and clicking the tick box 'Save this delivery information to my profile'.
 
 * Form Fields 
   * The input fields are: 
-    * Phone Number
+    
     * Street Address 1
-    * Street Address 2
     * Town or City
-    * County
-    * Postcode
-    * Country dropdown to make easier for the user to find their country.
+    * State
+    * Zip Code
+    
 
   * The form has instructions in how to be completed and also has form validation 
 
@@ -249,10 +246,9 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
   * If the users want to update their delivery information, fill out the fields in the form above with the required information and click this button to save the updated information to their profile.
 
 * Order History 
-  * This section provides users with their personal order history, including date, time, items ordered, order number, etc.
-  * The most recent order will be displayed at the top.
-
-  ![Profile](https://github.com/KateEllen/shoe_shop/blob/main/media/my-profile.png)
+   * The most recent order will be displayed at the top.
+  
+   ![card](https://github.com/ocimar84/funkosgalaxy/assets/79640465/0eba9575-4e44-4a08-9d70-84ef80098715)
 
 
 ### Features on the Shopping Bag
