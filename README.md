@@ -1,12 +1,14 @@
-<h1> Funky Feet </h1>
+<h1> FUNKOS GALAXY - TOYSHOP </h1>
 
-**View a live version of the site [here](https://funky-feet.herokuapp.com/).**
+**View a live version of the site [[here](https://funky-feet.herokuapp.com/)](https://funkogalaxys-9966c091c723.herokuapp.com).**
 
 This project has been created for educational purposes.
 
-It is an E-Commerce site for a fictional company 'Funky Feet' which offers a variety of ladies shoes for sale.
+Welcome to the Funko Store! Discover the world of Funko! We offer a wide variety of collectibles, from our famous Pop! Vinyl collection to other Funko products that you'll love. Our items are perfect for die-hard fans of movies, TV shows, video games, and more. Explore our selection and start your collection today!
 
-![Responsive](https://github.com/KateEllen/shoe_shop/blob/main/media/responsive.png)
+![repository](https://github.com/ocimar84/funkosgalaxy/assets/79640465/666b594a-7a70-432a-b982-4dad66276497)
+
+
 ___
 
 ## Project Goals
