@@ -128,27 +128,28 @@ The palette of colors for the site is simple, the main colors are black and whit
 
 ## Existing Features 
 
-### Features in all apps
-* Toast Messages, which are pop up messages appear. The toast messages will notify the user when an action has been successful or unsuccessful. These messages can be dismissed by the user by clicking the x button.
-![Footer](https://github.com/KateEllen/shoe_shop/blob/main/media/order-success.png)
 
 * Navbar 
-  * Contains the site name, My Account dropdown, Shopping bag, Search bar, all shoes, boots, heels, trainers, flats and special offers.
+  * Contains the site name, Home, Categories, Products, contact, Shopping bag, all products, boots.
   * My Profile and Logout links. Logged in superusers will also find the Manage Products.
   * The Basket link will take users to their shopping basket page. 
-  * The search function allows users to input keywords that filter the content to meet the inputed criteria.
 
-* Funky Feet Logo 
+
+* Funko 
   * A clickable link that brings you back to the homepage.
 
-![Nav and Logo](https://github.com/KateEllen/shoe_shop/blob/main/media/nav-and-logo.png)
+![navebar](https://github.com/ocimar84/funkosgalaxy/assets/79640465/b482a3d6-6263-403f-b18d-124d86828a05)
+
 
 ### Footer 
   * Subscribe, so the users can sign up for the NewsLetter.
-  * Users can sign up for newsletters to get previews of celebrity blogs and sales
+  * About
+  * Social
+  * Facebook
+  * Instragram
 
-  * Facebook link. 
-  ![Footer](https://github.com/KateEllen/shoe_shop/blob/main/media/footer.png)
+![footer](https://github.com/ocimar84/funkosgalaxy/assets/79640465/4d37dc29-4a1e-4e2d-a2b6-c3ca780467ca)
+
 
 ### Features on the Home Page
 * Home Image 
@@ -164,20 +165,21 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
 ### Features on the Sign Up Page 
 * Sign Up Form 
   * A very simply form, with instructions on how to register for the site. The text is clear and legible.
-  * Has form control that will tell the user if any fields haven't been filled out correctly whilst ensuring the form doesn't get sent without the required information.
-  * It includes the following fields:
-    *  Email field
-    *  Confirm email
-    *  Username
+
+    * It includes the following fields:
+    *  User Name
+    *  Email
     *  Password
     *  Confirm password fields. 
-    *  Link to redirect users who have already registered in the site.
 
-* Sign Up Button 
+![create acount](https://github.com/ocimar84/funkosgalaxy/assets/79640465/84b90073-c9a5-42e0-8828-b0e064f710d6)
+
+* Sign Up  
   * This button generates and sends a verification email link, to the email address provided. 
-  * This will allow the user to have accesible that information in their personal area. 
+ 
+![sign In](https://github.com/ocimar84/funkosgalaxy/assets/79640465/427a2898-7e40-42ab-9680-211f300e634a)
 
-    ![Sign Up](https://github.com/KateEllen/shoe_shop/blob/main/media/sign-up.png)
+
 
 ### Features on the Sign In Page 
 * Sign In Form 
