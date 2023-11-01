@@ -45,35 +45,35 @@ This table can help prioritize features for the MVP based on their feasibility a
 
 ## User Stories
 
-I used the Project page of Github to help keep track of my work. You can find it [here](https://github.com/KateEllen/shoe_shop/projects/1)
+I used the Project page of Github to help keep track of my work. You can find it https://github.com/users/ocimar84/projects/7
 
 ### User Goals
 
-* As a **User**, I want to easily understand the purpose of the site when navigating on it.
-* As a **User**, I want to be able to intuitively navigate the entire site in an easy way.
-* As a **User**, I want to be able to have the same functionalities on different devices (mobile, tablet and PC).
-* As a **User**, I want to be able to see what items are available for purchase on the site.
-* As a **User**, I want to know the prices of the items.
-* As a **User**, I want to be able to sign up for an account and receive a confirmation email.
-* As a **User**, I want to be able to sign up for the newsletter.
+* As a User, I want to easily understand the purpose of the site when navigating on it.
+* As a User, I want to be able to intuitively navigate the entire site in an easy way.
+* As a User, I want to be able to have the same functionalities on different devices (mobile, tablet, and PC).
+* As a User, I want to be able to see what items are available for purchase on the site.
+* As a User, I want to know the prices of the items.
+* As a User, I want to be able to sign up for an account and receive a confirmation email.
+* As a User, I want to be able to sign up for the newsletter.
 
 
 ### Registered User goals
 
-* As a **Registered User**, I want to be able to easily login and logout of my account.
-* As a **Registered User**, I want to be able to easily add and remove items in my shopping bag.
-* As a **Registered User**, I want to be able to easily purchase items on my shopping bag.
+* As a Registered User, I want to be able to easily login and logout of my account.
+* As a Registered User, I want to be able to easily add and remove items in my shopping bag.
+* As a Registered User, I want to be able to easily purchase items on my shopping bag.
 * As a **Registered User**, I want to receive a purchase confirmation email.
-* As a **Registered User**, I want to be able to easily update my contact and delivery information.
-* As a **Registered User**, I want to be able to view my previous orders.
+* As a Registered User, I want to receive a purchase confirmation email.
+* As a Registered User, I want to be able to easily update my contact and delivery 
 
 
 ### Site Owner/Superuser goals
 
-* As a **Site Owner/Superuser**, I want to be able to add new products.
-* As a **Site Owner/Superuser**, I want to be able to edit and delete products.
-* As a **Site Owner/Superuser**, I want to be able to access the admin section of the site to view orders made, the items they contain and the delivery information.
-* As a **Site Owner/Superuser**, I want to be able to access the admin section of the site to view users registered. 
+* As a Site Owner/Superuser, I want to be able to add new products.
+* As a Site Owner/Superuser, I want to be able to edit and delete products.
+* As a Site Owner/Superuser, I want to be able to access the admin section of the site to view orders made, the items they contain, and the delivery information.
+* As a Site Owner/Superuser, I want to be able to access the admin section of the site to view registered users.
 
 
 ## Site Structure
