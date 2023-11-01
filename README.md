@@ -13,22 +13,35 @@ ___
 
 ## Project Goals
 
-The goal of this project is to create E*Commerce store for a ladies shoe shop. 
+The goal of this project is to create E*Commerce store for a toy shop. 
 This project is for educational purposes only.
 
 ### Importance and Feasibility chart
 
-| Opportunity/Problem                                                                            | Importance | Viability/Feasibility |
-|------------------------------------------------------------------------------------------------|------------|-----------------------|
-| Users are able to register an account and login                                                | 5          | 5                     |
-| Users can add, edit and remove items from their shopping bag                                   | 5          | 5                     |
-| Blog Section so users can read related articles from celeb/fashion experts concerning products | 5          | 5                     |
-| Super users can add, edit, delete blogs                                                        | 5          | 5                     |
-| Allow users to add and edit, delete their own blog comments                                    | 4          | 4                     |
-| Super users can edit any blog comments                                                         | 4          | 4                     |
-| Users can search for products by keyworkds                                                     | 4          | 5                     |
-| Users are notified of their actions while interacting with the site                            | 4          | 4                     |
-| Users can sign up to the newsletter                                                            | 3          | 4                     |
+The features in the table below have been taken from the user stories above. Generic features found in most websites will also be implemented such as nav-bar, footer, obvious website purpose, etc.
+
+| Feature                   | Feasibility (1-5) | Importance (1-5) |
+|---------------------------|-------------------|------------------|
+| User Signup               | 4                 | 5                |
+| Login and Logout          | 4                 | 5                |
+| User Profile Page         | 3                 | 4                |
+| User Payment Details      | 3                 | 4                |
+| Shopping Bag              | 3                 | 4                |
+| Search Product            | 4                 | 4                |
+| Sort Products             | 3                 | 4                |
+| All Products Page         | 4                 | 4                |
+| Selected Products on Home | 4                 | 3                |
+| Admin - Add Products      | 4                 | 5                |
+| Admin - Manage Banners    | 4                 | 4                |
+| Admin - Manage Reviews    | 3                 | 3                |
+| View Purchased Products   | 4                 | 3                |
+
+In this table:
+
+- Feasibility is rated on a scale of 1 to 5, with 5 being highly feasible. It assesses how easy it is to implement the feature.
+- Importance is rated on a scale of 1 to 5, with 5 being highly important. It assesses how crucial the feature is for the project's success.
+
+This table can help prioritize features for the MVP based on their feasibility and importance.
 
 ## User Stories
 
