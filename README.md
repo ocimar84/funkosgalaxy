@@ -1,6 +1,6 @@
 <h1> FUNKOS GALAXY - TOYSHOP </h1>
 
-**View a live version of the site [(https://funkogalaxys-9966c091c723.herokuapp.com/).**
+**View a live version of the site [HERE](https://funkogalaxys-9966c091c723.herokuapp.com/).**
 
 This project has been created for educational purposes.
 
@@ -317,7 +317,16 @@ Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Twitter](ht
     * Name
     * Email address
     * Message
-    
+
+* Super User ADM.
+   
+![contactsuperuder](https://github.com/ocimar84/funkosgalaxy/assets/79640465/87bdcc0b-55c9-458b-a426-f54d735b9d43)
+
+    * Date
+    * Name
+    * Email address
+    * Note
+    * Action
 
 ## Future features 
 * Product Rating:
@@ -369,15 +378,13 @@ I used postgres as the database because the data is relational and heroku serves
 | created_at | DateTimeField | Date and time when the product was added. | None                                 | CREATE, READ                  |
 | updated_at | DateTimeField | Date and time of the last product update. | None                             | UPDATE                        |
 
-* Comment
+* Category Data Model
 
-| DB Key              | Data Type     | Purpose                       | Form Validation |
-|---------------------|---------------|-------------------------------|-----------------|
-| post_id             | ForeignKey    | Unique identifier             | None            |
-| comment_title       | CharField     | Display comment title         | Required        |
-| comment_content     | TextField     | Body of comment               | Required        |
-| comment_date_posted | DateTimeField | Date of comment being created | Required        |
-| comment_author      | ForeignKey    | User who created comment      | Required        |
+| DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
+| ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
+| id      | AutoField       | Unique identifier for each category. | None                                     | CREATE, READ, UPDATE, DELETE  |
+| name    | CharField       | Name of the category.                | <br>Max 50 chars                  | CREATE, READ, UPDATE, DELETE  |
+| image   | ImageField      | Image representing the category.      | Image format validation                  | CREATE, READ, UPDATE, DELETE  |
 
 * Order
 
@@ -446,29 +453,54 @@ I used postgres as the database because the data is relational and heroku serves
 
 ## SEO Strategy
 
-- Each page has key words meta data= xxxx as well as a description =xxx Product detail pages include the name of the shoe being sold in the description. Key words are also in content on the home page to re-enforce to search engines that the keywords aren’t being stuffed.
+- SEO (Search Engine Optimization) is a crucial component of our traffic generation strategy. Here's how we utilize SEO to attract users to our site.
 
-- I used sites like [Zappos](https://www.zappos.com/) and [Office](https://www.office.co.uk/)to deicde what keywords I would need. The keywords I selected are listed below. 
+- Keyword Research:** We conduct thorough keyword research to identify high-volume and relevant keywords within the collectibles and pop culture niche. This informs our content creation and optimization efforts. 
 
-* shoes
-* elusive
-* unique
-* free shipping
-* ladies
-* girls
-* fashion
-* womens shoes
-* casual shoes
-* new shoes
-* shoe shop
+# Short-Tail Keywords (General):
+
+* Funko
+* Collectibles
+* Pop Culture
+* Action Figures
+* Limited Edition
+* Vinyl Figures
+* Exclusive Funkos
+* Funko Store
+* Pop Culture Collectibles
+* Funko Pop Shop
 * sale
 * special offer
 
+# Long-Tail Keywords (Specific and Descriptive):
+
+*  Buy Funko Pop Star Wars Collectibles
+*  Rare Limited Edition Funko Pops
+*  Best Place to Buy Funko Figures
+*  Exclusive Marvel Funko Pops
+*  Pop Culture Collectibles Store
+*  Funko Pop Batman vs Superman
+*  Where to Find Rare Funko Collectibles
+*  Disney Funko Pop Collection for Sale
+*  Funko Pop Collectors' Club
+*  Authentic Funko Pop Store
+
+# Semantic Keywords (Related to Funko Pop):
+
+*   Funko Pop Vinyl Figures
+*   Funko Pop Animation Series
+*   Funko Pop TV Shows
+*   Funko Pop Movie Characters
+*   Funko Pop Comic Book Heroes
+*   Funko Pop Collectors' Community
+
+
 # E-commerce Business Model
-This site is designed for women who love shoes. They can find comfortable and unique styles for any ocassion. The user is also able to subscribe the the newsletter to receive news about the store.
+Discover a universe of collectibles and treasures at Funko's Galaxy, where every corner of popular culture comes alive. Our online emporium is more than just a store – it's an immersive experience that caters to every fandom. From iconic movie and TV characters to beloved superheroes and more, we've curated a stellar collection that will ignite your passion. The user is also able to subscribe the the newsletter to receive news about the store.
 
 ## Facebook Business Page
-Below are screenshots of the Funky Feet Facebook page. This page gives users the oppertunity to see extra updates outside of the website. The facebook page can be viewed here [Facebook](https://www.facebook.com/Funky-Feet-100119349392932)
+Below are screenshots of the Funko Facebook page. This page gives users the oppertunity to see extra updates outside of the website. The facebook page can be viewed here ![facebook](https://github.com/ocimar84/funkosgalaxy/assets/79640465/5c6c8d2a-a6e8-4af1-9680-183a14a7cb9a)
+
 
 ![Facebook1](https://github.com/KateEllen/shoe_shop/blob/main/media/facebook1.png)
 ![Facebook2](https://github.com/KateEllen/shoe_shop/blob/main/media/facebook2.png)
