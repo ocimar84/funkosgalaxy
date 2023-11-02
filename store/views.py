@@ -199,7 +199,7 @@ def checkout(request, order_id):
                 messages.success(request, 'Order paided!')
             except Exception as e:
                 print(e)
-                messages.error(request, 'Payment refused!', e)
+                messages.error(request, 'Payment refused!')
 
             return redirect('checkout', order.id)    
 
