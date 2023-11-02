@@ -277,82 +277,55 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
 * Place Order Button 
   * Process the user's order.
   * Generate a confirmation email sent to the provided email address in the checkout form.
-  ![Email confirmation](https://github.com/KateEllen/shoe_shop/blob/main/media/email.png)
+  
+![checkout](https://github.com/ocimar84/funkosgalaxy/assets/79640465/845f593f-5802-491e-8f26-383e75c0c488)
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-* Card Charge Warning 
-* Reminder for the users to tell them that their card will be charged with the stated amount.
-
-![Checkout](https://github.com/KateEllen/shoe_shop/blob/main/media/checkout.png)
+* Payment Notice
+* Reminder for users to inform them that their card will be charged the specified amount.
+![checkout](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2149329f-cde9-47f4-80cd-1f5d4f85dde4)
 
 ### Features on the Subscription feature
-** Please note that email from site (Funky Feet) may end up in spam folder **
+** Please be aware that emails from our site (Funkosgalaxy) may end up in the spam folder. **
 
-* The user can subscribe to the page.
-* The user have an input box and a button to subscribe.
-* The user will be receiving an email in their inbox.
+* Users can subscribe to the page.
+* Users have an input box and a button to subscribe.
+* Users will receive an email in their inbox.
 
-### Features on the Blog
-* The site supports a blog which will host product writes ups by famous people or  instagram influencers to help better sell products and increase product awareness.
+### Features on the Contact
+* Welcome to FunkoGalaxy, your one-stop-shop for all things related to funky and stylish footwear. Our mission is to provide you with the latest shoe designs, ensuring comfort, quality, and a touch of intergalactic flair. Whether you're searching for casual sneakers, elegant heels, or durable boots, we've got you covered.
+
+Join us in stepping up your footwear game and adding a touch of funk to your everyday style.
+
+## Contact Us
+
+Have any questions or feedback? We'd love to hear from you. Get in touch using the details below:
+
+**Address:** 123 Funky Street, Galaxy City, Outer Space
+
+**Phone:** 1-800-FUNKYFEET
+
+**Email:** galaxyfunkos@gmail.com
+
+Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Twitter](https://www.twitter.com/funkogalaxy) for the latest updates and special offers.
 
 * CRUD functionality
 * View Blog Posts
-![Blog](https://github.com/KateEllen/shoe_shop/blob/main/media/blog-list.png)
-* Post Title gives information for the user about what the blog post is about.
-* Post Link
-  * A link to redirect the users back to the Explore page with all the posts available.
-* Date and Time Post was Published
-  * Date and time stamp and the profile name of the super user who created the post entry.
-* Post Content/Body
-  * The content of the blog that has been included by the super user.
+![contact](https://github.com/ocimar84/funkosgalaxy/assets/79640465/e558843f-2a07-422b-85a5-742319584b5b)
 
-* Comments
-* Comments were included in blogs to help enrich a community environment among frequent visitors and encourage interaction with customers.
-
-  * The comments section shows users responses to the blog.
-  * Only registered users can post comments.
+  * The comments section shows users responses to the Contact.
   * To post comments to the blogs is through the form directly under this section on the site page.
   * When no comments have been add it will display 'No Comments Yet'.
   * This will include:
-    * Comment title
-    * Date and time the comment was added
-    * Edit/Delete comment
-    * Leave a comment
-
-![Blog](https://github.com/KateEllen/shoe_shop/blob/main/media/blog.png)
-
-### Add Post **(superuser only)**
-Super user's can create blog posts.
-![Add Post](https://github.com/KateEllen/shoe_shop/blob/main/media/add-blog.png)
-
-### Delete Post **(superuser only)**
-Super user's can delete their blog posts.
-![Delete Post](https://github.com/KateEllen/shoe_shop/blob/main/media/delete-blog.png) 
-
-### Edit Post **(superuser only)**
-Super user's can edit their blog posts. 
-![Edit Post](https://github.com/KateEllen/shoe_shop/blob/main/media/edit-blog.png)
-
-### Features on the Comments 
-
-* CRUD functionality
-
-* Create comments
-![Create Comments](https://github.com/KateEllen/shoe_shop/blob/main/media/create-comment.png)
-
-* Read comments under specific blog post
-![Comments](https://github.com/KateEllen/shoe_shop/blob/main/media/comments.png)
-
-* Edit comments you have left
-![Edit Comments](https://github.com/KateEllen/shoe_shop/blob/main/media/edit-comment.png)
-
-* Superuser can delete comments you have left
-![Delete Comments](https://github.com/KateEllen/shoe_shop/blob/main/media/delete-comment.png)
+    * Name
+    * Email address
+    * Message
+    
 
 ## Future features 
-* Returns
-* Product rating
-* Live chat
-* Images for blog posts
+* Product Rating:** Get ready for a more interactive shopping experience with our upcoming product rating feature. Share your thoughts and feedback, and help other customers make informed decisions.
+* Images for Blog Posts:** Enhance your reading experience with captivating visuals. Look forward to high-quality images accompanying our engaging blog posts, making the content more engaging and visually appealing.
+* Live Chat:** We're bringing real-time support closer to you with our live chat feature. Have your questions answered instantly by our dedicated support team, making your shopping experience smoother and more convenient.
+* Returns:** We're implementing a hassle-free returns process to ensure customer satisfaction. Stay tuned for our seamless and customer-friendly return policy.
 
 # Testing
 
