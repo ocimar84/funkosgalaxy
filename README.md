@@ -254,44 +254,31 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
 ### Features on the Shopping Bag
 * List of Added Items
   *  The list contains:
-     *  Product Info section
+     *  Name
+     *  Description
+     *  Price
+     *  Category
      *  Image
-     *  Product name 
-     *  SKU 
-     *  Total price section 
-     *  Quantity function with -/+ buttons to adjust the amount of items that the user wants to buy, in case they want to add more items.
+     
+![add prodts](https://github.com/ocimar84/funkosgalaxy/assets/79640465/04a45965-f9a6-4a40-9262-1619f8f9278e)
 
-* Basket Total 
-  *  This is the total items the user will have in their shopping bag. 
-
-* Delivery  
-  * Delivery charge the user will be charged if they don't reach the $80 to get a free delivery.
-
-* Grand Total  
-  * The sum of the total of all the items in the bag and delivery charge. This is the total amount the users will be charged in their cards. 
-
-![Product Information](https://github.com/KateEllen/shoe_shop/blob/main/media/product-info.png)
 
 ### Features on the Checkout Page 
 * Payment form 
-  * Follow same structures and form validation. 
-  * If the user have ordered before the information will be populated as well.
+  * Maintain the same structure and ensure form validation.
+  * If the user has placed an order previously, the information will be pre-filled.
 
-* Save Information Tickbox 
-  * If the user ticks their information will be saved for thenext time.
-  * If a field needs to be updated the user can enter the information in the checkout form and it will override the data on the profile page if the user select 'Save this delivery information to my profile'.
+* Payment Details Field
+  * Users need to input their card information (card number, expiration date, CVC, and ZIP code). To test, use the default Stripe test card.
 
-* Payment Form Field 
-  * This box will require users their card information (card number, month/year, cvc and zip code). To test you must use stripe default test card.
+* Adjust Cart Button 
+  * Redirect users back to the Shopping Cart page.
 
-* Adjust Bag Button 
-  * Redirect the users back to the Shopping Bag page.
-
-* Complete Order Button 
-  * The order for the user is processed. 
-  * Generates a confirmation email that is sent to the email address provided in the checkout form.
+* Place Order Button 
+  * Process the user's order.
+  * Generate a confirmation email sent to the provided email address in the checkout form.
   ![Email confirmation](https://github.com/KateEllen/shoe_shop/blob/main/media/email.png)
-
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 * Card Charge Warning 
 * Reminder for the users to tell them that their card will be charged with the stated amount.
 
