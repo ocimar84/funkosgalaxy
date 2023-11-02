@@ -36,7 +36,7 @@ if IS_HEROKU:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('SMTP_PASSWORD')
     # DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-    DEFAULT_FROM_EMAIL = "galaxyfunko@gmail.co,"
+    DEFAULT_FROM_EMAIL = "galaxyfunko@gmail.com"
 
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
