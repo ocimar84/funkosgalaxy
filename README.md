@@ -322,10 +322,14 @@ Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Twitter](ht
     
 
 ## Future features 
-* Product Rating:** Get ready for a more interactive shopping experience with our upcoming product rating feature. Share your thoughts and feedback, and help other customers make informed decisions.
-* Images for Blog Posts:** Enhance your reading experience with captivating visuals. Look forward to high-quality images accompanying our engaging blog posts, making the content more engaging and visually appealing.
-* Live Chat:** We're bringing real-time support closer to you with our live chat feature. Have your questions answered instantly by our dedicated support team, making your shopping experience smoother and more convenient.
-* Returns:** We're implementing a hassle-free returns process to ensure customer satisfaction. Stay tuned for our seamless and customer-friendly return policy.
+* Product Rating:
+  * Get ready for a more interactive shopping experience with our upcoming product rating feature. Share your thoughts and feedback, and help other customers make informed decisions.
+* Images for Blog Posts:
+  * Enhance your reading experience with captivating visuals. Look forward to high-quality images accompanying our engaging blog posts, making the content more engaging and visually appealing.
+* Live Chat:
+  * We're bringing real-time support closer to you with our live chat feature. Have your questions answered instantly by our dedicated support team, making your shopping experience smoother and more convenient.
+* Returns:
+  * We're implementing a hassle-free returns process to ensure customer satisfaction. Stay tuned for our seamless and customer-friendly return policy.
 
 # Testing
 
@@ -334,7 +338,7 @@ The full testing performed can be found [here](./TESTING.md)
 
 # Deployment 
 ## Heroku Deployment
-It's required to have an [AWS](https://aws.amazon.com/s3/) account and a [S3 bucket](https://aws.amazon.com/s3/) to hold all the static files for this project.
+It's required to have an [SUPABASE](https://supabase.com/) account and a [SUPABASE](https://supabase.com/) to hold all the static files for this project.
 
 1. Open and login to [Heroku](https://id.heroku.com/login)
 
