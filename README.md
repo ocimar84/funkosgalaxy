@@ -1,6 +1,6 @@
 <h1> FUNKOS GALAXY - TOYSHOP </h1>
 
-**View a live version of the site [[here](https://funky-feet.herokuapp.com/)](https://funkogalaxys-9966c091c723.herokuapp.com).**
+**View a live version of the site [(https://funkogalaxys-9966c091c723.herokuapp.com/).**
 
 This project has been created for educational purposes.
 
@@ -302,8 +302,6 @@ Have any questions or feedback? We'd love to hear from you. Get in touch using t
 
 **Address:** 123 Funky Street, Galaxy City, Outer Space
 
-**Phone:** 1-800-FUNKYFEET
-
 **Email:** galaxyfunkos@gmail.com
 
 Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Twitter](https://www.twitter.com/funkogalaxy) for the latest updates and special offers.
@@ -338,19 +336,19 @@ The full testing performed can be found [here](./TESTING.md)
 
 # Deployment 
 ## Heroku Deployment
-It's required to have an [SUPABASE](https://supabase.com/) account and a [SUPABASE](https://supabase.com/) to hold all the static files for this project.
+It's required to have an [SUPABASE](https://supabase.com/) account and a [GMAIL][(https://mail.google.com/mail/u/0/) to hold all the static files for this project.
 
 1. Open and login to [Heroku](https://id.heroku.com/login)
 
-2. Add all of your Config Vars. Such as keys for AWS, Stripe, Secret Key, Database URL and Email keys. 
+2. Include all of your Configuration Variables, such as keys for AWS, Stripe, Secret Key, Database URL, and Email keys. 
 
-3. In your local terminal type "heroku login"
+3. Open your local terminal and enter "heroku login".
 
-4. Use git to clone your repository's sorce code to your local machine. You can do this by typing "heroku git:clone -a (REPO NAME) then cd (REPO NAME) into yout terminal.
+4. Clone your repository's source code to your local machine using git. You can do this by running the command "heroku git:clone -a (REPO NAME)", then navigate to the directory using "cd (REPO NAME)" in your terminal.
 
-5. Now make some changes to the code you just clined and deploy them to Heorku using Git. You can do this by typing "git add ." followed by "git commit -m 'commit message' " then you will finally type "git push heroku main" to deploy to Heorku. This is all done in your local terminal. 
+5. Make the necessary changes to the cloned code and deploy it to Heroku using Git. Run "git add ." to stage your changes, followed by "git commit -m 'commit message'" to commit the changes. Finally, use "git push heroku main" to deploy to Heroku. All these steps are performed within your local terminal.
 
-6. When your app is deployed successfully. Click _Open App_ in to top right hand corner of Heroku to open app in a new tab in the browser.
+6. Once your application is successfully deployed, click on "Open App" in the top right-hand corner of Heroku to open the app in a new browser tab.
 
 ## Entity Relationship Diagram
 
@@ -358,15 +356,18 @@ It's required to have an [SUPABASE](https://supabase.com/) account and a [SUPABA
 ## Database Choice
 I used postgres as the database because the data is relational and heroku serves this up realitvely easily with no cost.The models used to construct the site are outlined below:
 
-* Post
+* Product Data Model
 
-| DB Key 	         | Data Type 	   |          Purpose          	        | Form Validation                        	|
-|--------	         |:---------:	   |:-------------------------:	        |----------------------------------------	|
-| pk   	           | ObjectId  	   | unique identifier, auto generated  | None                                   	|
-| post_title   	   | CharField     | Display name of blog entry         | Required<br>Min 1 char<br>Max 50 chars 	|
-| post_content     | TextField     | Body of blog 	                    | Required                               	|
-| post_date_posted | DateTimeField | Date of blog being created 	      | Required                               	|
-| post_content     | ForeignKey    | User who created blog 	            | Required                               	|
+| DB Key  | Data Type       | Purpose                              | Form Validation                           | DB Processing                  |
+| ------- | --------------- | ------------------------------------ | ---------------------------------------- | ------------------------------ |
+| id      | AutoField       | Unique identifier for each product.  | None                                     | CREATE, READ, UPDATE, DELETE  |
+| name    | CharField       | Name of the product.                 | <br>Max 100 chars                | CREATE, READ, UPDATE, DELETE  |
+| description | TextField   | Detailed description of the product. | None                                    | CREATE, READ, UPDATE, DELETE  |
+| price   | DecimalField    | Price of the product.                | Decimal validation                       | CREATE, READ, UPDATE, DELETE  |
+| image   | ImageField      | Image representing the product.      | Image format validation                  | CREATE, READ, UPDATE, DELETE  |
+| category | ForeignKey to Category | Category to which the product belongs. | Existence validation                | CREATE, READ, UPDATE, DELETE  |
+| created_at | DateTimeField | Date and time when the product was added. | None                                 | CREATE, READ                  |
+| updated_at | DateTimeField | Date and time of the last product update. | None                             | UPDATE                        |
 
 * Comment
 
