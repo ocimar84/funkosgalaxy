@@ -1,0 +1,17 @@
+Greetings {{ order.user }}!
+
+This is a confirmation of your order at Funkosgalaxy. Your order information is below:
+
+Order Date: {{ order.created_at }}
+
+Order Total: ${{ order.total }}
+
+Your order will be shipped to {{ order.street_address }} in {{ order.city }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Funkosgalaxy

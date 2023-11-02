@@ -10,6 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.urls import reverse
 import stripe
 from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 def home(request):
     categories = Category.objects.all().order_by('id')
@@ -193,8 +194,11 @@ def checkout(request, order_id):
                 order.status = 'paid'
                 order.save()
 
+                send_order_confirmation_email(order)
+
                 messages.success(request, 'Order paided!')
             except Exception as e:
+                print(e)
                 messages.error(request, 'Payment refused!')
 
             return redirect('checkout', order.id)    
@@ -202,6 +206,21 @@ def checkout(request, order_id):
         return render(request, 'checkout.html', { 'order': order, 'items': items, 'total': total, 'stripe_public_key': stripe.public_key })
     except:
         return render(request, 'error/404.html')
+
+#Email Confirmation
+def send_order_confirmation_email(order):
+    email_to = order.user.email
+    subject = render_to_string(
+        'checkout/confirmation_email_subject.txt',
+        {'order': order}
+    ).strip()  # strip to remove any unwanted whitespace
+    body = render_to_string(
+        'checkout/confirmation_email_body.txt',
+        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}
+    )
+    recipient_list = [email_to, ]
+    send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list, fail_silently=False)
+
 
 
 @csrf_exempt  # To allow POST requests without CSRF token for simplicity

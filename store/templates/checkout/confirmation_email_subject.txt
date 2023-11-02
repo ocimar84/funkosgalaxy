@@ -1,0 +1,1 @@
+Funkosgalaxy Order Confirmation for: {{ order.user }} ${{ order.total }}
