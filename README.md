@@ -279,7 +279,7 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
   * Generate a confirmation email sent to the provided email address in the checkout form.
   
 ![checkout](https://github.com/ocimar84/funkosgalaxy/assets/79640465/845f593f-5802-491e-8f26-383e75c0c488)
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 * Payment Notice
 * Reminder for users to inform them that their card will be charged the specified amount.
 ![checkout](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2149329f-cde9-47f4-80cd-1f5d4f85dde4)
@@ -304,7 +304,7 @@ Have any questions or feedback? We'd love to hear from you. Get in touch using t
 
 **Email:** galaxyfunkos@gmail.com
 
-Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Twitter](https://www.twitter.com/funkogalaxy) for the latest updates and special offers.
+Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Instagram](https://www.instagram.com/funkosgalaxy/)for the latest updates and special offers.
 
 * CRUD functionality
 * View Blog Posts
@@ -502,20 +502,17 @@ Discover a universe of collectibles and treasures at Funko's Galaxy, where every
 Below are screenshots of the Funko Facebook page. This page gives users the oppertunity to see extra updates outside of the website. The facebook page can be viewed here ![facebook](https://github.com/ocimar84/funkosgalaxy/assets/79640465/5c6c8d2a-a6e8-4af1-9680-183a14a7cb9a)
 
 
-![Facebook1](https://github.com/KateEllen/shoe_shop/blob/main/media/facebook1.png)
-![Facebook2](https://github.com/KateEllen/shoe_shop/blob/main/media/facebook2.png)
-
 ### Sitemap
 ![Sitemap](https://github.com/KateEllen/shoe_shop/blob/main/output.png)
-
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # Credits
 
 ## Content 
-* Products info and pictures - [Office](https://www.office.co.uk/)
-* Wireframes - [Balsamiq](https://balsamiq.com/wireframes/)
+* Products info and pictures - [Funko](https://funko.com/)
+* Wireframes - [[FunkoEurope](https://balsamiq.com/wireframes/)
 
 ## Media 
-Images - [Office](https://www.office.co.uk/)
+Images - [FunkoEurope](https://funkoeurope.com/)
 Facebook cover photo - [Canva](https://www.canva.com/)
 * [Font-Awesome](https://fontawesome.com/)
 
@@ -524,15 +521,19 @@ Facebook cover photo - [Canva](https://www.canva.com/)
 
 ### I received inspiration for this project from:
 * [Boutique Ado](https://github.com/ckz8780/ci-fsf-hello-django/tree/c13b414fd2e87a54b4f2788ceffec55be4ade925)
-* [Office](https://www.office.co.uk/)
 * [StackOverflow](https://stackoverflow.com/)
-* [Coolors](https://coolors.co/)
+* [FunkosEurope](https://funkoeurope.com/)
+* [EMP](https://www.emp.ie/fun-lifestyle/homeware/figures/funko-pops/)
+  
 
 
 ### I received advice and support from
-* [Niall Maher](https://www.linkedin.com/in/nialljoemaher/?originalSubdomain=ie)
+* Blogs and Tutorials: Various blogs and online tutorials contributed significantly to my knowledge and problem-solving skills. I'd like to acknowledge the authors of these resources for sharing their expertise.
 * Code Institute [Slack Community](code-institute-room.slack.com)
-* My mentor Malia was a huge help in this project as always. She constantly steered me in the right direction and helped me with my many questions on queries. 
+* Mentors: A special thanks to the mentors Malia and Vitor who provided valuable insights and assistance throughout the development process. Your guidance was instrumental in overcoming challenges and improving the quality of the project.
+* Friends and Peers: Last but not least, I'd like to thank my friends and peers who provided feedback, suggestions, and encouragement throughout this journey. Your support was invaluable.
+* YouTube Tutorials: Several YouTube tutorials on web development topics were instrumental in enhancing specific features of the project. I'm thankful for the creators of these tutorials.
+* Blogs and Tutorials: Various blogs and online tutorials contributed significantly to my knowledge and problem-solving skills. I'd like to acknowledge the authors of these resources for sharing their expertise.
 
 
 
