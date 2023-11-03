@@ -345,7 +345,7 @@ The full testing performed can be found [here](./TESTING.md)
 
 # Deployment 
 ## Heroku Deployment
-It's required to have an [SUPABASE](https://supabase.com/) account and a [GMAIL][(https://mail.google.com/mail/u/0/) to hold all the static files for this project.
+It's required to have an [SUPABASE](https://supabase.com/) account and a [GMAIL](https://mail.google.com/mail/u/0/) to hold all the static files for this project.
 
 1. Open and login to [Heroku](https://id.heroku.com/login)
 
