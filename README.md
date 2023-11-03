@@ -105,10 +105,10 @@ By focusing on responsive design, consistent navigation, mobile-friendly layouts
 
 The wireframes of the site can be found in the following links: 
 
-* ![wireframes1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2580da7c-44b6-4285-af84-3ef8730661ee)
-* ![wireframe2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/d92bfce8-4c11-456a-8599-40ff6e0bf053)
-* ![wireframe3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/28701def-873d-4124-af20-b4d0f05bac9d)
-* ![wireframe4](https://github.com/ocimar84/funkosgalaxy/assets/79640465/7f28bc39-0fc5-4772-a8f7-2996f9142cbb)
+   ![wireframes1](https://github.com/ocimar84/funkosgalaxy/assets/79640465/2580da7c-44b6-4285-af84-3ef8730661ee)
+   ![wireframe2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/d92bfce8-4c11-456a-8599-40ff6e0bf053)
+   ![wireframe3](https://github.com/ocimar84/funkosgalaxy/assets/79640465/28701def-873d-4124-af20-b4d0f05bac9d)
+   ![wireframe4](https://github.com/ocimar84/funkosgalaxy/assets/79640465/7f28bc39-0fc5-4772-a8f7-2996f9142cbb)
 
 
 
@@ -304,7 +304,7 @@ Have any questions or feedback? We'd love to hear from you. Get in touch using t
 
 **Email:** galaxyfunkos@gmail.com
 
-Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Instagram](https://www.instagram.com/funkosgalaxy/)for the latest updates and special offers.
+Follow us on [Facebook](https://www.facebook.com/people/Funkos-Galaxy/61550634398595/) and [Instagram](https://www.instagram.com/funkosgalaxy/)for the latest updates and special offers.
 
 * CRUD functionality
 * View Blog Posts
@@ -322,11 +322,11 @@ Follow us on [Instagram](https://www.instagram.com/funkogalaxy) and [Instagram](
    
 ![contactsuperuder](https://github.com/ocimar84/funkosgalaxy/assets/79640465/87bdcc0b-55c9-458b-a426-f54d735b9d43)
 
-    * Date
-    * Name
-    * Email address
-    * Note
-    * Action
+   * Date
+   * Name
+   * Email address
+   * Note
+   * Action
 
 ## Future features 
 * Product Rating:
@@ -501,6 +501,9 @@ Discover a universe of collectibles and treasures at Funko's Galaxy, where every
 ## Facebook Business Page
 Below are screenshots of the Funko Facebook page. This page gives users the oppertunity to see extra updates outside of the website. The facebook page can be viewed here ![facebook](https://github.com/ocimar84/funkosgalaxy/assets/79640465/5c6c8d2a-a6e8-4af1-9680-183a14a7cb9a)
 
+## Instagram Business Page
+Provide a brief overview of what your business offers and what sets it apart from competitors.
+(https://user-images.githubusercontent.com/79640465/266805724-cdce39e6-7ef5-4596-8ea0-0e500674f6c4.png)
 
 ### Sitemap
 ![Sitemap](https://github.com/KateEllen/shoe_shop/blob/main/output.png)
