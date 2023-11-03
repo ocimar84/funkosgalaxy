@@ -14,17 +14,22 @@ To validate the code the following **validation services** and **linters** were 
 
 * W3C CSS Validation Service
     Checks the validity of cascading style sheets (css) and (X)HTML documents with style sheets.
-![CSS](https://github.com/KateEllen/shoe_shop/blob/main/media/css.png)
+
+![CSS](https://github.com/ocimar84/funkosgalaxy/assets/79640465/e441df5b-f5ef-436a-b88e-34217aea3e23)
+
 
 * PEP8 Online validation
-    This linter checks the validity of Python code against the PEP8 requirements
-![PEP8](https://github.com/KateEllen/shoe_shop/blob/main/media/pep8.png)
+    This error I couldn't do it because it was a long line, even though I tried several models and none of them shortened.
 
-* JSON jsonlint validator
-![JSON](https://github.com/KateEllen/shoe_shop/blob/main/media/json.png)
+![PEP8](https://github.com/ocimar84/funkosgalaxy/assets/79640465/81a1e2fd-ef8d-47d2-97b4-8604b315decf)
+
+* JS validator
+![js validation](https://github.com/ocimar84/funkosgalaxy/assets/79640465/d1d84d41-7d79-4ab6-8001-c7080d26df90)
+
 
 * [Chrome DevTools Lighthouse]
-![Lighthouse](https://github.com/KateEllen/shoe_shop/blob/main/media/lighthouse.png)
+
+![Lighthouse](https://github.com/ocimar84/funkosgalaxy/assets/79640465/566d588d-7e6c-45f4-9c88-d0ae5de1c708)
 
 ## Manual Testing
 
@@ -32,9 +37,9 @@ To validate the code the following **validation services** and **linters** were 
 
 **Browser versions used in testing:**
 
-* Google Chrome Version 89.0.4389.114 (Official Build) (x86_64).
-* Safari Version 14.0.3 (16610.4.3.1.7).
-* Firefox Version 87.0 (64-bit)
+* Version 118.0.5993.118 (Official Build) (64-bit)
+* Safari Version 17.1 
+* Firefox Version 119.0 (64-bit)
 
 **Tested on the following devices using the Google Chrome Developer tools:**
 
@@ -46,6 +51,10 @@ To validate the code the following **validation services** and **linters** were 
 * iPhone 6/7/8
 * iPhone 6/7/8 Plus
 * iPhone X
+* iphone 11
+* iphone 12
+* iphone 13
+* iphone 14
 * iPad
 * iPad Pr
 * Surface Duo
@@ -62,14 +71,16 @@ To validate the code the following **validation services** and **linters** were 
 
 **Tested on the following physical devices:**
 
-* iPhone XS
+* iPhone 11
 * iPhone 12
+* iPhone 13
+* iphone 13 pro max 
 
 
 ### Features tested
 
 **Home Page:**
- * Clicking 'Funky Feet' log brings you to the homepage. 
+ * Clicking 'home, categories, products and contact' log brings you to the homepage. 
  * Clicking menu options brings you to the correct cateogry. 
     - All shoes gives a dropdown option, each individual category can be sleceted showing the correct category.
     - Heels gives a dropdown option, each individual category can be sleceted showing the correct category.
