@@ -508,6 +508,7 @@ Provide a brief overview of what your business offers and what sets it apart fro
 ### Sitemap
 ![Sitemap](https://github.com/ocimar84/funkosgalaxy/assets/79640465/f452b0e5-dfba-4855-82b7-ed7fd3794837)
 ![Sitemap2](https://github.com/ocimar84/funkosgalaxy/assets/79640465/dff805cd-74d7-4a31-843f-40f57464b6e9)
+![model](https://github.com/ocimar84/funkosgalaxy/assets/79640465/bcb207ce-8828-43f3-8408-62dd323c87f8)
 
 
 # Credits
