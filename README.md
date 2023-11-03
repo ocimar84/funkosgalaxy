@@ -440,7 +440,6 @@ I used postgres as the database because the data is relational and heroku serves
 | default_street_address1 | CharField     | Saved street address 1 | Not Required, auto populated if saved by user   |
 | default_street_address2 | CharField     | Saved street address 2 | Not Required, auto populated if saved by user** |
 | default_town_or_city    | CharField     | Saved town or city     | Not Required, auto populated if saved by user   |
-| default_country         | CountryField  | Saved country          | Not Required, auto populated if saved by user   |
 | default_postcode        | CharField     | Saved postcode         | Not Required, auto populated if saved by user   |
 | default_county          | CharField     | Saved county           | Not Required, auto populated if saved by user   |
 
@@ -503,7 +502,8 @@ Below are screenshots of the Funko Facebook page. This page gives users the oppe
 
 ## Instagram Business Page
 Provide a brief overview of what your business offers and what sets it apart from competitors.
-(https://user-images.githubusercontent.com/79640465/266805724-cdce39e6-7ef5-4596-8ea0-0e500674f6c4.png)
+![instagramlink](https://github.com/ocimar84/funkosgalaxy/assets/79640465/c4fe1eb4-28cd-4d1a-bf2f-91d89416d8db)
+
 
 ### Sitemap
 ![Sitemap](https://github.com/KateEllen/shoe_shop/blob/main/output.png)
@@ -512,7 +512,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## Content 
 * Products info and pictures - [Funko](https://funko.com/)
-* Wireframes - [[FunkoEurope](https://balsamiq.com/wireframes/)
+* Wireframes - [FunkoEurope](https://balsamiq.com/wireframes/)
 
 ## Media 
 Images - [FunkoEurope](https://funkoeurope.com/)
