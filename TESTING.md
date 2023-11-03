@@ -1,6 +1,6 @@
 # Testing
 
-[View the live project here.](https://funkogalaxys-9966c091c723.herokuapp.com/)
+[View the live project here.][(https://funkogalaxys-9966c091c723.herokuapp.com/)]
 
 
 ## Code Validation
