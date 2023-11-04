@@ -264,27 +264,20 @@ def add_product(request):
             form = ProductForm(request.POST, request.FILES)
             if form.is_valid():
                 new_product = form.save()
-                # Send newsletter
-                newsletter_subject = render_to_string('newsletter/new_product_alert_subject.txt', {'product_name': new_product.name}).strip()
-                newsletter_message = render_to_string('newsletter/new_product_alert_body.txt', {'product_name': new_product.name,'product_description': new_product.description, 'product_url': request.build_absolute_uri(new_product.get_absolute_url())})
-                recipients = [subscriber.email for subscriber in NewsletterSubscription.objects.all()]
-                
-                try:
-                    send_mail(
-                        newsletter_subject,
-                        newsletter_message,
-                        settings.EMAIL_HOST_USER,
-                        recipients,
-                        fail_silently=False,
-                    )
-                    print( "Newsletter sent successfully!")
-                except Exception as e:
-                    print(f"There was a problem sending the newsletter: {e}")
-
+                # Assuming you create a newsletter entry when a new product is added.
+                newsletter = Newsletter.objects.create(
+                    subject= render_to_string('newsletter/new_product_alert_subject.txt', {'product_name': new_product.name}).strip(),
+                    message=render_to_string('newsletter/new_product_alert_body.txt', {'product_name': new_product.name,'product_description': new_product.description, 'product_url': request.build_absolute_uri(new_product.get_absolute_url())}),
+                    recipients=",".join([subscriber.email for subscriber in NewsletterSubscription.objects.all()]),
+                    sent_successfully=""
+                )
+                if send_newsletter(request, newsletter.id):
+                    print("Newsletter sent successfully!")
+                else:
+                   print( "There was a problem sending the newsletter.")
                 return redirect('manage_products')
         else:
             form = ProductForm()
-
         return render(request, 'dashboard/add_product.html', {'form': form})
     else:
         return render(request, 'error/404.html')
@@ -315,10 +308,10 @@ def send_newsletter(request, newsletter_id):
 
         return True
     except Newsletter.DoesNotExist:
-        messages.error(request, "Newsletter does not exist.")
+        print( "Newsletter does not exist.")
         return False
     except Exception as e:
-        messages.error(request, "An error occurred: " + str(e))
+        print("An error occurred: " + str(e))
         return False
 def edit_product(request, product_id):
     if request.user.is_superuser:
