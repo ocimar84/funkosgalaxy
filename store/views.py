@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.conf import settings
-from .models import NewsletterSubscription
+from .models import NewsletterSubscription, Newsletter
 from django.contrib import messages
 from .forms import ProductForm, CategoryForm
 from django.views.decorators.csrf import csrf_exempt
@@ -11,6 +11,7 @@ from django.urls import reverse
 import stripe
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
+from django.utils import timezone
 
 def home(request):
     categories = Category.objects.all().order_by('id')
@@ -263,32 +264,62 @@ def add_product(request):
             form = ProductForm(request.POST, request.FILES)
             if form.is_valid():
                 new_product = form.save()
-                send_newsletter(request, new_product)
+                # Send newsletter
+                newsletter_subject = render_to_string('newsletter/new_product_alert_subject.txt', {'product_name': new_product.name}).strip()
+                newsletter_message = render_to_string('newsletter/new_product_alert_body.txt', {'product_name': new_product.name,'product_description': new_product.description, 'product_url': request.build_absolute_uri(new_product.get_absolute_url())})
+                recipients = [subscriber.email for subscriber in NewsletterSubscription.objects.all()]
+                
+                try:
+                    send_mail(
+                        newsletter_subject,
+                        newsletter_message,
+                        settings.EMAIL_HOST_USER,
+                        recipients,
+                        fail_silently=False,
+                    )
+                    print( "Newsletter sent successfully!")
+                except Exception as e:
+                    print(f"There was a problem sending the newsletter: {e}")
+
                 return redirect('manage_products')
         else:
             form = ProductForm()
+
         return render(request, 'dashboard/add_product.html', {'form': form})
     else:
         return render(request, 'error/404.html')
 
-def send_newsletter(request, new_product):
-    subscribers = NewsletterSubscription.objects.all()
-    subject = f"New Product Alert: {new_product.name}"
-    
-    # Generate absolute URL
-    product_url = request.build_absolute_uri(new_product.get_absolute_url())
+def send_newsletter(request, newsletter_id):
+    try:
+        newsletter = Newsletter.objects.get(id=newsletter_id)
+        subscribers = newsletter.recipients.split(',')  # Assuming subscribers are stored as a comma-separated list.
+        
+        subject = newsletter.subject
+        message = newsletter.message
+        
+        successfully_sent = []
 
-    message = f"Check out our new product: {new_product.name}! Find it here: {product_url}"
+        # Send email to each subscriber
+        for email in subscribers:
+            try:
+                send_mail(subject, message, settings.EMAIL_HOST_USER, [email], fail_silently=False)
+                successfully_sent.append(email)
+            except Exception as e:
+                # If sending failed, log the error (not shown here)
+                continue
 
-    for subscriber in subscribers:
-        send_mail(
-            subject,
-            message,
-            settings.EMAIL_HOST_USER,
-            [subscriber.email],
-            fail_silently=False,
-        )
+        # Update the Newsletter model with the emails that were sent successfully
+        newsletter.sent_successfully = ','.join(successfully_sent)  # Overwrite any existing data
+        newsletter.sent_date = timezone.now()
+        newsletter.save()
 
+        return True
+    except Newsletter.DoesNotExist:
+        messages.error(request, "Newsletter does not exist.")
+        return False
+    except Exception as e:
+        messages.error(request, "An error occurred: " + str(e))
+        return False
 def edit_product(request, product_id):
     if request.user.is_superuser:
         product = Product.objects.get(id=product_id)

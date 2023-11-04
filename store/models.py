@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django.utils import timezone
 
 # Modelo para representar as categorias dos produtos
 class Category(models.Model):
@@ -66,3 +67,18 @@ class NewsletterSubscription(models.Model):
 
     def __str__(self):
         return self.email
+    
+class Newsletter(models.Model):
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
+    sent_date = models.DateTimeField(default=timezone.now)
+    recipients = models.TextField(default="", help_text="Comma-separated list of recipient emails")
+    sent_successfully = models.TextField(default="", help_text="Comma-separated list of successfully sent emails")
+    # Assuming you want to keep track of which sends were successful
+
+    def __str__(self):
+        return f"Newsletter {self.subject} sent on {self.sent_date.strftime('%Y-%m-%d %H:%M:%S')}"
+
+    def was_sent_successfully_to(self, email):
+        return email in self.sent_successfully.split(',')
+

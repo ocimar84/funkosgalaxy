@@ -1,0 +1,13 @@
+Hello!
+
+We are excited to inform you that we have a new product available: {{ product_name }}!
+
+Here's what makes our new product standout:
+{{ product_description }}
+
+Find out more about the product and get it now at: {{ product_url }}
+
+Thank you for staying with us!
+
+Best regards,
+Funkosgalaxy Team
