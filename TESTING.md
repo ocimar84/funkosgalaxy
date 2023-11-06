@@ -81,44 +81,41 @@ To validate the code the following **validation services** and **linters** were 
 
 **Home Page:**
  * Clicking 'home, categories, products and contact' log brings you to the homepage. 
- * Clicking menu options brings you to the correct cateogry. 
-    - All shoes gives a dropdown option, each individual category can be sleceted showing the correct category.
-    - Heels gives a dropdown option, each individual category can be sleceted showing the correct category.
-    - Flats gives a dropdown option, each individual objecategoryct can be sleceted showing the correct category.
-    - Boots gives a dropdown option, each individual category can be sleceted showing the correct category.
-    - Special Offers gives a dropdown option, each individual category can be sleceted showing the correct category.
+ * Clicking menu options directs you to the appropriate category.
+    - All funkos provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Heels provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Flats provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Boots provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Clicking the 'My Account' icon option directs you to your profile and gives you the option to sign out.
 
  * Clicking 'My Account' icon option brings you to your profile and give you the option to sign out.
  * Clicking 'Shopping Bag' icon brings you to your shopping bag.
 
-**Search Bar:** 
- * The search bar was tested by using not relevant search terms so it displayed ''.
- * The search bar generates results based on user input. Results are listed underneath. Words that are relevant to the site were searched all returning the correct information.
 **Product Page:**   
 
 **Product Page:** 
- * Clicking the 'Sort by' dropdown allows you to sort products by price (A-Z) (Z-A) and category (A-Z) (Z-A).
- * Clicking an item in the product page will bring you to the item selected. 
+ * Just select the product you prefer, products are listed with photo and price.
+ * Clicking an item on the product page will navigate you to the selected item's specific page.
 
 **Register Page:** 
- * The form fields have validation, it was tested using correct and incorrect input, receiving the expected output. 
- * Clicking the back to login links take the user back to the login page.
- * Clicking the register button will trigger an email to be sent to the used email address requesting to confirm their email address, once verified the user will be returned to the main page.
+ * The form fields undergo validation, and they were tested using both accurate and inaccurate inputs, resulting in the expected outputs.
+ * Clicking the "back to login" links redirects the user to the login page.
+ * Clicking the register button will initiate an email to be sent to the provided email address, requesting confirmation of the email. Once verified, the user will be redirected to the main page.
 
 **All products - Dropdown** 
-* All the links in the dropdown list take the user to the different categories avaiable in the page.
-* The result of the users input is shown below with only the products listed in that category.
-* The page displays an item count so they can see how many products are available in that category, next to a link that directs them to the all products page. The item count was tested by entering and removing products from the database and updates accordingly.
-* The sort by dropdown is available for users to sort the products in the chosen category, it was tested by selecting all the availble sorting methods and observing the results, which were as expected.
-* The product image will take the user to that specific products details page.
+* All the links in the dropdown menu direct the user to the different available categories on the page.
+* The user's input results are displayed below, showing only the products listed in that category.
+* The page shows an item count so that users can see how many products are available in that category, alongside a link that takes them to the all products page. The item count was tested by adding and removing products from the database and updates accordingly.
+* The "sort by" dropdown is accessible for users to organize the products in the selected category, and it was tested by selecting all the available sorting methods, yielding the expected results.
+* Clicking the product image will take the user to the specific product details page.
 
 **Product Detail page** 
 * Show all the details of the selected product.
-* A category link takes users to that products category, where they will find other products in that category if there are any in the database. It was tested by clicking on every available method.
-* Users can use the amount minus and plus icons to select the amount of that product type to add to the bag. This has been tested with every product and the amount specified here will be added to the users shopping bag. 
-* Superusers will find the Edit and Delete buttons as well. They are not visible to nonsuperusers and they were tested by creating a regular user.
-* A continue shopping link directs users to the all products page whilst saving their current shopping bag.
-* The add to bag button adds the specified amount of the specified product to the users shopping bag. Users are notified of the success of this or if there's been an error.
+* A category link leads users to the product's category, where they can explore other items within the same category, if available in the database. This functionality was thoroughly tested across various scenarios.
+* Users can adjust the quantity of the selected product using the minus and plus icons before adding it to the shopping bag. This feature underwent extensive testing for each product, ensuring that the designated quantity is accurately added to the user's shopping bag.
+* Superusers have access to the Edit and Delete buttons, which are not visible to regular users. This was verified through the creation of a standard user account.
+* A "Continue Shopping" link redirects users to the "All Products" page while preserving the contents of their current shopping bag.
+* The "Add to Bag" button places the specified quantity of the chosen product into the user's shopping bag. Users receive prompt notifications for successful additions or any encountered errors.
 
 **Edit Product Button** 
 * Only super users have access to this button (found on Product Details page), and it was tested by creating a regular user.
