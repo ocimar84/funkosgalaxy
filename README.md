@@ -18,7 +18,7 @@ This project is for educational purposes only.
 
 ### Importance and Feasibility chart
 
-The features in the table below have been taken from the user stories above. Generic features found in most websites will also be implemented such as nav-bar, footer, obvious website purpose, etc.
+The features in the table below have been taken from the user stories above. Generic features found in most websites will also be implemented such as nav-bar, obvious website purpose, etc.
 
 | Feature                   | Feasibility (1-5) | Importance (1-5) |
 |---------------------------|-------------------|------------------|
@@ -291,10 +291,11 @@ https://github.com/ocimar84/funkosgalaxy/assets/79640465/20d87095-3c51-440d-bd45
 * Users have an input box and a button to subscribe.
 * Users will receive an email in their inbox.
 
-### Features on the Contact
-* Welcome to FunkoGalaxy, your one-stop-shop for all things related to funky and stylish footwear. Our mission is to provide you with the latest shoe designs, ensuring comfort, quality, and a touch of intergalactic flair. Whether you're searching for casual sneakers, elegant heels, or durable boots, we've got you covered.
 
-Join us in stepping up your footwear game and adding a touch of funk to your everyday style.
+### Features on the Contact
+* Provide a user-friendly form allowing visitors to send messages directly to your team. Ensure the form includes fields for name, email, subject, and message.
+
+
 
 ## Contact Us
 
@@ -414,7 +415,6 @@ I used postgres as the database because the data is relational and heroku serves
 |----------------|--------------|-------------------|--------------------------|
 | order          | ForeignKey   | Show order        | Required                 |
 | product        | ForeignKey   | Products in order | Required                 |
-| product_size   | CharField    | Size of shoe      | Required                 |
 | quantity       | IntegerField | Amount selected   | Required                 |
 | lineitem_total | DecimalField | total amount      | Required, auto populated |
 

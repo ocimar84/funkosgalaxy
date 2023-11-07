@@ -81,96 +81,90 @@ To validate the code the following **validation services** and **linters** were 
 
 **Home Page:**
  * Clicking 'home, categories, products and contact' log brings you to the homepage. 
- * Clicking menu options brings you to the correct cateogry. 
-    - All shoes gives a dropdown option, each individual category can be sleceted showing the correct category.
-    - Heels gives a dropdown option, each individual category can be sleceted showing the correct category.
-    - Flats gives a dropdown option, each individual objecategoryct can be sleceted showing the correct category.
-    - Boots gives a dropdown option, each individual category can be sleceted showing the correct category.
-    - Special Offers gives a dropdown option, each individual category can be sleceted showing the correct category.
+ * Clicking menu options directs you to the appropriate category.
+    - All funkos provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Heels provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Flats provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Boots provide a dropdown menu, allowing the selection of each individual category, which displays the correct category.
+    - Clicking the 'My Account' icon option directs you to your profile and gives you the option to sign out.
 
  * Clicking 'My Account' icon option brings you to your profile and give you the option to sign out.
  * Clicking 'Shopping Bag' icon brings you to your shopping bag.
 
-**Search Bar:** 
- * The search bar was tested by using not relevant search terms so it displayed ''.
- * The search bar generates results based on user input. Results are listed underneath. Words that are relevant to the site were searched all returning the correct information.
 **Product Page:**   
 
 **Product Page:** 
- * Clicking the 'Sort by' dropdown allows you to sort products by price (A-Z) (Z-A) and category (A-Z) (Z-A).
- * Clicking an item in the product page will bring you to the item selected. 
+ * Just select the product you prefer, products are listed with photo and price.
+ * Clicking an item on the product page will navigate you to the selected item's specific page.
 
 **Register Page:** 
- * The form fields have validation, it was tested using correct and incorrect input, receiving the expected output. 
- * Clicking the back to login links take the user back to the login page.
- * Clicking the register button will trigger an email to be sent to the used email address requesting to confirm their email address, once verified the user will be returned to the main page.
+ * The form fields undergo validation, and they were tested using both accurate and inaccurate inputs, resulting in the expected outputs.
+ * Clicking the "back to login" links redirects the user to the login page.
+ * Clicking the register button will initiate an email to be sent to the provided email address, requesting confirmation of the email. Once verified, the user will be redirected to the main page.
 
 **All products - Dropdown** 
-* All the links in the dropdown list take the user to the different categories avaiable in the page.
-* The result of the users input is shown below with only the products listed in that category.
-* The page displays an item count so they can see how many products are available in that category, next to a link that directs them to the all products page. The item count was tested by entering and removing products from the database and updates accordingly.
-* The sort by dropdown is available for users to sort the products in the chosen category, it was tested by selecting all the availble sorting methods and observing the results, which were as expected.
-* The product image will take the user to that specific products details page.
+* All the links in the dropdown menu direct the user to the different available categories on the page.
+* The user's input results are displayed below, showing only the products listed in that category.
+* The page shows an item count so that users can see how many products are available in that category, alongside a link that takes them to the all products page. The item count was tested by adding and removing products from the database and updates accordingly.
+* The "sort by" dropdown is accessible for users to organize the products in the selected category, and it was tested by selecting all the available sorting methods, yielding the expected results.
+* Clicking the product image will take the user to the specific product details page.
 
 **Product Detail page** 
 * Show all the details of the selected product.
-* A category link takes users to that products category, where they will find other products in that category if there are any in the database. It was tested by clicking on every available method.
-* Users can use the amount minus and plus icons to select the amount of that product type to add to the bag. This has been tested with every product and the amount specified here will be added to the users shopping bag. 
-* Superusers will find the Edit and Delete buttons as well. They are not visible to nonsuperusers and they were tested by creating a regular user.
-* A continue shopping link directs users to the all products page whilst saving their current shopping bag.
-* The add to bag button adds the specified amount of the specified product to the users shopping bag. Users are notified of the success of this or if there's been an error.
+* A category link leads users to the product's category, where they can explore other items within the same category, if available in the database. This functionality was thoroughly tested across various scenarios.
+* Users can adjust the quantity of the selected product using the minus and plus icons before adding it to the shopping bag. This feature underwent extensive testing for each product, ensuring that the designated quantity is accurately added to the user's shopping bag.
+* Superusers have access to the Edit and Delete buttons, which are not visible to regular users. This was verified through the creation of a standard user account.
+* A "Continue Shopping" link redirects users to the "All Products" page while preserving the contents of their current shopping bag.
+* The "Add to Bag" button places the specified quantity of the chosen product into the user's shopping bag. Users receive prompt notifications for successful additions or any encountered errors.
 
-**Edit Product Button** 
-* Only super users have access to this button (found on Product Details page), and it was tested by creating a regular user.
-* Clicking the 'Edit' buttons take the user to a form with the fields filled out with the current information and the 'Edit' button in the forms changes the information in the database, before taking the user back to that products details page.
-* The form fields have validation and were tested using correct and incorrect information with the expected responses given.
-* The current image section shows a thumbnail of the current image with the option to remove it, select a new image from the files (select button) or add an image using the image url field.
-* Clicking the 'Cancel' button will take the user back to the details page without making any changes.
-* Users are notified of the successor if there is any errors so the request couldn't be processed.
+**Edit Product Management** 
+* Exclusive access to this feature is reserved for superusers only (located on the Product Details page) and was verified through the creation of a standard user account.
+* Selecting the 'Edit' button directs the user to a form pre-filled with the current information. 
+* After making the necessary changes and clicking the 'Edit' button within the form, the updated information is modified in the database, followed by a return to the product's details page.
+* The form fields undergo thorough validation testing, assessing both accurate and inaccurate information input with the corresponding expected responses.
+* The existing image section displays a thumbnail of the current image with the options to delete it, upload a new image from local files (via the select button), or add an image using the image URL field.
+* Opting for the 'Cancel' button returns the user to the details page without implementing any modifications.
+
 
 **Product Management** 
-* Only super users have access to this page (found in My Account dropdown), and it was tested by creating a regular user.
-* Clicking the 'Add' buttons add the entered information to the database before taking the user back to the products details page.
-* The form fields have validation, tested using correct and incorrect information with the expected responses given.
-* Users can select a new image from the computers files via the select button or add an image using the image url field.
-* Clicking the 'Cancel' buttons take the user back to their respective details page without making changes as expected.
-* Users are notified of the success of this or if there's been an error.
+* Exclusive access to this section is granted only to superusers (located within the My Account dropdown), and this was verified through the testing process involving the creation of a regular user account.
+* By clicking the 'Add' button, the entered information is appended to the database before redirecting the user back to the product details page.
+* Thorough validation of the form fields was conducted, encompassing both accurate and inaccurate information inputs, with the anticipated responses duly assessed.
+* Users have the option to upload a new image from their local files via the select button or include an image using the image URL field.
+* Selecting the 'Cancel' button directs the user back to their respective details page without implementing any changes, as anticipated.
+* Users receive prompt notifications regarding the successful execution of their actions or the occurrence of any errors.
 
-**My Account Dropdown** 
-* In 'My Account' dropdown, when logged in, shows relevant information depending on if it a superuser or not, with superusers getting the Product Management option, alongside the profile and logout links. Tested both using superuser and nonsuperuser credentials.
-* Unregistered users and users not logged in will see product and register links. Tested using superuser and nonsuperuser credentials.
+**User Profile Options** 
+* Within the 'My Account' dropdown, when logged in, relevant information is displayed based on the user's status, distinguishing between regular users and superusers. Superusers have access to the Product Management option in addition to the profile and logout links. Testing involved the use of both superuser and nonsuperuser credentials to verify functionality.
+* Unregistered users and users not logged in will encounter links for product browsing and registration. This functionality was tested with both superuser and nonsuperuser credentials to ensure consistent behavior.
 
-**Profile Page** 
-* The users username appears at the top as programmed with their email displayed underneath.
-  * The profile page shows the users username and email address with a table containing their previous orders and current delivery information.
-  * Clicking the order numbers, in the order history table, redirects users to order confirmation page with all the information available in that order. A reminder toast message appears to remind the user they are viewing an old order 
-  is also displayed, with a link which takes users back to the profile page.
-  * The current delivery information section has different fields that can be edited with updated information after clicking the update information button.
-  If the user is logged in their information will automatically populate.
-  The form has validation.
-  * This page is only accessible if the user is logged in, it was tested using a username that wasn't logged in.
+**User Profile Page** 
+* The user's username is prominently displayed at the top, followed by their email address, as intended.
+  * The profile page showcases the user's username and email address, alongside a comprehensive table featuring their past orders and current delivery details.
+  * Clicking the order numbers within the order history table redirects users to an order confirmation page, providing a comprehensive overview of the selected order. A reminder toast message alerts the user that they are viewing an archived order, with a link to return to the profile page.
+  * The current delivery information section comprises editable fields that can be updated by clicking the 'update information' button. If the user is logged in, their information will be automatically populated. The form includes validation to ensure accurate data entry.
+  * Access to this page is exclusively granted to logged-in users and was tested using a username that was not logged in.
+  * The shopping bag icon in the navigation bar directs the user to their shopping bag, where they can view a detailed list of all the added products, alongside vital information. In the case of an empty bag, users receive a notification in a toast, with a link leading them to the 'All Products' page. Testing confirmed the functionality of both an empty bag and a bag with items, verifying the expected results.
 
-* The Bag icon in the navbar takes the user to their shopping bag. There they will find a list of all the products added to it, as well as important information. If the bag is empty
-  users will receive a notification in a toast, alongside a link which directs them to the all products page. This was tested by clicking the empty bag and clicking the bag with items inside and viewing the reults, which were as stated.
-  * Users who have items in their bag will be faced with the option to update item amounts and delete items from their bag. Both the plus and minus buttons update the number in the box field, and the update and delete buttons update the subtotal, bag total, delivery and grand total to reflect the changes.
+  * Users with items in their bag have the option to adjust item quantities and delete items from their bag. Both the plus and minus buttons update the quantity field, while the update and delete buttons modify the subtotal, bag total, delivery fees, and grand total to reflect the changes made. If all items are removed from the bag, users are directed to a page confirming that their bag is empty, with a link redirecting them to the 'All Products' page.
+  * Clicking the 'Continue Shopping' link guides users back to the 'All Products' page.
   If all the items are removed from the bag, users will be directed to a page stating that their bag is empty and a link which takes them to the all products page.
-  * Clicking the continue shopping link directs users to the all products page.
   * Clicking the checkout button takes users to the checkout page where they find an order summary alongside an order form. 
 
-**Checkout Page** 
-  * All form fields work as intended and have form validation in case the user doesn't fill the information in the correct way.
-  * Clicking the 'Save delivery info to profile' box, saves just the delivery sections users details to their profile page, which can be accessed via the 'My Account' dropdown. If the user has information saved to their profile, the delivery form fields will be automatically generated with the stored information. This was tested by changing the product information.
-  * Clicking the bag link takes users back to their bag.
-  * Clicking the checkout button generates the payment through stripe, adding the order to the admin section of the site and the users profile page. This was tested using multiple users and making orders then viewing the reults.
-  * The 'warning card is about to be debited' message updates with the bag user entries such as updating the amount of product and was tested by doing so.
+**Order Confirmation Page** 
+  * All the form fields are functioning as expected and include validation to ensure accurate data entry.
+  * Enabling the 'Save delivery info to profile' option stores the user's delivery details to their profile page, accessible through the 'My Account' dropdown. If the user has previously saved information, the delivery form fields will be automatically populated with the stored data. Testing involved modifying product information to verify this functionality.
+  * Clicking the 'View Bag' link allows users to return to their shopping bag.
+  * Clicking the checkout button initiates the payment process via Stripe, adding the order to both the admin section of the site and the user's profile page. To verify the functionality, multiple orders were made using different user accounts, and the results were examined.
+  * The 'Warning: Your card is about to be charged' message is dynamically updated based on the user's entries in the shopping bag, such as modifying the product quantity. This feature was tested by adjusting the product quantity and observing the message update accordingly.
 
-**Confirmation page** 
-* When users have checked out and paid, they are directed to a confirmation page with a copy of their order and a link which directs the to the Latest Deals page. 
-It will also display a toast message with all the details. 
+**Order Confirmation Page** 
+* Upon successfully completing the checkout process and making the payment, users will be directed to an order confirmation page that presents a comprehensive summary of their purchase. The page will also include a link guiding them to the Latest Deals page.  
+Furthermore, a notification message will be displayed, furnishing users with all the pertinent details pertaining to their transaction.
 
-**Subscription:** 
-* The subscription form is available in all the pages. 
-* It asks the user to input a correct email.
-* User receives an email to confirm their subscription.
+**Newsletter Subscription:** 
+* The newsletter subscription form is accessible on every page.
+* Users are required to input a valid email address for subscription.
+* A confirmation email is sent to the user to verify their subscription.
 
 ** To go back to [README.md](./README.md) **
