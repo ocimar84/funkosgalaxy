@@ -12,6 +12,7 @@ import stripe
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils import timezone
+from django.contrib.auth.decorators import login_required
 
 def home(request):
     categories = Category.objects.all().order_by('id')
@@ -19,6 +20,7 @@ def home(request):
 
     return render(request, 'home.html', {'categories': categories, 'products': products})
 
+@login_required
 def profile(request):
     try:
         orders = Order.objects.filter(user=request.user).order_by('-created_at')
@@ -28,11 +30,14 @@ def profile(request):
         return render(request, 'profile.html', { 'orders': orders })
     except:
         return render(request, 'error/404.html')
+    
+@login_required
 def category_list(request):
     categories = Category.objects.all().order_by('id')
 
     return render(request, 'category_list.html', {'categories': categories})
 
+@login_required
 def category_detail(request, category_id):
     try: 
         category = Category.objects.get(id=category_id)
@@ -42,6 +47,7 @@ def category_detail(request, category_id):
     except:
         return render(request, 'error/404.html')
 
+@login_required
 def product_list(request):
     products = Product.objects.all()
 
@@ -55,6 +61,7 @@ def product_detail(request, product_id):
     except:
         return render(request, 'error/404.html')
 
+@login_required
 def toggle_favorite(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     if product.favorites.filter(id=request.user.id).exists():
@@ -63,6 +70,7 @@ def toggle_favorite(request, product_id):
         product.favorites.add(request.user)
     return redirect('product_detail', product_id=product.id)
 
+@login_required
 def user_favorites(request):
     try:
         favorited_products = Product.objects.filter(favorites=request.user)
@@ -109,6 +117,7 @@ def cart_view(request):
         return render(request, 'cart.html', { 'items': cart_items, 'total': cart_total, 'count': cart_count })
     except:
         return render(request, 'error/404.html')
+
 
 def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
@@ -169,6 +178,7 @@ def create_order(request):
 
     return redirect('checkout', order.id)
 
+@login_required
 def checkout(request, order_id):
     try:
         order = Order.objects.get(user=request.user, id=order_id)
@@ -244,20 +254,22 @@ def subscribe_to_newsletter(request):
     except:
         return JsonResponse({'status': 'error', 'message': 'Something worng!'})
 
-
+@login_required
 def dashboard(request):
     if request.user.is_superuser:
         return render(request, 'dashboard/dashboard.html')
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
+@login_required
 def manage_products(request):
     if request.user.is_superuser:
         products = Product.objects.all()
         return render(request, 'dashboard/manage_products.html', {'products': products})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
+@login_required
 def add_product(request):
     if request.user.is_superuser:
         if request.method == 'POST':
@@ -280,7 +292,7 @@ def add_product(request):
             form = ProductForm()
         return render(request, 'dashboard/add_product.html', {'form': form})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
 def send_newsletter(request, newsletter_id):
     try:
@@ -313,6 +325,8 @@ def send_newsletter(request, newsletter_id):
     except Exception as e:
         print("An error occurred: " + str(e))
         return False
+
+@login_required
 def edit_product(request, product_id):
     if request.user.is_superuser:
         product = Product.objects.get(id=product_id)
@@ -325,24 +339,27 @@ def edit_product(request, product_id):
             form = ProductForm(instance=product)
         return render(request, 'dashboard/edit_product.html', {'form': form, 'product': product})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
+@login_required
 def delete_product(request, product_id):
     if request.user.is_superuser:
         product = Product.objects.get(id=product_id)
         product.delete()
         return redirect('manage_products')
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
+@login_required
 def manage_categories(request):
     if request.user.is_superuser:
         categories = Category.objects.all()
         return render(request, 'dashboard/manage_categories.html', {'categories': categories})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
 # View for adding a category
+@login_required
 def add_category(request):
     if request.user.is_superuser:
         if request.method == "POST":
@@ -354,9 +371,10 @@ def add_category(request):
             form = CategoryForm()
         return render(request, 'dashboard/add_category.html', {'form': form})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
 # View for editing a category
+@login_required
 def edit_category(request,  category_id):
     if request.user.is_superuser:
         category = get_object_or_404(Category, id=category_id)
@@ -369,9 +387,10 @@ def edit_category(request,  category_id):
             form = CategoryForm(instance=category)
         return render(request, 'dashboard/edit_category.html', {'form': form, 'category': category})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
 # View for deleting a category
+@login_required
 def delete_category(request, category_id):
     try:
         if request.user.is_superuser:
@@ -379,15 +398,16 @@ def delete_category(request, category_id):
             category.delete()
             return redirect('manage_categories')
         else:
-            return render(request, 'error/404.html')
+            return render(request, 'error/403.html')
     except:
         return render(request, 'error/404.html')
+@login_required
 def view_contacts(request):
     if request.user.is_superuser:
         contacts = Contact.objects.all()
         return render(request, 'dashboard/view_contacts.html', {'contacts': contacts})
     else:
-        return render(request, 'error/404.html')
+        return render(request, 'error/403.html')
 
 
 
